@@ -20,7 +20,7 @@ Quick reference for finding the right optimization guide.
 | Bloodrager | One B.A.M.F's Guide to the Bloodrager | Unknown | [guide.md](bloodrager-bamf/guide.md) |
 | Bloodrager | Raining Blood: The Bloodrager's Guide | Unknown | [guide.md](bloodrager-raining-blood/guide.md) |
 | Brawler | Brawlers: Debuffing with Style | Unknown | [guide.md](brawler-debuffing/guide.md) |
-| Cavalier | The Cavalry Has Arrived | Unknown | [index.md](cavalier-cavalry/index.md) |
+| Cavalier | The Cavalry Has Arrived | Unknown | [guide.md](cavalier-cavalry/guide.md) |
 | Cavalier | The Cavalier's Code | Unknown | [guide.md](cavalier-code/guide.md) |
 | Cleric | Blessed Be the Faithful: Guide to Clerics | Iluzry | [index.md](cleric-iluzry/index.md) |
 | Cleric | Tark's Big Holy Book of Clerical Optimization | Tark | [guide.md](cleric-tark/guide.md) |
@@ -44,11 +44,11 @@ Quick reference for finding the right optimization guide.
 | Magus | Forger's Supplemental Guide to the Updated Magus | Forger | [guide.md](magus-forger/guide.md) |
 | Magus | Myrrh, Frankincense, and Steel: Kurald Galain's Guide to the Magus | Kurald Galain | [guide.md](magus-kurald/guide.md) |
 | Medium | Leasing Your Body for Fun and Profit: Guide to the Medium | CockroachTeaParty | [guide.md](medium-cockroach/guide.md) |
-| Mesmerist | Follow My Voice: Allerseelen's Guide to the Mesmerist | Allerseelen | [index.md](mesmerist-allerseelen/index.md) |
+| Mesmerist | Follow My Voice: Allerseelen's Guide to the Mesmerist | Allerseelen | [guide.md](mesmerist-allerseelen/guide.md) |
 | Monk | Jam's Blended Archetype Guide: The Monk | JAM | [index.md](monk-jam/index.md) |
 | Monk | Beginner's Basics to the Master of Many Styles | Unknown | [guide.md](monk-master-of-many-styles/guide.md) |
 | Monk | Optimizing your Qinggong Monk | Unknown | [guide.md](monk-qinggong/guide.md) |
-| Occultist | The Occultist's Reliquary: Allerseelen's Guide to the Occultist | Allerseelen | [index.md](occultist-allerseelen/index.md) |
+| Occultist | The Occultist's Reliquary: Allerseelen's Guide to the Occultist | Allerseelen | [guide.md](occultist-allerseelen/guide.md) |
 | Oracle | Bell, Book, & Candle: A Guide to the Pathfinder Oracle | Allerseelen | [index.md](oracle-allerseelen/index.md) |
 | Oracle | Channeling the Cosmos: A Guide to the Oracle | Unknown | [guide.md](oracle-channeling-cosmos/guide.md) |
 | Paladin | Deadeye's Servant: Guide to the Archery Paladin | Deadeye | [guide.md](paladin-archery-deadeye/guide.md) |
@@ -66,11 +66,11 @@ Quick reference for finding the right optimization guide.
 | Sorcerer | Unlimited Mageworks: Guide to the Pathfinder 1e Sorcerer | Iluzry | [index.md](sorcerer-iluzry/index.md) |
 | Sorcerer | Building God's Grimoire: Guide to Sorcerer Spells | Iluzry | [index.md](sorcerer-spells-iluzry/index.md) |
 | Sorcerer, Wizard | BLOW THEM TO SMITHEREENS! Master Blaster Caster Guide | Unknown | [guide.md](blaster-caster/guide.md) |
-| Spiritualist | Phantom of the OP-era: Guide to the Spiritualist | Unknown | [index.md](spiritualist-phantom-opera/index.md) |
+| Spiritualist | Phantom of the OP-era: Guide to the Spiritualist | Unknown | [guide.md](spiritualist-phantom-opera/guide.md) |
 | Summoner | Getting into Someone Else's Skin: N. Jolly's Synthesist Guide | N. Jolly | [guide.md](summoner-synthesist-njolly/guide.md) |
 | Summoner | Tark's Guide to Building Tag Team Champions (Summoner) | Tark | [guide.md](summoner-tark/guide.md) |
 | Summoner | Unchained Summons Guide | Unknown | [guide.md](summoner-unchained/guide.md) |
-| Vigilante | Rogues Gallery: Allerseelen's Guide to the Vigilante | Allerseelen | [index.md](vigilante-allerseelen/index.md) |
+| Vigilante | Rogues Gallery: Allerseelen's Guide to the Vigilante | Allerseelen | [guide.md](vigilante-allerseelen/guide.md) |
 | Vigilante | I am Vengeance, I am the Night: Vigilante Guide | Unknown | [guide.md](vigilante-vengeance/guide.md) |
 | Warpriest | Piercing the Heavens: N. Jolly's Guide to the Warpriest | N. Jolly | [guide.md](warpriest-njolly/guide.md) |
 | Witch | Owl's Guide to Witches | Owl | [guide.md](witch-owl/guide.md) |
@@ -91,8 +91,4 @@ Quick reference for finding the right optimization guide.
 | The Armamentarium: Guide to Wo | The Armamentarium: Guide to Wondrous Items | Unknown | [index.md](wondrous-items-guide/index.md) |
 | Tips and Traits: Guide to Path | Tips and Traits: Guide to Pathfinder Traits | Unknown | [index.md](traits-guide/index.md) |
 
-## Coverage: 37/38 classes
-
-**Missing standalone guides:** Swashbuckler
-
-The gestalt guide covers combo ratings for all classes.
+## Coverage: 38/38 classes

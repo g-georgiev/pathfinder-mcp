@@ -1,6 +1,0 @@
-# Variant Multiclassing
-
-Variant Multiclassing
-
-
-        Variant multiclassing was introduced in Pathfinder Unchained, and allows characters to buy class features from other classes in exchange for about half their feats. Although variant multiclassing is generally more powerful on full-martial classes, which can skate by with fewer feats because of their bonus feats, there are still a few good variant multiclassing options for mesmerists. Bard is the most obvious choice for mesmerists, shoring up their relative weakness in Knowledge skills and also giving them some non-spell team buffing options via bardic performances. Rogue isn’t terrible, especially with some free sneak attack dice to add to your painful stare, but you never receive any rogue talents or finesse abilities, which makes tight Weapon Finesse builds even tighter. Among the base classes, oracle never fails to impress, given how excellent most revelations are, and inquisitor also isn’t bad for Intimidate/demoralization builds and all-around combat. Of note, variant multiclassing becomes stronger and stronger the more bonus feats PCs are given, so consider these options a bit more seriously if you’re going to be using Elephant in the Room feat tax rules or somesuch.

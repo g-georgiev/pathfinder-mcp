@@ -4,13 +4,5 @@
   "version": "0.1.0",
   "skills": "skills",
   "agents": "agents",
-  "mcpServers": {
-    "pathfinder-data": {
-      "command": "${CLAUDE_PLUGIN_ROOT}/mcp-server/.venv/bin/python3",
-      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp-server/server.py"],
-      "env": {
-        "PF_DB_PATH": "${CLAUDE_PLUGIN_ROOT}/db/pathfinder.db"
-      }
-    }
-  }
+  "mcpServers": "./.mcp.json"
 }

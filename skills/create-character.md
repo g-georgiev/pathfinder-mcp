@@ -39,8 +39,11 @@ Keep this brief — don't interrogate. If the data is clear enough, move on.
 Spawn the `character-builder` agent to do the heavy lifting:
 
 ```
-Use the Agent tool with subagent_type="character-builder" to generate the character sheet.
-Pass it ALL the character data collected so far.
+Use the Agent tool with subagent_type="pathfinder:character-builder" to generate the character sheet.
+Pass it ALL the character data collected so far, including:
+- The full character data (stats, feats, spells, etc.)
+- The path to the personal data directory (../personal/ relative to the plugin)
+- Any house rules from the personal CLAUDE.md
 ```
 
 The agent will:

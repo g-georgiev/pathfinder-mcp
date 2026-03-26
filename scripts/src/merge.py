@@ -37,6 +37,23 @@ def load_json(filename: str) -> list:
         return json.load(f)
 
 
+def clean_aonprd_name(entry: dict) -> str:
+    """Extract the clean spell/feat name from an aonprd entry.
+
+    aonprd list pages append superscript markers to names during HTML parsing:
+    spells get R/M/F/Y/T suffixes, feats get ⊤ and * characters.
+    The URL's ItemName= parameter has the clean name, so prefer that.
+    """
+    url = entry.get("url") or ""
+    if "ItemName=" in url:
+        return url.split("ItemName=")[1]
+    # Fallback: strip known trailing artifacts
+    name = entry.get("name", "")
+    name = name.rstrip('*⊤')
+    name = re.sub(r'[RMFYT]+$', '', name)
+    return name.strip()
+
+
 def normalize_name(name: str) -> str:
     """Normalize a name for deduplication matching."""
     return name.strip().lower().replace('\u2019', "'").replace('\u2018', "'")
@@ -73,11 +90,12 @@ def merge_spells():
 
     # Add aonprd-only spells as index entries (name + url + brief description)
     for a in aonprd_spells:
-        key = normalize_name(a['name'])
+        clean = clean_aonprd_name(a)
+        key = normalize_name(clean)
         if key not in psrd_keys:
             # Create a minimal spell entry from aonprd index data
             spell = {
-                'name': a['name'],
+                'name': clean,
                 'school': '',
                 'source': '',
                 'class_levels': [],
@@ -99,7 +117,7 @@ def merge_spells():
             added_from_aonprd += 1
 
     # Update PSRD spells with aonprd URLs
-    aonprd_by_name = {normalize_name(a['name']): a for a in aonprd_spells}
+    aonprd_by_name = {normalize_name(clean_aonprd_name(a)): a for a in aonprd_spells}
     for s in merged:
         key = normalize_name(s['name'])
         if key in aonprd_by_name and not s.get('url'):
@@ -142,10 +160,11 @@ def merge_feats():
 
     # Add aonprd-only feats
     for a in aonprd_feats:
-        key = normalize_name(a['name'])
+        clean = clean_aonprd_name(a)
+        key = normalize_name(clean)
         if key not in psrd_keys:
             feat = {
-                'name': a['name'],
+                'name': clean,
                 'source': '',
                 'types': [a.get('category', 'General')],
                 'prerequisites': a.get('prerequisites', ''),
@@ -158,7 +177,7 @@ def merge_feats():
             added_from_aonprd += 1
 
     # Update PSRD feats with aonprd URLs
-    aonprd_by_name = {normalize_name(a['name']): a for a in aonprd_feats}
+    aonprd_by_name = {normalize_name(clean_aonprd_name(a)): a for a in aonprd_feats}
     for f in merged:
         key = normalize_name(f['name'])
         if key in aonprd_by_name and not f.get('url'):

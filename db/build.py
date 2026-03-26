@@ -200,16 +200,33 @@ def seed_archetypes(cur, data):
         )
 
 
+def default_aonprd_url(name: str, table: str) -> str:
+    """Generate a default aonprd URL for records that don't have one."""
+    page = {"spells": "SpellDisplay", "feats": "FeatDisplay"}.get(table, "")
+    if page:
+        from urllib.parse import quote
+        return f"https://aonprd.com/{page}.aspx?ItemName={quote(name)}"
+    return ""
+
+
 def seed_spells(cur, data):
     for item in data:
         spell_level = item.get("spell_level", "")
         if isinstance(spell_level, dict):
             spell_level = ", ".join(f"{k} {v}" for k, v in spell_level.items())
+        # Convert class_levels list of dicts to "class N, class N" string
+        if not spell_level and item.get("class_levels"):
+            spell_level = ", ".join(
+                f"{cl['class_name'].lower()} {cl['level']}"
+                for cl in item["class_levels"]
+                if cl.get("class_name") and cl.get("level") is not None
+            )
+        url = item.get("url") or default_aonprd_url(item["name"], "spells")
         cur.execute(
             "INSERT OR IGNORE INTO spells (id, name, source, school, subschool, descriptor, spell_level, url, data) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (slugify(item.get("source", ""), item["name"]), item["name"],
              item.get("source"), item.get("school"), item.get("subschool"),
-             item.get("descriptor"), spell_level, item.get("url"),
+             item.get("descriptor"), spell_level, url,
              json.dumps(item))
         )
 
@@ -219,13 +236,15 @@ def seed_feats(cur, data):
         prereqs = item.get("prerequisites", "")
         if isinstance(prereqs, list):
             prereqs = ", ".join(str(p) for p in prereqs)
-        feat_type = item.get("type", item.get("feat_type", ""))
+        # JSON uses 'types' list (e.g. ['Combat', 'General']), fall back to 'type'/'feat_type'
+        feat_type = item.get("types", []) or item.get("type") or item.get("feat_type", "")
         if isinstance(feat_type, list):
             feat_type = ", ".join(feat_type)
+        url = item.get("url") or default_aonprd_url(item["name"], "feats")
         cur.execute(
             "INSERT OR IGNORE INTO feats (id, name, source, type, prerequisites, url, data) VALUES (?, ?, ?, ?, ?, ?, ?)",
             (slugify(item.get("source", ""), item["name"]), item["name"],
-             item.get("source"), feat_type, prereqs, item.get("url"),
+             item.get("source"), feat_type, prereqs, url,
              json.dumps(item))
         )
 
@@ -241,13 +260,47 @@ def seed_items(cur, data):
         )
 
 
+def derive_equipment_subcategory(item: dict) -> str:
+    """Derive subcategory from weapon_stats.proficiency or armor_stats."""
+    ws = item.get("weapon_stats")
+    if ws and ws.get("proficiency"):
+        prof = ws["proficiency"].lower()
+        if "exotic" in prof:
+            return "exotic"
+        elif "martial" in prof:
+            return "martial"
+        elif "simple" in prof:
+            return "simple"
+        elif "firearm" in prof:
+            return "firearm"
+    ars = item.get("armor_stats")
+    if ars:
+        # Derive light/medium/heavy from max_dex_bonus and armor_bonus
+        bonus = ars.get("armor_bonus") or ars.get("shield_bonus")
+        if item.get("category") == "shield":
+            return "shield"
+        if bonus is not None:
+            try:
+                b = int(bonus)
+                if b <= 3:
+                    return "light"
+                elif b <= 6:
+                    return "medium"
+                else:
+                    return "heavy"
+            except (ValueError, TypeError):
+                pass
+    return ""
+
+
 def seed_equipment(cur, data):
     for item in data:
+        subcategory = item.get("subcategory", "") or derive_equipment_subcategory(item)
         cur.execute(
             "INSERT OR IGNORE INTO equipment (id, name, source, category, subcategory, price, weight, data) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
             (slugify(item.get("source", ""), item.get("category", ""), item["name"]),
              item["name"], item.get("source"), item.get("category"),
-             item.get("subcategory"), item.get("price"), item.get("weight"),
+             subcategory, item.get("price"), item.get("weight"),
              json.dumps(item))
         )
 

@@ -92,6 +92,23 @@ All search tools accept `query` (name text), type-specific filters, `limit` (def
 
 The DB is a **read-through cache**: if a search returns no results, do a web search (aonprd.com, d20pfsrd.com), normalize the data into the same structure, and call `cache_entry` to store it. Future queries will hit the local DB. Use `source="web"` and prefix IDs with `web-` for cached entries.
 
+#### Stub records and lazy enrichment
+
+Many DB entries have incomplete data (short summary instead of full description, missing school/class levels for spells, missing parsed prerequisites for feats). When you query with `expand=True`, stub records are flagged with `_stub: true`.
+
+**When you encounter `_stub: true` and need the full data:**
+
+1. **Web fetch** the record's `url` field (aonprd.com or d20pfsrd.com)
+2. **Extract** the missing fields (full description, school, class/level list, prerequisites, etc.)
+3. **Cache** the enriched data via `cache_entry` using the record's existing `id` — this replaces the stub with complete data for all future queries
+
+This is the expected workflow — the DB was bulk-seeded from indexes that only have summaries. Full data gets backfilled on demand as you use it. Don't flag stub records as errors; just enrich them when you need the detail.
+
+**What counts as a stub by table:**
+- **spells**: description < 100 chars (most are one-line summaries like "1d6 fire damage per level")
+- **feats**: benefit < 50 chars (aonprd index entries have only a brief summary)
+- **archetypes, items, equipment, class_options**: description < 50 chars
+
 ## Characters
 
 Each character is a **directory** under `data/characters/` containing multiple linked markdown files:
@@ -116,11 +133,13 @@ data/characters/nettle/
 
 ### Data completeness
 
-Some DB entries have stub descriptions (short summary only, no full benefit text). When writing or updating character sheets:
-1. Check DB for full data (`expand=True`)
-2. If the description is a stub, web search aonprd.com or d20pfsrd.com
-3. Cache the full data back to DB via `cache_entry`
+Many DB entries are stubs — flagged with `_stub: true` when queried with `expand=True`. When writing or updating character sheets:
+1. Query with `expand=True` and check the `_stub` flag
+2. If `_stub: true`, web fetch the entry's `url` for full data
+3. Cache the enriched data via `cache_entry` (replaces the stub permanently)
 4. Write the complete description to the character's reference file
+
+Never use stub text in character sheets. Always enrich first.
 
 ## Personal Data
 

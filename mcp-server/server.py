@@ -23,8 +23,28 @@ def rows_to_list(rows: list[sqlite3.Row]) -> list[dict]:
     return [dict(r) for r in rows]
 
 
-def parse_data_field(results: list[dict], expand: bool = False) -> list[dict]:
-    """If expand=True, parse the JSON 'data' field and merge it into the row."""
+STUB_THRESHOLDS = {
+    "spells": ("description", 100),
+    "feats": ("benefit", 50),
+    "archetypes": ("description", 50),
+    "items": ("description", 50),
+    "equipment": ("description", 50),
+    "class_options": ("description", 50),
+}
+
+
+def is_stub(table: str, data: dict) -> bool:
+    """Check if a record has incomplete data that should be enriched via web fetch."""
+    field, min_len = STUB_THRESHOLDS.get(table, ("description", 50))
+    text = data.get(field, "") or ""
+    return len(text) < min_len and bool(data.get("url"))
+
+
+def parse_data_field(results: list[dict], expand: bool = False, table: str = "") -> list[dict]:
+    """If expand=True, parse the JSON 'data' field and merge it into the row.
+
+    Adds _stub=True to records with incomplete descriptions that have a URL for enrichment.
+    """
     if not expand:
         for r in results:
             r.pop("data", None)
@@ -34,6 +54,8 @@ def parse_data_field(results: list[dict], expand: bool = False) -> list[dict]:
         raw = r.pop("data", "{}")
         full = json.loads(raw)
         full.update({k: v for k, v in r.items() if k != "data"})
+        if table:
+            full["_stub"] = is_stub(table, full)
         expanded.append(full)
     return expanded
 
@@ -95,7 +117,7 @@ def search_spells(
                 filtered.append(r)
         rows = filtered
 
-    return parse_data_field(rows, expand)
+    return parse_data_field(rows, expand, table="spells")
 
 
 @mcp.tool()
@@ -135,7 +157,7 @@ def search_feats(
 
     rows = rows_to_list(db.execute(sql, params).fetchall())
     db.close()
-    return parse_data_field(rows, expand)
+    return parse_data_field(rows, expand, table="feats")
 
 
 @mcp.tool()
@@ -170,7 +192,7 @@ def search_classes(
 
     rows = rows_to_list(db.execute(sql, params).fetchall())
     db.close()
-    return parse_data_field(rows, expand)
+    return parse_data_field(rows, expand, table="classes")
 
 
 @mcp.tool()
@@ -205,7 +227,7 @@ def search_archetypes(
 
     rows = rows_to_list(db.execute(sql, params).fetchall())
     db.close()
-    return parse_data_field(rows, expand)
+    return parse_data_field(rows, expand, table="archetypes")
 
 
 @mcp.tool()
@@ -245,7 +267,7 @@ def search_items(
 
     rows = rows_to_list(db.execute(sql, params).fetchall())
     db.close()
-    return parse_data_field(rows, expand)
+    return parse_data_field(rows, expand, table="items")
 
 
 @mcp.tool()
@@ -285,7 +307,7 @@ def search_equipment(
 
     rows = rows_to_list(db.execute(sql, params).fetchall())
     db.close()
-    return parse_data_field(rows, expand)
+    return parse_data_field(rows, expand, table="equipment")
 
 
 @mcp.tool()
@@ -320,7 +342,7 @@ def search_races(
 
     rows = rows_to_list(db.execute(sql, params).fetchall())
     db.close()
-    return parse_data_field(rows, expand)
+    return parse_data_field(rows, expand, table="races")
 
 
 @mcp.tool()
@@ -360,7 +382,7 @@ def search_class_options(
 
     rows = rows_to_list(db.execute(sql, params).fetchall())
     db.close()
-    return parse_data_field(rows, expand)
+    return parse_data_field(rows, expand, table="class_options")
 
 
 @mcp.tool()
@@ -369,7 +391,7 @@ def get_skills() -> list[dict]:
     db = get_db()
     rows = rows_to_list(db.execute("SELECT * FROM skills ORDER BY name").fetchall())
     db.close()
-    return parse_data_field(rows, expand=True)
+    return parse_data_field(rows, expand=True, table="skills")
 
 
 @mcp.tool()
@@ -395,6 +417,7 @@ def get_detail(table: str, id: str) -> dict | None:
     raw = result.pop("data", "{}")
     full = json.loads(raw)
     full.update({k: v for k, v in result.items()})
+    full["_stub"] = is_stub(table, full)
     return full
 
 

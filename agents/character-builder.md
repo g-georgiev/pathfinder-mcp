@@ -55,12 +55,11 @@ For every spell, feat, and feature, query the pathfinder-data MCP server:
 
 ### Step 3: Generate Files
 
-Read the format template:
-```
-data/characters/FORMAT.md
-```
+Read the format template from the **plugin directory** (find it via `Glob` for `**/FORMAT.md`).
 
-Create the character directory at `data/characters/{name_lowercase}/` with:
+Find the **personal data directory** — look for a sibling `personal/` directory next to the plugin, or a working directory containing `data/characters/`. Use `Glob` for `**/data/characters` to locate it.
+
+Create the character directory at `{personal_data}/data/characters/{name_lowercase}/` with:
 
 1. **sheet.md** — Main reference following FORMAT.md structure exactly
 2. **spells.md** — Full description card for every spell (current AND planned)

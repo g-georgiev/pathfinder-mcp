@@ -1,0 +1,4711 @@
+{
+  "domains": [
+    {
+      "name": "Air Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You can manipulate lightning, mist, and wind, traffic with air creatures, and are resistant to electricity damage.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "obscuring mist"
+        },
+        {
+          "level": 2,
+          "spell_name": "wind wall"
+        },
+        {
+          "level": 3,
+          "spell_name": "gaseous form"
+        },
+        {
+          "level": 4,
+          "spell_name": "air walk"
+        },
+        {
+          "level": 5,
+          "spell_name": "control winds"
+        },
+        {
+          "level": 6,
+          "spell_name": "chain lightning"
+        },
+        {
+          "level": 7,
+          "spell_name": "elemental body IV (air only)"
+        },
+        {
+          "level": 8,
+          "spell_name": "whirlwind"
+        },
+        {
+          "level": 9,
+          "spell_name": "elemental swarm (air spell only)"
+        }
+      ]
+    },
+    {
+      "name": "Animal Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You can speak with and befriend animals with ease. In addition, you treat Knowledge (nature) as a class skill.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "calm animals"
+        },
+        {
+          "level": 2,
+          "spell_name": "hold animal"
+        },
+        {
+          "level": 3,
+          "spell_name": "dominate animal"
+        },
+        {
+          "level": 4,
+          "spell_name": "summon nature's ally IV (animals only)"
+        },
+        {
+          "level": 5,
+          "spell_name": "beast shape III (animals only)"
+        },
+        {
+          "level": 6,
+          "spell_name": "antilife shell"
+        },
+        {
+          "level": 7,
+          "spell_name": "animal shapes"
+        },
+        {
+          "level": 8,
+          "spell_name": "summon nature's ally VIII (animals only)"
+        },
+        {
+          "level": 9,
+          "spell_name": "shapechange"
+        }
+      ]
+    },
+    {
+      "name": "Artifice Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You can repair damage to objects, animate objects with life, and create objects from nothing.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "animate rope"
+        },
+        {
+          "level": 2,
+          "spell_name": "wood shape"
+        },
+        {
+          "level": 3,
+          "spell_name": "stone shape"
+        },
+        {
+          "level": 4,
+          "spell_name": "minor creation"
+        },
+        {
+          "level": 5,
+          "spell_name": "fabricate"
+        },
+        {
+          "level": 6,
+          "spell_name": "major creation"
+        },
+        {
+          "level": 7,
+          "spell_name": "wall of iron"
+        },
+        {
+          "level": 8,
+          "spell_name": "statue"
+        },
+        {
+          "level": 9,
+          "spell_name": "prismatic sphere"
+        }
+      ]
+    },
+    {
+      "name": "Chaos Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "Your touch infuses life and weapons with chaos, and you revel in all things anarchic.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "protection from law"
+        },
+        {
+          "level": 2,
+          "spell_name": "align weapon (chaos only)"
+        },
+        {
+          "level": 3,
+          "spell_name": "magic circle against law"
+        },
+        {
+          "level": 4,
+          "spell_name": "chaos hammer"
+        },
+        {
+          "level": 5,
+          "spell_name": "dispel law"
+        },
+        {
+          "level": 6,
+          "spell_name": "animate objects"
+        },
+        {
+          "level": 7,
+          "spell_name": "word of chaos"
+        },
+        {
+          "level": 8,
+          "spell_name": "cloak of chaos"
+        },
+        {
+          "level": 9,
+          "spell_name": "summon monster IX (chaos spell only)"
+        }
+      ]
+    },
+    {
+      "name": "Charm Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You can baffle and befuddle foes with a touch or a smile, and your beauty and grace are divine.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "charm person"
+        },
+        {
+          "level": 2,
+          "spell_name": "calm emotions"
+        },
+        {
+          "level": 3,
+          "spell_name": "suggestion"
+        },
+        {
+          "level": 4,
+          "spell_name": "heroism"
+        },
+        {
+          "level": 5,
+          "spell_name": "charm monster"
+        },
+        {
+          "level": 6,
+          "spell_name": "geas/quest"
+        },
+        {
+          "level": 7,
+          "spell_name": "insanity"
+        },
+        {
+          "level": 8,
+          "spell_name": "demand"
+        },
+        {
+          "level": 9,
+          "spell_name": "dominate monster"
+        }
+      ]
+    },
+    {
+      "name": "Community Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "Your touch can heal wounds, and your presence instills unity and strengthens emotional bonds.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "bless"
+        },
+        {
+          "level": 2,
+          "spell_name": "shield other"
+        },
+        {
+          "level": 3,
+          "spell_name": "prayer"
+        },
+        {
+          "level": 4,
+          "spell_name": "imbue with spell ability"
+        },
+        {
+          "level": 5,
+          "spell_name": "telepathic bond"
+        },
+        {
+          "level": 6,
+          "spell_name": "heroes' feast"
+        },
+        {
+          "level": 7,
+          "spell_name": "refuge"
+        },
+        {
+          "level": 8,
+          "spell_name": "mass cure critical wounds"
+        },
+        {
+          "level": 9,
+          "spell_name": "miracle"
+        }
+      ]
+    },
+    {
+      "name": "Darkness Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You manipulate shadows and darkness. In addition, you receive Blind-Fight as a bonus feat.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "obscuring mist"
+        },
+        {
+          "level": 2,
+          "spell_name": "blindness/deafness (only to cause blindness)"
+        },
+        {
+          "level": 3,
+          "spell_name": "deeper darkness"
+        },
+        {
+          "level": 4,
+          "spell_name": "shadow conjuration"
+        },
+        {
+          "level": 5,
+          "spell_name": "summon monster V (summons 1d3 shadows)"
+        },
+        {
+          "level": 6,
+          "spell_name": "shadow walk"
+        },
+        {
+          "level": 7,
+          "spell_name": "power word blind"
+        },
+        {
+          "level": 8,
+          "spell_name": "greater shadow evocation"
+        },
+        {
+          "level": 9,
+          "spell_name": "shades"
+        }
+      ]
+    },
+    {
+      "name": "Death Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You can cause the living to bleed at a touch, and find comfort in the presence of the dead.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "cause fear"
+        },
+        {
+          "level": 2,
+          "spell_name": "death knell"
+        },
+        {
+          "level": 3,
+          "spell_name": "animate dead"
+        },
+        {
+          "level": 4,
+          "spell_name": "death ward"
+        },
+        {
+          "level": 5,
+          "spell_name": "slay living"
+        },
+        {
+          "level": 6,
+          "spell_name": "create undead"
+        },
+        {
+          "level": 7,
+          "spell_name": "destruction"
+        },
+        {
+          "level": 8,
+          "spell_name": "create greater undead"
+        },
+        {
+          "level": 9,
+          "spell_name": "wail of the banshee"
+        }
+      ]
+    },
+    {
+      "name": "Destruction Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You revel in ruin and devastation, and can deliver particularly destructive attacks.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "true strike"
+        },
+        {
+          "level": 2,
+          "spell_name": "shatter"
+        },
+        {
+          "level": 3,
+          "spell_name": "rage"
+        },
+        {
+          "level": 4,
+          "spell_name": "inflict critical wounds"
+        },
+        {
+          "level": 5,
+          "spell_name": "shout"
+        },
+        {
+          "level": 6,
+          "spell_name": "harm"
+        },
+        {
+          "level": 7,
+          "spell_name": "disintegrate"
+        },
+        {
+          "level": 8,
+          "spell_name": "earthquake"
+        },
+        {
+          "level": 9,
+          "spell_name": "implosion"
+        }
+      ]
+    },
+    {
+      "name": "Earth Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You have mastery over earth, metal, and stone, can fire darts of acid, and command earth creatures.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "magic stone"
+        },
+        {
+          "level": 2,
+          "spell_name": "soften earth and stone"
+        },
+        {
+          "level": 3,
+          "spell_name": "stone shape"
+        },
+        {
+          "level": 4,
+          "spell_name": "spike stones"
+        },
+        {
+          "level": 5,
+          "spell_name": "wall of stone"
+        },
+        {
+          "level": 6,
+          "spell_name": "stoneskin"
+        },
+        {
+          "level": 7,
+          "spell_name": "elemental body IV (earth only)"
+        },
+        {
+          "level": 8,
+          "spell_name": "earthquake"
+        },
+        {
+          "level": 9,
+          "spell_name": "elemental swarm (earth spell only)"
+        }
+      ]
+    },
+    {
+      "name": "Evil Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You are sinister and cruel, and have wholly pledged your soul to the cause of evil.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "protection from good"
+        },
+        {
+          "level": 2,
+          "spell_name": "align weapon (evil only)"
+        },
+        {
+          "level": 3,
+          "spell_name": "magic circle against good"
+        },
+        {
+          "level": 4,
+          "spell_name": "unholy blight"
+        },
+        {
+          "level": 5,
+          "spell_name": "dispel good"
+        },
+        {
+          "level": 6,
+          "spell_name": "create undead"
+        },
+        {
+          "level": 7,
+          "spell_name": "blasphemy"
+        },
+        {
+          "level": 8,
+          "spell_name": "unholy aura"
+        },
+        {
+          "level": 9,
+          "spell_name": "summon monster IX (evil spell only)"
+        }
+      ]
+    },
+    {
+      "name": "Fire Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You can call forth fire, command creatures of the inferno, and your flesh does not burn.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "burning hands"
+        },
+        {
+          "level": 2,
+          "spell_name": "produce flame"
+        },
+        {
+          "level": 3,
+          "spell_name": "fireball"
+        },
+        {
+          "level": 4,
+          "spell_name": "wall of fire"
+        },
+        {
+          "level": 5,
+          "spell_name": "fire shield"
+        },
+        {
+          "level": 6,
+          "spell_name": "fire seeds"
+        },
+        {
+          "level": 7,
+          "spell_name": "elemental body IV (fire only)"
+        },
+        {
+          "level": 8,
+          "spell_name": "incendiary cloud"
+        },
+        {
+          "level": 9,
+          "spell_name": "elemental swarm (fire spell only)"
+        }
+      ]
+    },
+    {
+      "name": "Glory Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You are infused with the glory of the divine, and are a true foe of the undead. In addition, when you channel positive energy to harm undead creatures, the save DC to halve the damage is increased by 2.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "shield of faith"
+        },
+        {
+          "level": 2,
+          "spell_name": "bless weapon"
+        },
+        {
+          "level": 3,
+          "spell_name": "searing light"
+        },
+        {
+          "level": 4,
+          "spell_name": "holy smite"
+        },
+        {
+          "level": 5,
+          "spell_name": "righteous might"
+        },
+        {
+          "level": 6,
+          "spell_name": "undeath to death"
+        },
+        {
+          "level": 7,
+          "spell_name": "holy sword"
+        },
+        {
+          "level": 8,
+          "spell_name": "holy aura"
+        },
+        {
+          "level": 9,
+          "spell_name": "gate"
+        }
+      ]
+    },
+    {
+      "name": "Good Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You have pledged your life and soul to goodness and purity.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "protection from evil"
+        },
+        {
+          "level": 2,
+          "spell_name": "align weapon (good only)"
+        },
+        {
+          "level": 3,
+          "spell_name": "magic circle against evil"
+        },
+        {
+          "level": 4,
+          "spell_name": "holy smite"
+        },
+        {
+          "level": 5,
+          "spell_name": "dispel evil"
+        },
+        {
+          "level": 6,
+          "spell_name": "blade barrier"
+        },
+        {
+          "level": 7,
+          "spell_name": "holy word"
+        },
+        {
+          "level": 8,
+          "spell_name": "holy aura"
+        },
+        {
+          "level": 9,
+          "spell_name": "summon monster IX (good spell only)"
+        }
+      ]
+    },
+    {
+      "name": "Healing Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "Your touch staves off pain and death, and your healing magic is particularly vital and potent.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "cure light wounds"
+        },
+        {
+          "level": 2,
+          "spell_name": "cure moderate wounds"
+        },
+        {
+          "level": 3,
+          "spell_name": "cure serious wounds"
+        },
+        {
+          "level": 4,
+          "spell_name": "cure critical wounds"
+        },
+        {
+          "level": 5,
+          "spell_name": "breath of life"
+        },
+        {
+          "level": 6,
+          "spell_name": "heal"
+        },
+        {
+          "level": 7,
+          "spell_name": "regenerate"
+        },
+        {
+          "level": 8,
+          "spell_name": "mass cure critical wounds"
+        },
+        {
+          "level": 9,
+          "spell_name": "mass heal"
+        }
+      ]
+    },
+    {
+      "name": "Knowledge Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You are a scholar and a sage of legends. In addition, you treat all Knowledge skills as class skills.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "comprehend languages"
+        },
+        {
+          "level": 2,
+          "spell_name": "detect thoughts"
+        },
+        {
+          "level": 3,
+          "spell_name": "speak with dead"
+        },
+        {
+          "level": 4,
+          "spell_name": "divination"
+        },
+        {
+          "level": 5,
+          "spell_name": "true seeing"
+        },
+        {
+          "level": 6,
+          "spell_name": "find the path"
+        },
+        {
+          "level": 7,
+          "spell_name": "legend lore"
+        },
+        {
+          "level": 8,
+          "spell_name": "discern location"
+        },
+        {
+          "level": 9,
+          "spell_name": "foresight"
+        }
+      ]
+    },
+    {
+      "name": "Law Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You follow a strict and ordered code of laws, and in so doing, achieve enlightenment.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "protection from chaos"
+        },
+        {
+          "level": 2,
+          "spell_name": "align weapon (law only)"
+        },
+        {
+          "level": 3,
+          "spell_name": "magic circle against chaos"
+        },
+        {
+          "level": 4,
+          "spell_name": "order's wrath"
+        },
+        {
+          "level": 5,
+          "spell_name": "dispel chaos"
+        },
+        {
+          "level": 6,
+          "spell_name": "hold monster"
+        },
+        {
+          "level": 7,
+          "spell_name": "dictum"
+        },
+        {
+          "level": 8,
+          "spell_name": "shield of law"
+        },
+        {
+          "level": 9,
+          "spell_name": "summon monster IX (law spell only)"
+        }
+      ]
+    },
+    {
+      "name": "Liberation Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You are a spirit of freedom and a staunch foe against all who would enslave and oppress.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "remove fear"
+        },
+        {
+          "level": 2,
+          "spell_name": "remove paralysis"
+        },
+        {
+          "level": 3,
+          "spell_name": "remove curse"
+        },
+        {
+          "level": 4,
+          "spell_name": "freedom of movement"
+        },
+        {
+          "level": 5,
+          "spell_name": "break enchantment"
+        },
+        {
+          "level": 6,
+          "spell_name": "greater dispel magic"
+        },
+        {
+          "level": 7,
+          "spell_name": "refuge"
+        },
+        {
+          "level": 8,
+          "spell_name": "mind blank"
+        },
+        {
+          "level": 9,
+          "spell_name": "freedom"
+        }
+      ]
+    },
+    {
+      "name": "Luck Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You are infused with luck, and your mere presence can spread good fortune.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "true strike"
+        },
+        {
+          "level": 2,
+          "spell_name": "aid"
+        },
+        {
+          "level": 3,
+          "spell_name": "protection from energy"
+        },
+        {
+          "level": 4,
+          "spell_name": "freedom of movement"
+        },
+        {
+          "level": 5,
+          "spell_name": "break enchantment"
+        },
+        {
+          "level": 6,
+          "spell_name": "mislead"
+        },
+        {
+          "level": 7,
+          "spell_name": "spell turning"
+        },
+        {
+          "level": 8,
+          "spell_name": "moment of prescience"
+        },
+        {
+          "level": 9,
+          "spell_name": "miracle"
+        }
+      ]
+    },
+    {
+      "name": "Madness Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You embrace the madness that lurks deep in your heart, and can unleash it to drive your foes insane or to sacrifice certain abilities to hone others.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "lesser confusion"
+        },
+        {
+          "level": 2,
+          "spell_name": "touch of idiocy"
+        },
+        {
+          "level": 3,
+          "spell_name": "rage"
+        },
+        {
+          "level": 4,
+          "spell_name": "confusion"
+        },
+        {
+          "level": 5,
+          "spell_name": "nightmare"
+        },
+        {
+          "level": 6,
+          "spell_name": "phantasmal killer"
+        },
+        {
+          "level": 7,
+          "spell_name": "insanity"
+        },
+        {
+          "level": 8,
+          "spell_name": "scintillating pattern"
+        },
+        {
+          "level": 9,
+          "spell_name": "weird"
+        }
+      ]
+    },
+    {
+      "name": "Magic Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You are a true student of all things mystical, and see divinity in the purity of magic.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "identify"
+        },
+        {
+          "level": 2,
+          "spell_name": "magic mouth"
+        },
+        {
+          "level": 3,
+          "spell_name": "dispel magic"
+        },
+        {
+          "level": 4,
+          "spell_name": "imbue with spell ability"
+        },
+        {
+          "level": 5,
+          "spell_name": "spell resistance"
+        },
+        {
+          "level": 6,
+          "spell_name": "antimagic field"
+        },
+        {
+          "level": 7,
+          "spell_name": "spell turning"
+        },
+        {
+          "level": 8,
+          "spell_name": "protection from spells"
+        },
+        {
+          "level": 9,
+          "spell_name": "mage's disjunction"
+        }
+      ]
+    },
+    {
+      "name": "Nobility Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You are a great leader, an inspiration to all who follow the teachings of your faith.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "divine favor"
+        },
+        {
+          "level": 2,
+          "spell_name": "enthrall"
+        },
+        {
+          "level": 3,
+          "spell_name": "magic vestment"
+        },
+        {
+          "level": 4,
+          "spell_name": "discern lies"
+        },
+        {
+          "level": 5,
+          "spell_name": "greater command"
+        },
+        {
+          "level": 6,
+          "spell_name": "geas/quest"
+        },
+        {
+          "level": 7,
+          "spell_name": "repulsion"
+        },
+        {
+          "level": 8,
+          "spell_name": "demand"
+        },
+        {
+          "level": 9,
+          "spell_name": "storm of vengeance"
+        }
+      ]
+    },
+    {
+      "name": "Plant Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You find solace in the green, can grow defensive thorns, and can communicate with plants.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "entangle"
+        },
+        {
+          "level": 2,
+          "spell_name": "barkskin"
+        },
+        {
+          "level": 3,
+          "spell_name": "plant growth"
+        },
+        {
+          "level": 4,
+          "spell_name": "command plants"
+        },
+        {
+          "level": 5,
+          "spell_name": "wall of thorns"
+        },
+        {
+          "level": 6,
+          "spell_name": "repel wood"
+        },
+        {
+          "level": 7,
+          "spell_name": "animate plants"
+        },
+        {
+          "level": 8,
+          "spell_name": "control plants"
+        },
+        {
+          "level": 9,
+          "spell_name": "shambler"
+        }
+      ]
+    },
+    {
+      "name": "Protection Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "Your faith is your greatest source of protection, and you can use that faith to defend others. In addition, you receive a +1 resistance bonus on saving throws. This bonus increases by 1 for every 5 levels you possess.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "sanctuary"
+        },
+        {
+          "level": 2,
+          "spell_name": "shield other"
+        },
+        {
+          "level": 3,
+          "spell_name": "protection from energy"
+        },
+        {
+          "level": 4,
+          "spell_name": "spell immunity"
+        },
+        {
+          "level": 5,
+          "spell_name": "spell resistance"
+        },
+        {
+          "level": 6,
+          "spell_name": "antimagic field"
+        },
+        {
+          "level": 7,
+          "spell_name": "repulsion"
+        },
+        {
+          "level": 8,
+          "spell_name": "mind blank"
+        },
+        {
+          "level": 9,
+          "spell_name": "prismatic sphere"
+        }
+      ]
+    },
+    {
+      "name": "Repose Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You see death not as something to be feared, but as a final rest and reward for a life well spent. The taint of undeath is a mockery of what you hold dear.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "deathwatch"
+        },
+        {
+          "level": 2,
+          "spell_name": "gentle repose"
+        },
+        {
+          "level": 3,
+          "spell_name": "speak with dead"
+        },
+        {
+          "level": 4,
+          "spell_name": "death ward"
+        },
+        {
+          "level": 5,
+          "spell_name": "slay living"
+        },
+        {
+          "level": 6,
+          "spell_name": "undeath to death"
+        },
+        {
+          "level": 7,
+          "spell_name": "destruction"
+        },
+        {
+          "level": 8,
+          "spell_name": "waves of exhaustion"
+        },
+        {
+          "level": 9,
+          "spell_name": "wail of the banshee"
+        }
+      ]
+    },
+    {
+      "name": "Rune Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "In strange and eldritch runes you find potent magic. You gain Scribe Scroll as a bonus feat.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "erase"
+        },
+        {
+          "level": 2,
+          "spell_name": "secret page"
+        },
+        {
+          "level": 3,
+          "spell_name": "glyph of warding"
+        },
+        {
+          "level": 4,
+          "spell_name": "explosive runes"
+        },
+        {
+          "level": 5,
+          "spell_name": "lesser planar binding"
+        },
+        {
+          "level": 6,
+          "spell_name": "greater glyph of warding"
+        },
+        {
+          "level": 7,
+          "spell_name": "instant summons"
+        },
+        {
+          "level": 8,
+          "spell_name": "symbol of death"
+        },
+        {
+          "level": 9,
+          "spell_name": "teleportation circle"
+        }
+      ]
+    },
+    {
+      "name": "Strength Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "In strength and brawn there is truth—your faith gives you incredible might and power.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "enlarge person"
+        },
+        {
+          "level": 2,
+          "spell_name": "bull's strength"
+        },
+        {
+          "level": 3,
+          "spell_name": "magic vestment"
+        },
+        {
+          "level": 4,
+          "spell_name": "spell immunity"
+        },
+        {
+          "level": 5,
+          "spell_name": "righteous might"
+        },
+        {
+          "level": 6,
+          "spell_name": "stoneskin"
+        },
+        {
+          "level": 7,
+          "spell_name": "grasping hand"
+        },
+        {
+          "level": 8,
+          "spell_name": "clenched fist"
+        },
+        {
+          "level": 9,
+          "spell_name": "crushing hand"
+        }
+      ]
+    },
+    {
+      "name": "Sun Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You see truth in the pure and burning light of the sun, and can call upon its blessing or wrath to work great deeds.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "endure elements"
+        },
+        {
+          "level": 2,
+          "spell_name": "heat metal"
+        },
+        {
+          "level": 3,
+          "spell_name": "searing light"
+        },
+        {
+          "level": 4,
+          "spell_name": "fire shield"
+        },
+        {
+          "level": 5,
+          "spell_name": "flame strike"
+        },
+        {
+          "level": 6,
+          "spell_name": "fire seeds"
+        },
+        {
+          "level": 7,
+          "spell_name": "sunbeam"
+        },
+        {
+          "level": 8,
+          "spell_name": "sunburst"
+        },
+        {
+          "level": 9,
+          "spell_name": "prismatic sphere"
+        }
+      ]
+    },
+    {
+      "name": "Travel Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You are an explorer and find enlightenment in the simple joy of travel, be it by foot or conveyance or magic. Increase your base speed by 10 feet.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "longstrider"
+        },
+        {
+          "level": 2,
+          "spell_name": "locate object"
+        },
+        {
+          "level": 3,
+          "spell_name": "fly"
+        },
+        {
+          "level": 4,
+          "spell_name": "dimension door"
+        },
+        {
+          "level": 5,
+          "spell_name": "teleport"
+        },
+        {
+          "level": 6,
+          "spell_name": "find the path"
+        },
+        {
+          "level": 7,
+          "spell_name": "greater teleport"
+        },
+        {
+          "level": 8,
+          "spell_name": "phase door"
+        },
+        {
+          "level": 9,
+          "spell_name": "astral projection"
+        }
+      ]
+    },
+    {
+      "name": "Trickery Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You are a master of illusions and deceptions. Bluff, Disguise, and Stealth are class skills.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "disguise self"
+        },
+        {
+          "level": 2,
+          "spell_name": "invisibility"
+        },
+        {
+          "level": 3,
+          "spell_name": "nondetection"
+        },
+        {
+          "level": 4,
+          "spell_name": "confusion"
+        },
+        {
+          "level": 5,
+          "spell_name": "false vision"
+        },
+        {
+          "level": 6,
+          "spell_name": "mislead"
+        },
+        {
+          "level": 7,
+          "spell_name": "screen"
+        },
+        {
+          "level": 8,
+          "spell_name": "mass invisibility"
+        },
+        {
+          "level": 9,
+          "spell_name": "time stop"
+        }
+      ]
+    },
+    {
+      "name": "War Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You are a crusader for your god, always ready and willing to fight to defend your faith.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "magic weapon"
+        },
+        {
+          "level": 2,
+          "spell_name": "spiritual weapon"
+        },
+        {
+          "level": 3,
+          "spell_name": "magic vestment"
+        },
+        {
+          "level": 4,
+          "spell_name": "divine power"
+        },
+        {
+          "level": 5,
+          "spell_name": "flame strike"
+        },
+        {
+          "level": 6,
+          "spell_name": "blade barrier"
+        },
+        {
+          "level": 7,
+          "spell_name": "power word blind"
+        },
+        {
+          "level": 8,
+          "spell_name": "power word stun"
+        },
+        {
+          "level": 9,
+          "spell_name": "power word kill"
+        }
+      ]
+    },
+    {
+      "name": "Water Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "You can manipulate water and mist and ice, conjure creatures of water, and resist cold.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "obscuring mist"
+        },
+        {
+          "level": 2,
+          "spell_name": "fog cloud"
+        },
+        {
+          "level": 3,
+          "spell_name": "water breathing"
+        },
+        {
+          "level": 4,
+          "spell_name": "control water"
+        },
+        {
+          "level": 5,
+          "spell_name": "ice storm"
+        },
+        {
+          "level": 6,
+          "spell_name": "cone of cold"
+        },
+        {
+          "level": 7,
+          "spell_name": "elemental body IV (water only)"
+        },
+        {
+          "level": 8,
+          "spell_name": "horrid wilting"
+        },
+        {
+          "level": 9,
+          "spell_name": "elemental swarm (water spell only)"
+        }
+      ]
+    },
+    {
+      "name": "Weather Domain",
+      "source": "Core Rulebook",
+      "description": "",
+      "granted_powers": "With power over storm and sky, you can call down the wrath of the gods upon the world below.",
+      "spells": [
+        {
+          "level": 1,
+          "spell_name": "obscuring mist"
+        },
+        {
+          "level": 2,
+          "spell_name": "fog cloud"
+        },
+        {
+          "level": 3,
+          "spell_name": "call lightning"
+        },
+        {
+          "level": 4,
+          "spell_name": "sleet storm"
+        },
+        {
+          "level": 5,
+          "spell_name": "ice storm"
+        },
+        {
+          "level": 6,
+          "spell_name": "control winds"
+        },
+        {
+          "level": 7,
+          "spell_name": "control weather"
+        },
+        {
+          "level": 8,
+          "spell_name": "whirlwind"
+        },
+        {
+          "level": 9,
+          "spell_name": "storm of vengeance"
+        }
+      ]
+    }
+  ],
+  "subdomains": [
+    {
+      "name": "Agathion Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Ancestors Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Arcane Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Archon Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Ash Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Azata Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Blood Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Catastrophe Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Caves Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Cloud Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Construct Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Curse Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Daemon Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Day Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Decay Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Deception Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Defense Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Demon Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Devil Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Divine Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Exploration Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Family Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Fate Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Feather Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Ferocity Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Freedom Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Fur Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Growth Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Heroism Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Home Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Honor Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Ice Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Inevitable Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Insanity Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Language Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Leadership Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Light Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Loss Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Love Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Lust Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Martyr Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Memory Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Metal Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Murder Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Night Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Nightmare Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Oceans Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Protean Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Purity Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Rage Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Resolve Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Restoration Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Resurrection Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Revolution Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Seasons Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Smoke Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Souls Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Storms Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Tactics Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Thievery Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Thought Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Toil Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Trade Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Undead Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Wards Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    },
+    {
+      "name": "Wind Subdomain",
+      "domain": "Subdomains",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "replaced_powers": "",
+      "replacement_powers": ""
+    }
+  ],
+  "bloodlines": [
+    {
+      "name": "Aberrant",
+      "source": "Core Rulebook",
+      "description": "There is a taint in your blood, one that is alien and bizarre. You tend to think in odd ways, approaching problems from an angle that most would not expect. Over time, this taint manifests itself in your physical form.",
+      "class_skill": "Knowledge (dungeoneering).",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": "enlarge person"
+        },
+        {
+          "level": 5,
+          "spell_name": "see invisibility"
+        },
+        {
+          "level": 7,
+          "spell_name": "tongues"
+        },
+        {
+          "level": 9,
+          "spell_name": "black tentacles"
+        },
+        {
+          "level": 11,
+          "spell_name": "feeblemind"
+        },
+        {
+          "level": 13,
+          "spell_name": "veil"
+        },
+        {
+          "level": 15,
+          "spell_name": "plane shift"
+        },
+        {
+          "level": 17,
+          "spell_name": "mind blank"
+        },
+        {
+          "level": 19,
+          "spell_name": "shapechange"
+        }
+      ],
+      "bonus_feats": "Combat Casting, Improved Disarm, Improved Grapple, Improved Initiative, Improved Unarmed Strike, Iron Will, Silent Spell, Skill Focus (Knowledge [dungeoneering]).",
+      "bloodline_arcana": "Whenever you cast a spell of the polymorph subschool, increase the duration of the spell by 50% (minimum 1 round). This bonus does not stack with the increase granted by the Extend Spell feat.",
+      "bloodline_powers": "Aberrant sorcerers show increasing signs of their tainted heritage as they increase in level, although they are only visible when used."
+    },
+    {
+      "name": "Abyssal",
+      "source": "Core Rulebook",
+      "description": "Generations ago, a demon spread its filth into your heritage. While it does not manifest in all of your kin, for you it is particularly strong. You might sometimes have urges to chaos or evil, but your destiny (and alignment) is up to you.",
+      "class_skill": "Knowledge (planes).",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": "cause fear"
+        },
+        {
+          "level": 5,
+          "spell_name": "bull's strength"
+        },
+        {
+          "level": 7,
+          "spell_name": "rage"
+        },
+        {
+          "level": 9,
+          "spell_name": "stoneskin"
+        },
+        {
+          "level": 11,
+          "spell_name": "dismissal"
+        },
+        {
+          "level": 13,
+          "spell_name": "transformation"
+        },
+        {
+          "level": 15,
+          "spell_name": "greater teleport"
+        },
+        {
+          "level": 17,
+          "spell_name": "unholy aura"
+        },
+        {
+          "level": 19,
+          "spell_name": "summon monster IX"
+        }
+      ],
+      "bonus_feats": "Augment Summoning, Cleave, Empower Spell, Great Fortitude, Improved Bull Rush, Improved Sunder, Power Attack, Skill Focus (Knowledge [planes]).",
+      "bloodline_arcana": "Whenever you cast a spell of the summoning subschool, the creatures summoned gain DR/good equal to 1/2 your sorcerer level (minimum 1). This does not stack with any DR the creature might have.",
+      "bloodline_powers": "While some would say that you are possessed, you know better. The demonic influence in your blood grows as you gain power."
+    },
+    {
+      "name": "Aquatic",
+      "source": "Advanced Player's Guide",
+      "description": "Your family traces its heritage back to the ocean depths, whether scions of undersea empires left in the wake of nomadic sea-tribes, or the spawn of creeping ichthyic infiltrators into remote seaside villages. The song of the sea hums in your blood, calling the waves and all those within to your command.",
+      "class_skill": "Swim.",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": "hydraulic push*"
+        },
+        {
+          "level": 5,
+          "spell_name": "slipstream*"
+        },
+        {
+          "level": 7,
+          "spell_name": "aqueous orb*"
+        },
+        {
+          "level": 9,
+          "spell_name": "geyser*"
+        },
+        {
+          "level": 11,
+          "spell_name": "control water"
+        },
+        {
+          "level": 13,
+          "spell_name": "beast shape IV"
+        },
+        {
+          "level": 15,
+          "spell_name": "summon monster VII"
+        },
+        {
+          "level": 17,
+          "spell_name": "seamantle*"
+        },
+        {
+          "level": 19,
+          "spell_name": "world wave*"
+        }
+      ],
+      "bonus_feats": "Athletic, Brew Potion, Defensive Combat Training, Dodge, Mobility, Silent Spell, Skill Focus (Swim), Toughness.",
+      "bloodline_arcana": "Whenever you cast a spell of the water type, your effective caster level is increased by one, and summoned creatures with a swim speed or the aquatic or water type gain a +1 morale bonus on attack and damage rolls.",
+      "bloodline_powers": "Your seaborn magical talents awaken changes in you, both mystical and physical, as you develop your powers."
+    },
+    {
+      "name": "Arcane",
+      "source": "Core Rulebook",
+      "description": "Your family has always been skilled in the eldritch art of magic. While many of your relatives were accomplished wizards, your powers developed without the need for study and practice.",
+      "class_skill": "Knowledge (any one).",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": "identify"
+        },
+        {
+          "level": 5,
+          "spell_name": "invisibility"
+        },
+        {
+          "level": 7,
+          "spell_name": "dispel magic"
+        },
+        {
+          "level": 9,
+          "spell_name": "dimension door"
+        },
+        {
+          "level": 11,
+          "spell_name": "overland flight"
+        },
+        {
+          "level": 13,
+          "spell_name": "true seeing"
+        },
+        {
+          "level": 15,
+          "spell_name": "greater teleport"
+        },
+        {
+          "level": 17,
+          "spell_name": "power word stun"
+        },
+        {
+          "level": 19,
+          "spell_name": "wish"
+        }
+      ],
+      "bonus_feats": "Combat Casting, Improved Counterspell, Improved Initiative, Iron Will, Scribe Scroll, Skill Focus (Knowledge [arcana]), Spell Focus, Still Spell.",
+      "bloodline_arcana": "Whenever you apply a metamagic feat to a spell that increases the slot used by at least one level, increase the spell's DC by +1. This bonus does not stack with itself and does not apply to spells modified by the Heighten Spell feat.",
+      "bloodline_powers": "Magic comes naturally to you, but as you gain levels you must take care to prevent the power from overwhelming you."
+    },
+    {
+      "name": "Boreal",
+      "source": "Advanced Player's Guide",
+      "description": "Descended from inhabitants of the lands of ice and snow, you count among your ancestors giant-kin, troll-born, and frost-rimed spirits. Their savage and raw energies flow down through generations to infuse you to the marrow with the chill of the polar wind, crackling auroras, and the long winter's night.",
+      "class_skill": "Survival.",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": "enlarge person"
+        },
+        {
+          "level": 5,
+          "spell_name": "rage"
+        },
+        {
+          "level": 9,
+          "spell_name": "wall of ice"
+        },
+        {
+          "level": 11,
+          "spell_name": "cone of cold"
+        },
+        {
+          "level": 13,
+          "spell_name": "transformation"
+        },
+        {
+          "level": 15,
+          "spell_name": "giant form I"
+        },
+        {
+          "level": 17,
+          "spell_name": "polar ray"
+        }
+      ],
+      "bonus_feats": "Arcane Strike, Diehard, Empower Spell, Endurance, Exotic Weapon Proficiency, Power Attack, Skill Focus (Intimidate), Toughness.",
+      "bloodline_arcana": "Whenever you cast a spell with the cold descriptor, increase the spell's save DC by 1.",
+      "bloodline_powers": "Your connection to primeval winters grants you a mastery of cold magic that few can match, and a savagery that fewer still can withstand."
+    },
+    {
+      "name": "Celestial",
+      "source": "Core Rulebook",
+      "description": "Your bloodline is blessed by a celestial power, either from a celestial ancestor or through divine intervention. Although this power drives you along the path of good, your fate (and alignment) is your own to determine.",
+      "class_skill": "Heal.",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": "bless"
+        },
+        {
+          "level": 5,
+          "spell_name": "resist energy"
+        },
+        {
+          "level": 7,
+          "spell_name": "magic circle against evil"
+        },
+        {
+          "level": 9,
+          "spell_name": "remove curse"
+        },
+        {
+          "level": 11,
+          "spell_name": "flame strike"
+        },
+        {
+          "level": 13,
+          "spell_name": "greater dispel magic"
+        },
+        {
+          "level": 15,
+          "spell_name": "banishment"
+        },
+        {
+          "level": 17,
+          "spell_name": "sunburst"
+        },
+        {
+          "level": 19,
+          "spell_name": "gate"
+        }
+      ],
+      "bonus_feats": "Dodge, Extend Spell, Iron Will, Mobility, Mounted Combat, Ride-By Attack, Skill Focus (Knowledge [religion]), Weapon Finesse.",
+      "bloodline_arcana": "Whenever you cast a spell of the summoning subschool, the creatures summoned gain DR/evil equal to 1/2 your sorcerer level (minimum 1). This does not stack with any DR the creature might have.",
+      "bloodline_powers": "Your celestial heritage grants you a great many powers, but they come at a price. The lords of the higher planes are watching you and your actions closely."
+    },
+    {
+      "name": "Deep Earth",
+      "source": "Advanced Player's Guide",
+      "description": "The echoing cave-songs and the rumble and creak of primal spirits deep below the ground thrum in your soul and in all your family line. You are likely slow, steady, and stable in your thinking, little prone to wandering and preferring to instead find depth in contemplation.",
+      "class_skill": "Knowledge (dungeoneering).",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": "expeditious excavation*"
+        },
+        {
+          "level": 5,
+          "spell_name": "darkvision"
+        },
+        {
+          "level": 7,
+          "spell_name": "shifting sand*"
+        },
+        {
+          "level": 9,
+          "spell_name": "stoneskin"
+        },
+        {
+          "level": 11,
+          "spell_name": "spike stones"
+        },
+        {
+          "level": 13,
+          "spell_name": "stone tell"
+        },
+        {
+          "level": 15,
+          "spell_name": "repel metal or stone"
+        },
+        {
+          "level": 17,
+          "spell_name": "earthquake"
+        },
+        {
+          "level": 19,
+          "spell_name": "clashing rocks*"
+        }
+      ],
+      "bonus_feats": "Acrobatic Steps, Alertness, Blind-Fight, Forge Ring, Nimble Moves, Skill Focus (Perception), Stealthy, Still Spell.",
+      "bloodline_arcana": "Whenever you and the target of your spell are both underground, increase the spell's save DC by +1.",
+      "bloodline_powers": "The powers of the living rock are within you, and your communion with the strength of stone is refined and enhanced as your power grows."
+    },
+    {
+      "name": "Destined",
+      "source": "Core Rulebook",
+      "description": "Your family is destined for greatness in some way. Your birth could have been foretold in prophecy, or perhaps it occurred during an especially auspicious event, such as a solar eclipse. Regardless of your bloodline's origin, you have a great future ahead.",
+      "class_skill": "Knowledge (history).",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": ": alarm"
+        },
+        {
+          "level": 5,
+          "spell_name": "blur"
+        },
+        {
+          "level": 7,
+          "spell_name": "protection from energy"
+        },
+        {
+          "level": 9,
+          "spell_name": "freedom of movement"
+        },
+        {
+          "level": 11,
+          "spell_name": "break enchantment"
+        },
+        {
+          "level": 13,
+          "spell_name": "mislead"
+        },
+        {
+          "level": 15,
+          "spell_name": "spell turning"
+        },
+        {
+          "level": 17,
+          "spell_name": "moment of prescience"
+        },
+        {
+          "level": 19,
+          "spell_name": "foresight"
+        }
+      ],
+      "bonus_feats": "Arcane Strike, Diehard, Endurance, Leadership, Lightning Reflexes, Maximize Spell, Skill Focus (Knowledge [history]), Weapon Focus.",
+      "bloodline_arcana": "Whenever you cast a spell with a range of “personal,” you gain a luck bonus equal to the spell's level on all your saving throws for 1 round.",
+      "bloodline_powers": "You are destined for great things, and the powers that you gain serve to protect you."
+    },
+    {
+      "name": "Draconic",
+      "source": "Core Rulebook",
+      "description": "At some point in your family's history, a dragon interbred with your bloodline, and now its ancient power flows through your veins.",
+      "class_skill": "Perception.",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": "mage armor"
+        },
+        {
+          "level": 5,
+          "spell_name": "resist energy"
+        },
+        {
+          "level": 7,
+          "spell_name": "fly"
+        },
+        {
+          "level": 9,
+          "spell_name": "fear"
+        },
+        {
+          "level": 11,
+          "spell_name": "spell resistance"
+        },
+        {
+          "level": 13,
+          "spell_name": "form of the dragon I"
+        },
+        {
+          "level": 15,
+          "spell_name": "form of the dragon II"
+        },
+        {
+          "level": 17,
+          "spell_name": "form of the dragon III"
+        },
+        {
+          "level": 19,
+          "spell_name": "wish"
+        }
+      ],
+      "bonus_feats": "Blind-Fight, Great Fortitude, Improved Initiative, Power Attack, Quicken Spell, Skill Focus (Fly), Skill Focus (Knowledge [arcana]), Toughness.",
+      "bloodline_arcana": "Whenever you cast a spell with an energy descriptor that matches your draconic bloodline's energy type, that spell deals +1 point of damage per die rolled.",
+      "bloodline_powers": "The power of dragons flows through you and manifests in a number of ways. At 1st level, you must select one of the chromatic or metallic dragon types. This choice cannot be changed. A number of your abilities grant resistances and deal damage based on your dragon type, as noted on the following table."
+    },
+    {
+      "name": "Dreamspun",
+      "source": "Advanced Player's Guide",
+      "description": "Your family is a long line of dreamers, who dream not as ordinary mortals do but rather as those who reach through and touch the supernal realm of dreams and the farthest shores of night. Whether it is a gift or curse is not always clear, but your visions of the past and future call you ineluctably to a life of adventure.",
+      "class_skill": "Sense Motive.",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": "sleep"
+        },
+        {
+          "level": 5,
+          "spell_name": "augury"
+        },
+        {
+          "level": 7,
+          "spell_name": "deep slumber"
+        },
+        {
+          "level": 9,
+          "spell_name": "divination"
+        },
+        {
+          "level": 11,
+          "spell_name": "dream"
+        },
+        {
+          "level": 13,
+          "spell_name": "shadow walk"
+        },
+        {
+          "level": 15,
+          "spell_name": "vision"
+        },
+        {
+          "level": 17,
+          "spell_name": "moment of prescience"
+        },
+        {
+          "level": 19,
+          "spell_name": "astral projection"
+        }
+      ],
+      "bonus_feats": "Alertness, Blind-Fight, Combat Expertise, Deceitful, Heighten Spell, Improved Feint, Persuasive, Skill Focus (Sense Motive).",
+      "bloodline_arcana": "Whenever you target a single creature with a spell, you gain an insight bonus equal to half the spell's level (minimum +1) for 1 round to your AC and saving throws against any spell or attack made by that creature.",
+      "bloodline_powers": "You reach out into and through the world of dreams to touch the minds and destinies of those around you."
+    },
+    {
+      "name": "Elemental",
+      "source": "Core Rulebook",
+      "description": "The power of the elements resides in you, and at times you can hardly control its fury. This influence comes from an elemental outsider in your family history or a time when you or your relatives were exposed to a powerful elemental force.",
+      "class_skill": "Knowledge (planes).",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": "burning hands*"
+        },
+        {
+          "level": 5,
+          "spell_name": "scorching ray*"
+        },
+        {
+          "level": 7,
+          "spell_name": "protection from energy"
+        },
+        {
+          "level": 9,
+          "spell_name": "elemental body I"
+        },
+        {
+          "level": 11,
+          "spell_name": "elemental body II"
+        },
+        {
+          "level": 13,
+          "spell_name": "elemental body III"
+        },
+        {
+          "level": 15,
+          "spell_name": "elemental body IV"
+        },
+        {
+          "level": 19,
+          "spell_name": "elemental swarm"
+        }
+      ],
+      "bonus_feats": "Dodge, Empower Spell, Great Fortitude, Improved Initiative, Lightning Reflexes, Power Attack, Skill Focus (Knowledge [planes]), Weapon Finesse.",
+      "bloodline_arcana": "Whenever you cast a spell that deals energy damage, you can change the type of damage to match the type of your bloodline. This also changes the spell's type to match the type of your bloodline.",
+      "bloodline_powers": "One of the four elements infuses your being, and you can draw upon its power in times of need. At first level, you must select one of the four elements: air, earth, fire, or water. This choice cannot be changed. A number of your abilities grant resistances and deal damage based on your element, as noted below."
+    },
+    {
+      "name": "Fey",
+      "source": "Core Rulebook",
+      "description": "The capricious nature of the fey runs in your family due to some intermingling of fey blood or magic. You are more emotional than most, prone to bouts of joy and rage.",
+      "class_skill": "Knowledge (nature).",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": "entangle"
+        },
+        {
+          "level": 5,
+          "spell_name": "hideous laughter"
+        },
+        {
+          "level": 7,
+          "spell_name": "deep slumber"
+        },
+        {
+          "level": 9,
+          "spell_name": "poison"
+        },
+        {
+          "level": 11,
+          "spell_name": "tree stride"
+        },
+        {
+          "level": 13,
+          "spell_name": "mislead"
+        },
+        {
+          "level": 15,
+          "spell_name": "phase door"
+        },
+        {
+          "level": 17,
+          "spell_name": "irresistible dance"
+        },
+        {
+          "level": 19,
+          "spell_name": "shapechange"
+        }
+      ],
+      "bonus_feats": "Dodge, Improved Initiative, Lightning Reflexes, Mobility, Point Blank Shot, Precise Shot, Quicken Spell, Skill Focus (Knowledge [nature]).",
+      "bloodline_arcana": "Whenever you cast a spell of the compulsion subschool, increase the spell's DC by +2.",
+      "bloodline_powers": "You have always had a tie to the natural world, and as your power increases, so does the influence of the fey over your magic."
+    },
+    {
+      "name": "Infernal",
+      "source": "Core Rulebook",
+      "description": "Somewhere in your family's history, a relative made a deal with a devil, and that pact has influenced your family line ever since. In you, it manifests in direct and obvious ways, granting you powers and abilities. While your fate is still your own, you can't help but wonder if your ultimate reward is bound to the Pit.",
+      "class_skill": "Diplomacy.",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": "protection from good"
+        },
+        {
+          "level": 5,
+          "spell_name": "scorching ray"
+        },
+        {
+          "level": 7,
+          "spell_name": "suggestion"
+        },
+        {
+          "level": 9,
+          "spell_name": "charm monster"
+        },
+        {
+          "level": 11,
+          "spell_name": "dominate person"
+        },
+        {
+          "level": 15,
+          "spell_name": "greater teleport"
+        },
+        {
+          "level": 17,
+          "spell_name": "power word stun"
+        },
+        {
+          "level": 19,
+          "spell_name": "meteor swarm"
+        }
+      ],
+      "bonus_feats": "Blind-Fight, Combat Expertise, Deceitful, Extend Spell, Improved Disarm, Iron Will, Skill Focus (Knowledge [planes]), Spell Penetration.",
+      "bloodline_arcana": "Whenever you cast a spell of the charm subschool, increase the spell's DC by +2.",
+      "bloodline_powers": "You can draw upon the power of Hell, although you must be wary of its corrupting influence. Such power does not come without a price."
+    },
+    {
+      "name": "Protean",
+      "source": "Advanced Player's Guide",
+      "description": "You have in your veins the ever-changing wildness of primal chaos, the raw essence of unbound creation. Your mind and spirit burst with the constant inspiration of consummate freedom, though you have difficulty following through on a task when another, new and exciting, catches your interest.",
+      "class_skill": "Knowledge (planes).",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": "entropic shield"
+        },
+        {
+          "level": 5,
+          "spell_name": "blur"
+        },
+        {
+          "level": 7,
+          "spell_name": "gaseous form"
+        },
+        {
+          "level": 9,
+          "spell_name": "confusion"
+        },
+        {
+          "level": 11,
+          "spell_name": "major creation"
+        },
+        {
+          "level": 13,
+          "spell_name": "disintegrate"
+        },
+        {
+          "level": 15,
+          "spell_name": "greater polymorph"
+        },
+        {
+          "level": 17,
+          "spell_name": "polymorph any object"
+        },
+        {
+          "level": 19,
+          "spell_name": "shapechange"
+        }
+      ],
+      "bonus_feats": "Agile Maneuvers, Defensive Combat Training, Enlarge Spell, Great Fortitude, Improved Great Fortitude, Skill Focus (Craft [any]), Spell Focus, Toughness.",
+      "bloodline_arcana": "Your magic of creation and changing is hard to unravel. The DC to dispel transmutation or conjuration (creation) spells that you cast is increased by +4.",
+      "bloodline_powers": "Your ancestral immersion in primordial chaos begets your curiously warped magical talents."
+    },
+    {
+      "name": "Serpentine",
+      "source": "Advanced Player's Guide",
+      "description": "Your bloodline carries the lingering stain of ancient serpent races that ruled when the world was young; your forebears were likely favored slaves anointed by their reptilian masters and gifted with their cold cunning and subtle manipulation. While deception and a mesmeric charm are your birthright, you may struggle for truth in spite of your heritage.",
+      "class_skill": "Diplomacy.",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": "hypnotism"
+        },
+        {
+          "level": 5,
+          "spell_name": "delay poison"
+        },
+        {
+          "level": 9,
+          "spell_name": "poison"
+        },
+        {
+          "level": 11,
+          "spell_name": "hold monster"
+        },
+        {
+          "level": 13,
+          "spell_name": "mass suggestion"
+        },
+        {
+          "level": 17,
+          "spell_name": "irresistible dance"
+        },
+        {
+          "level": 19,
+          "spell_name": "dominate monster"
+        }
+      ],
+      "bonus_feats": "Combat Casting, Combat Reflexes, Deceitful, Deft Hands, Persuasive, Silent Spell, Skill Focus (Bluff), Stealthy.",
+      "bloodline_arcana": "Your powers of compulsion can affect even bestial creatures. Whenever you cast a mind-affecting or language-dependent spell, it affects animals, magical beasts, and monstrous humanoids as if they were humanoids who understood your language.",
+      "bloodline_powers": "The treacherous and yet hypnotic serpent's blood that flows through you taints your magic with a sinuous and seductive grace."
+    },
+    {
+      "name": "Shadow",
+      "source": "Advanced Player's Guide",
+      "description": "Spirits from the shadow plane dally at times in the world of light, and such as these lay with your ancestors once upon a time, imparting the mystery of shadow-stuff into your lineage. You are often sullen and withdrawn, preferring to skulk at the fringes of social circles and keep to yourself, cultivating an air of mystery and majesty that is all your own.",
+      "class_skill": "Stealth.",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": "ray of enfeeblement"
+        },
+        {
+          "level": 5,
+          "spell_name": "darkvision"
+        },
+        {
+          "level": 7,
+          "spell_name": "deeper darkness"
+        },
+        {
+          "level": 9,
+          "spell_name": "shadow conjuration"
+        },
+        {
+          "level": 11,
+          "spell_name": "shadow evocation"
+        },
+        {
+          "level": 13,
+          "spell_name": "shadow walk"
+        },
+        {
+          "level": 15,
+          "spell_name": "power word blind"
+        },
+        {
+          "level": 17,
+          "spell_name": "greater shadow evocation"
+        },
+        {
+          "level": 19,
+          "spell_name": "shades"
+        }
+      ],
+      "bonus_feats": "Acrobatic, Blind-Fight, Dodge, Quick Draw, Silent Spell, Skill Focus (Stealth), Stealthy, Weapon Finesse.",
+      "bloodline_arcana": "Whenever you cast a spell with the darkness descriptor or the shadow subschool, you gain a circumstance bonus on Stealth checks equal to the spell's level for 1d4 rounds.",
+      "bloodline_powers": "Your benighted heritage infuses your mastery of magic with the essence of shadowstuff."
+    },
+    {
+      "name": "Starsoul",
+      "source": "Advanced Player's Guide",
+      "description": "You come from a line of stargazers and explorers who delved deeply into the darkness beyond the stars. In touching the void, the void touched them, and your mind, spirit, and body yearn to span the gulf between worlds.",
+      "class_skill": "Knowledge (nature).",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": "unseen servant"
+        },
+        {
+          "level": 5,
+          "spell_name": "glitterdust"
+        },
+        {
+          "level": 7,
+          "spell_name": "blink"
+        },
+        {
+          "level": 11,
+          "spell_name": "overland flight"
+        },
+        {
+          "level": 13,
+          "spell_name": "repulsion"
+        },
+        {
+          "level": 15,
+          "spell_name": "reverse gravity"
+        },
+        {
+          "level": 17,
+          "spell_name": "greater prying eyes"
+        },
+        {
+          "level": 19,
+          "spell_name": "meteor swarm"
+        }
+      ],
+      "bonus_feats": "Blind-Fight, Craft Rod, Dodge, Endurance, Improved Counterspell, Improved Iron Will, Iron Will, Quicken Spell, Skill Focus (Perception), Toughness.",
+      "bloodline_arcana": "Whenever you cast an evocation spell, targets that fail their saves are dazzled by tiny sparkling starlights for 1 round per level of the spell.",
+      "bloodline_powers": "Your skyward gaze and communion with the heavens focus and enhance your magical talents."
+    },
+    {
+      "name": "Stormborn",
+      "source": "Advanced Player's Guide",
+      "description": "You trace your heritage to fierce and proud spirits of storm and sky, and living lightning sings in your veins.",
+      "class_skill": "Knowledge (nature).",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": "shocking grasp"
+        },
+        {
+          "level": 5,
+          "spell_name": "gust of wind"
+        },
+        {
+          "level": 7,
+          "spell_name": "lightning bolt"
+        },
+        {
+          "level": 9,
+          "spell_name": "shout"
+        },
+        {
+          "level": 11,
+          "spell_name": "overland flight"
+        },
+        {
+          "level": 13,
+          "spell_name": "chain lightning"
+        },
+        {
+          "level": 15,
+          "spell_name": "control weather"
+        },
+        {
+          "level": 17,
+          "spell_name": "whirlwind"
+        },
+        {
+          "level": 19,
+          "spell_name": "storm of vengeance"
+        }
+      ],
+      "bonus_feats": "Deadly Aim, Dodge, Enlarge Spell, Far Shot, Great Fortitude, Point Blank Shot, Skill Focus (Fly), Wind Stance.",
+      "bloodline_arcana": "Whenever you cast a spell with the electricity or sonic descriptor, increase the save DC by 1.",
+      "bloodline_powers": "Your mastery of the storm is reflected in the unique panoply of powers you manifest."
+    },
+    {
+      "name": "Undead",
+      "source": "Core Rulebook",
+      "description": "The taint of the grave runs through your family. Perhaps one of your ancestors became a powerful lich or vampire, or maybe you were born dead before suddenly returning to life. Either way, the forces of death move through you and touch your every action.",
+      "class_skill": "Knowledge (religion).",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": "chill touch"
+        },
+        {
+          "level": 5,
+          "spell_name": "false life"
+        },
+        {
+          "level": 7,
+          "spell_name": "vampiric touch"
+        },
+        {
+          "level": 9,
+          "spell_name": "animate dead"
+        },
+        {
+          "level": 11,
+          "spell_name": "waves of fatigue"
+        },
+        {
+          "level": 13,
+          "spell_name": "undeath to death"
+        },
+        {
+          "level": 15,
+          "spell_name": "finger of death"
+        },
+        {
+          "level": 17,
+          "spell_name": "horrid wilting"
+        },
+        {
+          "level": 19,
+          "spell_name": "energy drain"
+        }
+      ],
+      "bonus_feats": "Combat Casting, Diehard, Endurance, Iron Will, Skill Focus (Knowledge [religion]), Spell Focus, Still Spell, Toughness.",
+      "bloodline_arcana": "Some undead are susceptible to your mind-affecting spells. Corporeal undead that were once humanoids are treated as humanoids for the purposes of determining which spells affect them.",
+      "bloodline_powers": "You can call upon the foul powers of the afterlife. Unfortunately, the more you draw upon them, the closer you come to joining them."
+    },
+    {
+      "name": "Verdant",
+      "source": "Advanced Player's Guide",
+      "description": "Your progenitors infused themselves with raw plant life, binding it into their own tissue and passing it down to their literal seed, giving you innate communion with nature.",
+      "class_skill": "Knowledge (nature).",
+      "bonus_spells": [
+        {
+          "level": 3,
+          "spell_name": "entangle"
+        },
+        {
+          "level": 5,
+          "spell_name": "barkskin"
+        },
+        {
+          "level": 7,
+          "spell_name": "speak with plants"
+        },
+        {
+          "level": 9,
+          "spell_name": "command plants"
+        },
+        {
+          "level": 11,
+          "spell_name": "wall of thorns"
+        },
+        {
+          "level": 13,
+          "spell_name": "transport via plants"
+        },
+        {
+          "level": 15,
+          "spell_name": "plant shape III"
+        },
+        {
+          "level": 17,
+          "spell_name": "animate plants"
+        },
+        {
+          "level": 19,
+          "spell_name": "shambler"
+        }
+      ],
+      "bonus_feats": "Acrobatic Steps, Craft Staff, Endurance, Extend Spell, Fleet, Nimble Moves, Skill Focus (Knowledge [nature]), Toughness.",
+      "bloodline_arcana": "Whenever you cast a spell with a range of personal, your skin toughens, granting you a natural armor bonus equal to the spell's level for 1d4 rounds. This bonus does not stack with any other natural armor bonuses you might have.",
+      "bloodline_powers": "The power of living things infuses every aspect of your magic, as you draw power from nature and its life energies flow through you."
+    }
+  ],
+  "oracle_mysteries": [
+    {
+      "name": "Ancestor",
+      "source": "Ultimate Magic",
+      "description": "",
+      "class_skills": [
+        "An oracle with the ancestor mystery adds Linguistics",
+        "Knowledge skills to her list of class skills"
+      ],
+      "bonus_spells": [
+        {
+          "level": 2,
+          "spell_name": "unseen servant"
+        },
+        {
+          "level": 4,
+          "spell_name": "spiritual weapon"
+        },
+        {
+          "level": 6,
+          "spell_name": "heroism"
+        },
+        {
+          "level": 8,
+          "spell_name": "spiritual ally"
+        },
+        {
+          "level": 10,
+          "spell_name": "telekinesis"
+        },
+        {
+          "level": 12,
+          "spell_name": "greater heroism"
+        },
+        {
+          "level": 14,
+          "spell_name": "ethereal jaunt"
+        },
+        {
+          "level": 16,
+          "spell_name": "vision"
+        },
+        {
+          "level": 18,
+          "spell_name": "astral projection"
+        }
+      ],
+      "revelations": "Upon reaching 20th level, you become one with the spirits of your ancestors. You gain a bonus on Will saving throws equal to your Charisma modifier, blindsense out to a range of 60 feet, and a +4 bonus on your caster level for all divination spells. You can cast astral projection as a spell-like ability once per day without requiring material components."
+    },
+    {
+      "name": "Battle",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "class_skills": [
+        "An oracle with the battle mystery adds Intimidate",
+        "Knowledge",
+        "Perception",
+        "Ride to her list of class skills"
+      ],
+      "bonus_spells": [
+        {
+          "level": 2,
+          "spell_name": "enlarge person"
+        },
+        {
+          "level": 4,
+          "spell_name": "fog cloud"
+        },
+        {
+          "level": 6,
+          "spell_name": "magic vestment"
+        },
+        {
+          "level": 8,
+          "spell_name": "wall of fire"
+        },
+        {
+          "level": 10,
+          "spell_name": "righteous might"
+        },
+        {
+          "level": 12,
+          "spell_name": "mass bull's strength"
+        },
+        {
+          "level": 14,
+          "spell_name": "control weather"
+        },
+        {
+          "level": 16,
+          "spell_name": "earthquake"
+        },
+        {
+          "level": 18,
+          "spell_name": "storm of vengeance"
+        }
+      ],
+      "revelations": "Upon reaching 20th level, you become an avatar of battle. You can take a full-attack action and move up to your speed as a full-round action (you can move before or after the attacks). Whenever you score a critical hit, you can ignore any DR the target might possess. You gain a +4 insight bonus to your AC for the purpose of confirming critical hits against you. When you are below 0 hit points, you do not die until your negative total is in excess of twice your Constitution score."
+    },
+    {
+      "name": "Bones",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "class_skills": [
+        "An oracle with a bones mystery adds Bluff",
+        "Disguise",
+        "Intimidate",
+        "Stealth to her list of class skills"
+      ],
+      "bonus_spells": [
+        {
+          "level": 2,
+          "spell_name": "cause fear"
+        },
+        {
+          "level": 4,
+          "spell_name": "false life"
+        },
+        {
+          "level": 6,
+          "spell_name": "animate dead"
+        },
+        {
+          "level": 8,
+          "spell_name": "fear"
+        },
+        {
+          "level": 10,
+          "spell_name": "slay living"
+        },
+        {
+          "level": 12,
+          "spell_name": "circle of death"
+        },
+        {
+          "level": 14,
+          "spell_name": "control undead"
+        },
+        {
+          "level": 16,
+          "spell_name": "horrid wilting"
+        },
+        {
+          "level": 18,
+          "spell_name": "wail of the banshee"
+        }
+      ],
+      "revelations": "Upon reaching 20th level, you become a master of death. Once per round, you can cast bleed or stabilize as a free action. If you are brought to below 0 hit points, you automatically stabilize. You can cast animate dead at will without paying a material component cost (although you are still subject to the usual Hit Die control limit). Once per day, you can cast power word kill, but the spell can target a creature with 150 hit points or less."
+    },
+    {
+      "name": "Dark Tapestry",
+      "source": "Ultimate Magic",
+      "description": "",
+      "class_skills": [
+        "An oracle with the dark tapestry mystery adds Disguise",
+        "Intimidate",
+        "Knowledge",
+        "Stealth to her list of class skills"
+      ],
+      "bonus_spells": [
+        {
+          "level": 2,
+          "spell_name": "entropic shield"
+        },
+        {
+          "level": 4,
+          "spell_name": "dust of twilight"
+        },
+        {
+          "level": 6,
+          "spell_name": "tongues"
+        },
+        {
+          "level": 8,
+          "spell_name": "black tentacles"
+        },
+        {
+          "level": 10,
+          "spell_name": "feeblemind"
+        },
+        {
+          "level": 12,
+          "spell_name": "planar binding"
+        },
+        {
+          "level": 14,
+          "spell_name": "insanity"
+        },
+        {
+          "level": 16,
+          "spell_name": "reverse gravity"
+        },
+        {
+          "level": 18,
+          "spell_name": "interplanetary teleport"
+        }
+      ],
+      "revelations": "Upon reaching 20th level, you become a truly alien and unnatural creature. You gain damage reduction 5/— and immunity to acid, critical hits, and sneak attacks. Once per day, you can cast shapechange as a spell-like ability without requiring a material component."
+    },
+    {
+      "name": "Flame",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "class_skills": [
+        "An oracle with the flame mystery adds Acrobatics",
+        "Climb",
+        "Intimidate",
+        "Perform to her list of class skills"
+      ],
+      "bonus_spells": [
+        {
+          "level": 2,
+          "spell_name": "burning hands"
+        },
+        {
+          "level": 4,
+          "spell_name": "resist energy"
+        },
+        {
+          "level": 6,
+          "spell_name": "fireball"
+        },
+        {
+          "level": 8,
+          "spell_name": "wall of fire"
+        },
+        {
+          "level": 12,
+          "spell_name": "fire seeds"
+        },
+        {
+          "level": 14,
+          "spell_name": "fire storm"
+        },
+        {
+          "level": 16,
+          "spell_name": "incendiary cloud"
+        },
+        {
+          "level": 18,
+          "spell_name": "fiery body*"
+        }
+      ],
+      "revelations": "Upon reaching 20th level, you become a master of fire. You can apply any one of the following feats to any fire spell you cast without increasing the level or casting time: Enlarge Spell, Extend Spell, Silent Spell, or Still Spell. You do not need to possess these feats to use this ability."
+    },
+    {
+      "name": "Heavens",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "class_skills": [
+        "An oracle with the heavens mystery adds Fly",
+        "Knowledge",
+        "Perception",
+        "Survival to her list of class skills"
+      ],
+      "bonus_spells": [
+        {
+          "level": 2,
+          "spell_name": "color spray"
+        },
+        {
+          "level": 4,
+          "spell_name": "hypnotic pattern"
+        },
+        {
+          "level": 6,
+          "spell_name": "daylight"
+        },
+        {
+          "level": 8,
+          "spell_name": "rainbow pattern"
+        },
+        {
+          "level": 10,
+          "spell_name": "overland flight"
+        },
+        {
+          "level": 12,
+          "spell_name": "chain lightning"
+        },
+        {
+          "level": 14,
+          "spell_name": "prismatic spray"
+        },
+        {
+          "level": 16,
+          "spell_name": "sunburst"
+        },
+        {
+          "level": 18,
+          "spell_name": "meteor swarm"
+        }
+      ],
+      "revelations": "Upon achieving 20th level, your rapport with the heavens grants you perfect harmony with the universe. You receive a bonus on all saving throws equal to your Charisma modifier. You automatically stabilize if you are below 0 hit points, are immune to fear effects, and automatically confirm all critical hits. Should you die, you are reborn 3 days later in the form of a star child, who matures over the course of 7 days (treat as the reincarnate spell)."
+    },
+    {
+      "name": "Life",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "class_skills": [
+        "An oracle with the life mystery adds Handle Animal",
+        "Knowledge",
+        "Survival to her list of class skills"
+      ],
+      "bonus_spells": [
+        {
+          "level": 2,
+          "spell_name": "detect undead"
+        },
+        {
+          "level": 4,
+          "spell_name": "lesser restoration"
+        },
+        {
+          "level": 6,
+          "spell_name": "neutralize poison"
+        },
+        {
+          "level": 8,
+          "spell_name": "restoration"
+        },
+        {
+          "level": 10,
+          "spell_name": "breath of life"
+        },
+        {
+          "level": 12,
+          "spell_name": "heal"
+        },
+        {
+          "level": 14,
+          "spell_name": "greater restoration"
+        },
+        {
+          "level": 16,
+          "spell_name": "mass heal"
+        },
+        {
+          "level": 18,
+          "spell_name": "true resurrection"
+        }
+      ],
+      "revelations": "Upon reaching 20th level, you become a perfect channel for life energy. You become immune to bleed, death attacks, exhaustion, fatigue, nausea effects, negative levels, and sickened effects. Ability damage and drain cannot reduce you below 1 in any ability score. You automatically make saving throws against massive damage. When you are below 0 hit points, you do not die until your negative total is in excess of twice your Constitution score."
+    },
+    {
+      "name": "Lore",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "class_skills": [
+        "An oracle with the lore mystery adds Appraise",
+        "Knowledge skills to her list of class skills"
+      ],
+      "bonus_spells": [
+        {
+          "level": 2,
+          "spell_name": "identify"
+        },
+        {
+          "level": 4,
+          "spell_name": "tongues"
+        },
+        {
+          "level": 6,
+          "spell_name": "locate object"
+        },
+        {
+          "level": 8,
+          "spell_name": "legend lore"
+        },
+        {
+          "level": 10,
+          "spell_name": "contact other plane"
+        },
+        {
+          "level": 12,
+          "spell_name": "mass owl's wisdom"
+        },
+        {
+          "level": 14,
+          "spell_name": "vision"
+        },
+        {
+          "level": 16,
+          "spell_name": "moment of prescience"
+        },
+        {
+          "level": 18,
+          "spell_name": "time stop"
+        }
+      ],
+      "revelations": "You gain the ability to take 20 on all Knowledge skill checks. Your understanding of the fundamental underpinnings of reality has also become so advanced that once per day, you can cast wish. This ability does not require a material component, but the wish cannot be used to grant ability score bonuses, nor can it be used to replicate spells with expensive material components."
+    },
+    {
+      "name": "Metal",
+      "source": "Ultimate Magic",
+      "description": "",
+      "class_skills": [
+        "An oracle with the metal mystery adds Appraise",
+        "Bluff",
+        "Disable Device",
+        "Intimidate to her list of class skills"
+      ],
+      "bonus_spells": [
+        {
+          "level": 2,
+          "spell_name": "lead blades"
+        },
+        {
+          "level": 4,
+          "spell_name": "heat metal"
+        },
+        {
+          "level": 6,
+          "spell_name": "keen edge"
+        },
+        {
+          "level": 8,
+          "spell_name": "versatile weapon"
+        },
+        {
+          "level": 12,
+          "spell_name": "wall of iron"
+        },
+        {
+          "level": 16,
+          "spell_name": "repel metal or stone"
+        },
+        {
+          "level": 18,
+          "spell_name": "iron body"
+        }
+      ],
+      "revelations": "Upon reaching 20th level, you become a master of iron and steel. You gain the benefits of Weapon Focus, Greater Weapon Focus, and Improved Critical with any one metal weapon that you are proficient with. Your armor is like a second skin to you—while wearing metal armor you are proficient with, the armor's maximum Dexterity bonus increases by +5 and you take no armor check penalty. In addition, any metal you create with your magic (such as wall of iron) has its hardness increased by +10."
+    },
+    {
+      "name": "Nature",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "class_skills": [
+        "An oracle with the nature mystery adds Climb",
+        "Fly",
+        "Knowledge",
+        "Ride",
+        "Survival",
+        "Swim to her list of class skills"
+      ],
+      "bonus_spells": [
+        {
+          "level": 2,
+          "spell_name": "charm animal"
+        },
+        {
+          "level": 4,
+          "spell_name": "barkskin"
+        },
+        {
+          "level": 6,
+          "spell_name": "speak with plants"
+        },
+        {
+          "level": 8,
+          "spell_name": "grove of respite*"
+        },
+        {
+          "level": 10,
+          "spell_name": "awaken"
+        },
+        {
+          "level": 12,
+          "spell_name": "stone tell"
+        },
+        {
+          "level": 14,
+          "spell_name": "creeping doom"
+        },
+        {
+          "level": 16,
+          "spell_name": "animal shapes"
+        },
+        {
+          "level": 18,
+          "spell_name": "world wave*"
+        }
+      ],
+      "revelations": "At 20th level, you have discovered the intrinsic secrets of life itself, granting you incredible control over your own body. Once per day, you can surround yourself with an organic cocoon as a full-round action. While enclosed in the cocoon, you are considered helpless. Eight hours later, you emerge having changed your type to plant, animal, or humanoid, gaining superficial physical characteristics as appropriate (see the Pathfinder RPG Bestiary). This change does not alter your Hit Dice, hit points, saving throws, skill points, class skills, or proficiencies. Each time the transformation is made, you are cleansed of all poisons or diseases, are restored to full hit points, and heal all ability damage. You must select a new type every time the transformation is made."
+    },
+    {
+      "name": "Stone",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "class_skills": [
+        "An oracle with the stone mystery adds Appraise",
+        "Climb",
+        "Intimidate",
+        "Survival to her list of class skills"
+      ],
+      "bonus_spells": [
+        {
+          "level": 2,
+          "spell_name": "magic stone"
+        },
+        {
+          "level": 4,
+          "spell_name": "stone call*"
+        },
+        {
+          "level": 6,
+          "spell_name": "meld into stone"
+        },
+        {
+          "level": 8,
+          "spell_name": "wall of stone"
+        },
+        {
+          "level": 10,
+          "spell_name": "stoneskin"
+        },
+        {
+          "level": 12,
+          "spell_name": "stone tell"
+        },
+        {
+          "level": 14,
+          "spell_name": "statue"
+        },
+        {
+          "level": 16,
+          "spell_name": "repel metal or stone"
+        },
+        {
+          "level": 18,
+          "spell_name": "clashing rocks*"
+        }
+      ],
+      "revelations": "Upon reaching 20th level, you become a master of acid and earth. You can apply any one of the following feats to any acid or earth spell without increasing the level or casting time: Enlarge Spell, Extend Spell, Silent Spell, or Still Spell."
+    },
+    {
+      "name": "Time",
+      "source": "Ultimate Magic",
+      "description": "",
+      "class_skills": [
+        "An oracle with the time mystery adds Fly",
+        "Knowledge",
+        "Perception",
+        "Use Magic Device to her list of class skills"
+      ],
+      "bonus_spells": [
+        {
+          "level": 2,
+          "spell_name": "memory lapse"
+        },
+        {
+          "level": 4,
+          "spell_name": "gentle repose"
+        },
+        {
+          "level": 6,
+          "spell_name": "sands of time"
+        },
+        {
+          "level": 8,
+          "spell_name": "threefold aspect"
+        },
+        {
+          "level": 10,
+          "spell_name": "permanency"
+        },
+        {
+          "level": 12,
+          "spell_name": "contingency"
+        },
+        {
+          "level": 14,
+          "spell_name": "disintegrate"
+        },
+        {
+          "level": 16,
+          "spell_name": "temporal stasis"
+        },
+        {
+          "level": 18,
+          "spell_name": "time stop"
+        }
+      ],
+      "revelations": "Upon reaching 20th level, you become a true master of time and stop aging. You cannot be magically aged and no longer take penalties to your ability scores for aging. Age bonuses still accrue, and any aging penalties that you have already accrued remain in place. You cannot die of old age, but you can be killed or die through accident, disease, poison, or other external effects. In addition, you can cast time stop once per day as a spell-like ability."
+    },
+    {
+      "name": "Waves",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "class_skills": [
+        "An oracle with the waves mystery adds Acrobatics",
+        "Escape Artist",
+        "Knowledge",
+        "Swim to her list of class skills"
+      ],
+      "bonus_spells": [
+        {
+          "level": 2,
+          "spell_name": "touch of the sea*"
+        },
+        {
+          "level": 4,
+          "spell_name": "slipstream*"
+        },
+        {
+          "level": 6,
+          "spell_name": "water breathing"
+        },
+        {
+          "level": 8,
+          "spell_name": "wall of ice"
+        },
+        {
+          "level": 10,
+          "spell_name": "geyser*"
+        },
+        {
+          "level": 12,
+          "spell_name": "fluid form*"
+        },
+        {
+          "level": 14,
+          "spell_name": "vortex*"
+        },
+        {
+          "level": 16,
+          "spell_name": "seamantle*"
+        },
+        {
+          "level": 18,
+          "spell_name": "tsunami*"
+        }
+      ],
+      "revelations": "Upon reaching 20th level, you become a master of cold and water. You can apply any one of the following feats to any cold or water spell without increasing the level or casting time: Enlarge Spell, Extend Spell, Silent Spell, or Still Spell."
+    },
+    {
+      "name": "Wind",
+      "source": "Advanced Player's Guide",
+      "description": "",
+      "class_skills": [
+        "An oracle with the wind mystery adds Acrobatics",
+        "Escape Artist",
+        "Fly",
+        "Stealth to her list of class skills"
+      ],
+      "bonus_spells": [
+        {
+          "level": 2,
+          "spell_name": "alter winds*"
+        },
+        {
+          "level": 4,
+          "spell_name": "gust of wind"
+        },
+        {
+          "level": 6,
+          "spell_name": "cloak of winds*"
+        },
+        {
+          "level": 8,
+          "spell_name": "river of wind*"
+        },
+        {
+          "level": 10,
+          "spell_name": "control winds"
+        },
+        {
+          "level": 12,
+          "spell_name": "sirocco*"
+        },
+        {
+          "level": 14,
+          "spell_name": "control weather"
+        },
+        {
+          "level": 16,
+          "spell_name": "whirlwind"
+        },
+        {
+          "level": 18,
+          "spell_name": "winds of vengeance*"
+        }
+      ],
+      "revelations": "Upon reaching 20th level, you become a master of air and electricity. You can apply any one of the following feats to any air or electricity spell without increasing the level or casting time: Enlarge Spell, Extend Spell, Silent Spell, or Still Spell."
+    },
+    {
+      "name": "Wood",
+      "source": "Ultimate Magic",
+      "description": "",
+      "class_skills": [
+        "An oracle with the wood mystery adds Climb",
+        "Knowledge",
+        "Stealth",
+        "Survival to her list of class skills"
+      ],
+      "bonus_spells": [
+        {
+          "level": 2,
+          "spell_name": "shillelagh"
+        },
+        {
+          "level": 4,
+          "spell_name": "barkskin"
+        },
+        {
+          "level": 8,
+          "spell_name": "thorn body"
+        },
+        {
+          "level": 10,
+          "spell_name": "tree stride"
+        },
+        {
+          "level": 12,
+          "spell_name": "ironwood"
+        },
+        {
+          "level": 14,
+          "spell_name": "transmute metal to wood"
+        },
+        {
+          "level": 16,
+          "spell_name": "changestaff"
+        },
+        {
+          "level": 18,
+          "spell_name": "wooden phalanx"
+        }
+      ],
+      "revelations": "Upon reaching 20th level, you become a living creature of wood. You are forevermore treated as the plant type rather than your original type for the purpose of spells and magical effects. Your skin takes on the appearance of polished wood grain, and you gain a +4 natural armor bonus to your Armor Class and damage reduction 10/— against wooden weapons or any natural attacks made by a wooden or woodlike creature. You gain immunity to paralysis, poison, polymorph, sleep, and stunning. At will, you can meld with any tree or single block of wood (as meld into stone, except wood only, and with no limit to how long you can remain in the wood)."
+    }
+  ],
+  "witch_patrons": [
+    {
+      "name": "Agility",
+      "source": "Advanced Player's Guide",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "jump"
+        },
+        {
+          "level": 4,
+          "spell_name": "cat's grace"
+        },
+        {
+          "level": 6,
+          "spell_name": "haste"
+        },
+        {
+          "level": 8,
+          "spell_name": "freedom of movement"
+        },
+        {
+          "level": 10,
+          "spell_name": "polymorph"
+        },
+        {
+          "level": 12,
+          "spell_name": "cat's grace (mass)"
+        },
+        {
+          "level": 14,
+          "spell_name": "ethereal jaunt"
+        },
+        {
+          "level": 16,
+          "spell_name": "animal shapes"
+        },
+        {
+          "level": 18,
+          "spell_name": "shapechange"
+        }
+      ]
+    },
+    {
+      "name": "Ancestors",
+      "source": "Ultimate Magic",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "bless"
+        },
+        {
+          "level": 4,
+          "spell_name": "aid"
+        },
+        {
+          "level": 6,
+          "spell_name": "prayer"
+        },
+        {
+          "level": 8,
+          "spell_name": "blessing of fervor"
+        },
+        {
+          "level": 10,
+          "spell_name": "commune"
+        },
+        {
+          "level": 12,
+          "spell_name": "greater heroism"
+        },
+        {
+          "level": 14,
+          "spell_name": "refuge"
+        },
+        {
+          "level": 16,
+          "spell_name": "euphoric tranquility"
+        },
+        {
+          "level": 18,
+          "spell_name": "weird"
+        }
+      ]
+    },
+    {
+      "name": "Animals",
+      "source": "Advanced Player's Guide",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "charm animals"
+        },
+        {
+          "level": 4,
+          "spell_name": "speak with animals"
+        },
+        {
+          "level": 6,
+          "spell_name": "dominate animal"
+        },
+        {
+          "level": 8,
+          "spell_name": "summon nature's ally IV"
+        },
+        {
+          "level": 10,
+          "spell_name": "animal growth"
+        },
+        {
+          "level": 12,
+          "spell_name": "antilife shell"
+        },
+        {
+          "level": 14,
+          "spell_name": "beast shape IV"
+        },
+        {
+          "level": 16,
+          "spell_name": "animal shapes"
+        },
+        {
+          "level": 18,
+          "spell_name": "summon nature's ally IX"
+        }
+      ]
+    },
+    {
+      "name": "Death",
+      "source": "Ultimate Magic",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "deathwatch"
+        },
+        {
+          "level": 4,
+          "spell_name": "blessing of courage and life"
+        },
+        {
+          "level": 6,
+          "spell_name": "speak with dead"
+        },
+        {
+          "level": 8,
+          "spell_name": "rest eternal"
+        },
+        {
+          "level": 10,
+          "spell_name": "suffocation"
+        },
+        {
+          "level": 12,
+          "spell_name": "circle of death"
+        },
+        {
+          "level": 14,
+          "spell_name": "finger of death"
+        },
+        {
+          "level": 16,
+          "spell_name": "symbol of death"
+        },
+        {
+          "level": 18,
+          "spell_name": "power word kill"
+        }
+      ]
+    },
+    {
+      "name": "Deception",
+      "source": "Advanced Player's Guide",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "ventriloquism"
+        },
+        {
+          "level": 4,
+          "spell_name": "invisibility"
+        },
+        {
+          "level": 6,
+          "spell_name": "blink"
+        },
+        {
+          "level": 8,
+          "spell_name": "confusion"
+        },
+        {
+          "level": 10,
+          "spell_name": "passwall"
+        },
+        {
+          "level": 12,
+          "spell_name": "programmed image"
+        },
+        {
+          "level": 14,
+          "spell_name": "invisibility (mass)"
+        },
+        {
+          "level": 16,
+          "spell_name": "scintillating pattern"
+        },
+        {
+          "level": 18,
+          "spell_name": "time stop"
+        }
+      ]
+    },
+    {
+      "name": "Elements",
+      "source": "Advanced Player's Guide",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "shocking grasp"
+        },
+        {
+          "level": 4,
+          "spell_name": "flaming sphere"
+        },
+        {
+          "level": 6,
+          "spell_name": "fireball"
+        },
+        {
+          "level": 8,
+          "spell_name": "wall of ice"
+        },
+        {
+          "level": 10,
+          "spell_name": "flame strike"
+        },
+        {
+          "level": 12,
+          "spell_name": "freezing sphere"
+        },
+        {
+          "level": 14,
+          "spell_name": "vortex*"
+        },
+        {
+          "level": 16,
+          "spell_name": "fire storm"
+        },
+        {
+          "level": 18,
+          "spell_name": "meteor swarm"
+        }
+      ]
+    },
+    {
+      "name": "Enchantment",
+      "source": "Ultimate Magic",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "unnatural lust"
+        },
+        {
+          "level": 4,
+          "spell_name": "calm emotions"
+        },
+        {
+          "level": 6,
+          "spell_name": "unadulterated loathing"
+        },
+        {
+          "level": 8,
+          "spell_name": "overwhelming grief"
+        },
+        {
+          "level": 10,
+          "spell_name": "dominate person"
+        },
+        {
+          "level": 12,
+          "spell_name": "geas"
+        },
+        {
+          "level": 14,
+          "spell_name": "euphoric tranquility"
+        },
+        {
+          "level": 16,
+          "spell_name": "demand"
+        },
+        {
+          "level": 18,
+          "spell_name": "dominate monster"
+        }
+      ]
+    },
+    {
+      "name": "Endurance",
+      "source": "Advanced Player's Guide",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "endure elements"
+        },
+        {
+          "level": 4,
+          "spell_name": "bear's endurance"
+        },
+        {
+          "level": 6,
+          "spell_name": "protection from energy"
+        },
+        {
+          "level": 8,
+          "spell_name": "spell immunity"
+        },
+        {
+          "level": 10,
+          "spell_name": "spell resistance"
+        },
+        {
+          "level": 12,
+          "spell_name": "bear's endurance (mass)"
+        },
+        {
+          "level": 14,
+          "spell_name": "restoration (greater)"
+        },
+        {
+          "level": 16,
+          "spell_name": "iron body"
+        },
+        {
+          "level": 18,
+          "spell_name": "miracle"
+        }
+      ]
+    },
+    {
+      "name": "Healing",
+      "source": "Ultimate Magic",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "remove fear"
+        },
+        {
+          "level": 4,
+          "spell_name": "lesser restoration"
+        },
+        {
+          "level": 6,
+          "spell_name": "remove disease"
+        },
+        {
+          "level": 8,
+          "spell_name": "restoration"
+        },
+        {
+          "level": 10,
+          "spell_name": "cleanse"
+        },
+        {
+          "level": 12,
+          "spell_name": "pillar of life 14th—greater restoration"
+        },
+        {
+          "level": 16,
+          "spell_name": "mass cure critical wounds"
+        },
+        {
+          "level": 18,
+          "spell_name": "true resurrection"
+        }
+      ]
+    },
+    {
+      "name": "Insanity",
+      "source": "Ultimate Magic",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "memory lapse"
+        },
+        {
+          "level": 4,
+          "spell_name": "hideous laughter"
+        },
+        {
+          "level": 6,
+          "spell_name": "distracting cacophony"
+        },
+        {
+          "level": 8,
+          "spell_name": "confusion"
+        },
+        {
+          "level": 10,
+          "spell_name": "mind fog"
+        },
+        {
+          "level": 12,
+          "spell_name": "envious urge"
+        },
+        {
+          "level": 14,
+          "spell_name": "insanity"
+        },
+        {
+          "level": 16,
+          "spell_name": "symbol of insanity"
+        },
+        {
+          "level": 18,
+          "spell_name": "overwhelming presence"
+        }
+      ]
+    },
+    {
+      "name": "Light",
+      "source": "Ultimate Magic",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "dancing lantern"
+        },
+        {
+          "level": 4,
+          "spell_name": "continual flame"
+        },
+        {
+          "level": 6,
+          "spell_name": "daylight"
+        },
+        {
+          "level": 8,
+          "spell_name": "rainbow pattern"
+        },
+        {
+          "level": 10,
+          "spell_name": "fire snake"
+        },
+        {
+          "level": 12,
+          "spell_name": "sirocco"
+        },
+        {
+          "level": 14,
+          "spell_name": "sunbeam"
+        },
+        {
+          "level": 16,
+          "spell_name": "sunburst"
+        },
+        {
+          "level": 18,
+          "spell_name": "fiery body"
+        }
+      ]
+    },
+    {
+      "name": "Moon",
+      "source": "Ultimate Magic",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "darkness"
+        },
+        {
+          "level": 4,
+          "spell_name": "darkvision"
+        },
+        {
+          "level": 6,
+          "spell_name": "owl's wisdom"
+        },
+        {
+          "level": 8,
+          "spell_name": "moonstruck"
+        },
+        {
+          "level": 10,
+          "spell_name": "aspect of the wolf"
+        },
+        {
+          "level": 12,
+          "spell_name": "control water"
+        },
+        {
+          "level": 14,
+          "spell_name": "lunar veil"
+        },
+        {
+          "level": 16,
+          "spell_name": "horrid wilting"
+        },
+        {
+          "level": 18,
+          "spell_name": "meteor swarm"
+        }
+      ]
+    },
+    {
+      "name": "Occult",
+      "source": "Ultimate Magic",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "detect undead"
+        },
+        {
+          "level": 4,
+          "spell_name": "command undead"
+        },
+        {
+          "level": 6,
+          "spell_name": "twilight knife"
+        },
+        {
+          "level": 8,
+          "spell_name": "black tentacles"
+        },
+        {
+          "level": 10,
+          "spell_name": "snake staff"
+        },
+        {
+          "level": 12,
+          "spell_name": "create undead"
+        },
+        {
+          "level": 14,
+          "spell_name": "waves of exhaustion"
+        },
+        {
+          "level": 16,
+          "spell_name": "trap the soul"
+        },
+        {
+          "level": 18,
+          "spell_name": "gate"
+        }
+      ]
+    },
+    {
+      "name": "Plague",
+      "source": "Advanced Player's Guide",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "detect undead"
+        },
+        {
+          "level": 4,
+          "spell_name": "command undead"
+        },
+        {
+          "level": 6,
+          "spell_name": "contagion"
+        },
+        {
+          "level": 8,
+          "spell_name": "animate dead"
+        },
+        {
+          "level": 10,
+          "spell_name": "giant vermin"
+        },
+        {
+          "level": 12,
+          "spell_name": "create undead"
+        },
+        {
+          "level": 14,
+          "spell_name": "control undead"
+        },
+        {
+          "level": 16,
+          "spell_name": "create greater undead"
+        },
+        {
+          "level": 18,
+          "spell_name": "energy drain"
+        }
+      ]
+    },
+    {
+      "name": "Portents",
+      "source": "Ultimate Magic",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "ill-omen"
+        },
+        {
+          "level": 4,
+          "spell_name": "locate object"
+        },
+        {
+          "level": 6,
+          "spell_name": "blood biography"
+        },
+        {
+          "level": 8,
+          "spell_name": "divination"
+        },
+        {
+          "level": 10,
+          "spell_name": "contact other plane"
+        },
+        {
+          "level": 12,
+          "spell_name": "legend lore"
+        },
+        {
+          "level": 14,
+          "spell_name": "vision"
+        },
+        {
+          "level": 16,
+          "spell_name": "moment of prescience"
+        },
+        {
+          "level": 18,
+          "spell_name": "foresight"
+        }
+      ]
+    },
+    {
+      "name": "Shadow",
+      "source": "Advanced Player's Guide",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "silent image"
+        },
+        {
+          "level": 4,
+          "spell_name": "darkness"
+        },
+        {
+          "level": 6,
+          "spell_name": "deeper darkness"
+        },
+        {
+          "level": 8,
+          "spell_name": "shadow conjuration"
+        },
+        {
+          "level": 10,
+          "spell_name": "shadow evocation"
+        },
+        {
+          "level": 12,
+          "spell_name": "shadow walk"
+        },
+        {
+          "level": 14,
+          "spell_name": "shadow conjuration (greater)"
+        },
+        {
+          "level": 16,
+          "spell_name": "shadow evocation (greater)"
+        },
+        {
+          "level": 18,
+          "spell_name": "shades"
+        }
+      ]
+    },
+    {
+      "name": "Spirits",
+      "source": "Ultimate Magic",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "ghostbane dirge"
+        },
+        {
+          "level": 4,
+          "spell_name": "invisibility"
+        },
+        {
+          "level": 6,
+          "spell_name": "speak with dead"
+        },
+        {
+          "level": 8,
+          "spell_name": "spiritual ally"
+        },
+        {
+          "level": 10,
+          "spell_name": "mass ghostbane dirge"
+        },
+        {
+          "level": 12,
+          "spell_name": "shadow walk"
+        },
+        {
+          "level": 14,
+          "spell_name": "ethereal jaunt"
+        },
+        {
+          "level": 16,
+          "spell_name": "planar ally"
+        },
+        {
+          "level": 18,
+          "spell_name": "etherealness"
+        }
+      ]
+    },
+    {
+      "name": "Stars",
+      "source": "Ultimate Magic",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "faerie fire"
+        },
+        {
+          "level": 4,
+          "spell_name": "dust of twilight"
+        },
+        {
+          "level": 6,
+          "spell_name": "guiding star"
+        },
+        {
+          "level": 8,
+          "spell_name": "wandering star motes"
+        },
+        {
+          "level": 10,
+          "spell_name": "dream"
+        },
+        {
+          "level": 12,
+          "spell_name": "cloak of dreams 14th—circle of clarity"
+        },
+        {
+          "level": 16,
+          "spell_name": "euphoric tranquility"
+        },
+        {
+          "level": 18,
+          "spell_name": "astral projection"
+        }
+      ]
+    },
+    {
+      "name": "Strength",
+      "source": "Advanced Player's Guide",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "divine favor"
+        },
+        {
+          "level": 4,
+          "spell_name": "bull's strength"
+        },
+        {
+          "level": 6,
+          "spell_name": "greater magic weapon"
+        },
+        {
+          "level": 8,
+          "spell_name": "divine power"
+        },
+        {
+          "level": 10,
+          "spell_name": "righteous might"
+        },
+        {
+          "level": 12,
+          "spell_name": "bull's strength (mass)"
+        },
+        {
+          "level": 14,
+          "spell_name": "giant form I"
+        },
+        {
+          "level": 16,
+          "spell_name": "giant form II"
+        },
+        {
+          "level": 18,
+          "spell_name": "shapechange"
+        }
+      ]
+    },
+    {
+      "name": "Time",
+      "source": "Ultimate Magic",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "ventriloquism"
+        },
+        {
+          "level": 4,
+          "spell_name": "silence"
+        },
+        {
+          "level": 6,
+          "spell_name": "haste"
+        },
+        {
+          "level": 8,
+          "spell_name": "threefold aspect"
+        },
+        {
+          "level": 10,
+          "spell_name": "teleport"
+        },
+        {
+          "level": 12,
+          "spell_name": "disintegrate"
+        },
+        {
+          "level": 14,
+          "spell_name": "expend"
+        },
+        {
+          "level": 16,
+          "spell_name": "temporal stasis"
+        },
+        {
+          "level": 18,
+          "spell_name": "time stop"
+        }
+      ]
+    },
+    {
+      "name": "Transformation",
+      "source": "Advanced Player's Guide",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "jump"
+        },
+        {
+          "level": 4,
+          "spell_name": "bear's endurance"
+        },
+        {
+          "level": 6,
+          "spell_name": "beast shape I"
+        },
+        {
+          "level": 8,
+          "spell_name": "beast shape II"
+        },
+        {
+          "level": 10,
+          "spell_name": "beast shape III"
+        },
+        {
+          "level": 12,
+          "spell_name": "form of the dragon I"
+        },
+        {
+          "level": 14,
+          "spell_name": "form of the dragon II"
+        },
+        {
+          "level": 16,
+          "spell_name": "form of the dragon III"
+        },
+        {
+          "level": 18,
+          "spell_name": "shapechange"
+        }
+      ]
+    },
+    {
+      "name": "Trickery",
+      "source": "Advanced Player's Guide",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "animate rope"
+        },
+        {
+          "level": 4,
+          "spell_name": "mirror image"
+        },
+        {
+          "level": 6,
+          "spell_name": "major image"
+        },
+        {
+          "level": 8,
+          "spell_name": "hallucinatory terrain"
+        },
+        {
+          "level": 10,
+          "spell_name": "mirage arcana"
+        },
+        {
+          "level": 12,
+          "spell_name": "mislead"
+        },
+        {
+          "level": 14,
+          "spell_name": "reverse gravity"
+        },
+        {
+          "level": 16,
+          "spell_name": "screen"
+        },
+        {
+          "level": 18,
+          "spell_name": "time stop"
+        }
+      ]
+    },
+    {
+      "name": "Vengeance",
+      "source": "Ultimate Magic",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "burning hands"
+        },
+        {
+          "level": 4,
+          "spell_name": "burning gaze"
+        },
+        {
+          "level": 6,
+          "spell_name": "pain strike"
+        },
+        {
+          "level": 8,
+          "spell_name": "shout"
+        },
+        {
+          "level": 10,
+          "spell_name": "symbol of pain"
+        },
+        {
+          "level": 12,
+          "spell_name": "mass pain strike"
+        },
+        {
+          "level": 14,
+          "spell_name": "phantasmal revenge 16th—incendiary cloud"
+        },
+        {
+          "level": 18,
+          "spell_name": "winds of vengeance"
+        }
+      ]
+    },
+    {
+      "name": "Water",
+      "source": "Advanced Player's Guide",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "bless water/curse water"
+        },
+        {
+          "level": 4,
+          "spell_name": "slipstream*"
+        },
+        {
+          "level": 6,
+          "spell_name": "water breathing"
+        },
+        {
+          "level": 8,
+          "spell_name": "control water"
+        },
+        {
+          "level": 10,
+          "spell_name": "geyser*"
+        },
+        {
+          "level": 12,
+          "spell_name": "elemental body III (water only)"
+        },
+        {
+          "level": 14,
+          "spell_name": "elemental body IV (water only)"
+        },
+        {
+          "level": 16,
+          "spell_name": "seamantle*"
+        },
+        {
+          "level": 18,
+          "spell_name": "tsunami*"
+        }
+      ]
+    },
+    {
+      "name": "Winter",
+      "source": "Ultimate Magic",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "unshakable chill"
+        },
+        {
+          "level": 4,
+          "spell_name": "resist energy (cold only)"
+        },
+        {
+          "level": 6,
+          "spell_name": "ice storm"
+        },
+        {
+          "level": 8,
+          "spell_name": "wall of ice"
+        },
+        {
+          "level": 10,
+          "spell_name": "cone of cold"
+        },
+        {
+          "level": 12,
+          "spell_name": "freezing sphere 14th—control weather"
+        },
+        {
+          "level": 16,
+          "spell_name": "polar ray"
+        },
+        {
+          "level": 18,
+          "spell_name": "polar midnight"
+        }
+      ]
+    },
+    {
+      "name": "Wisdom",
+      "source": "Advanced Player's Guide",
+      "spells": [
+        {
+          "level": 2,
+          "spell_name": "shield of faith"
+        },
+        {
+          "level": 4,
+          "spell_name": "owl's wisdom"
+        },
+        {
+          "level": 6,
+          "spell_name": "magic vestment"
+        },
+        {
+          "level": 8,
+          "spell_name": "globe of invulnerability (lesser)"
+        },
+        {
+          "level": 10,
+          "spell_name": "dream"
+        },
+        {
+          "level": 12,
+          "spell_name": "globe of invulnerability (greater)"
+        },
+        {
+          "level": 14,
+          "spell_name": "spell turning"
+        },
+        {
+          "level": 16,
+          "spell_name": "protection from spells"
+        },
+        {
+          "level": 18,
+          "spell_name": "mage's disjunction"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data pipeline databases (downloaded)
+scripts/data/*.db
+scripts/data/raw/
+
+# Built SQLite database (regenerable from JSON)
+db/pathfinder.db

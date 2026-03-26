@@ -1,0 +1,13 @@
+{
+  "name": "pathfinder-local",
+  "owner": {
+    "name": "georgi"
+  },
+  "plugins": [
+    {
+      "name": "pathfinder",
+      "description": "Pathfinder 1e advisor — character management, game data queries, build optimization",
+      "source": "./"
+    }
+  ]
+}

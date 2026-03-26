@@ -4,12 +4,9 @@ The `data/guides/` directory contains 20 community optimization guides covering 
 
 ## How to Find the Right Guide
 
-Each guide directory has either an `index.md` (multi-file guide with sections) or a `guide.md` (single file). Both have YAML frontmatter with `classes` and `topics` fields.
+**Start with the index:** Read `data/guides/INDEX.md` for a complete listing of all guides organized by class and topic, with direct links to entry points.
 
-**To find guides for a class or topic:**
-```
-grep -rl "oracle" data/guides/*/index.md data/guides/*/guide.md
-```
+Each guide directory has either an `index.md` (multi-file guide with sections) or a `guide.md` (single file). Both have YAML frontmatter with `classes` and `topics` fields.
 
 **To find a specific recommendation within guides:**
 ```

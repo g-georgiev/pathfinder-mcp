@@ -1,0 +1,9 @@
+# Overview — The All-Seeing Eye
+
+Introduced first in 2010 with the release of the Advanced Player’s Guide, the Oracle class has quickly risen to the top of many players’ “Favorite Class” lists. I happen to include myself among those players! Mechanically, Oracles feel like an almost perfect marriage of the Sorcerer and Cleric classes: Mysteries feel and play a lot like Bloodlines, and both Sorcerers and Oracles are spontaneous casters; and yet, Oracles share their hit die, BAB progression, and divine spell list with the Cleric. In terms of flavor, well, Oracles can be anything you want them to be, from raging seers who channel the raw bloodshed of battle, to the traditional smoke-veiled mystics spinning prophecies from the movements of planets, patterns of bones, and whisperings of the wind. Thanks to the immense range of Mysteries and Curses available, there is no such thing as a “mainstream” Oracle: every combination of Mystery, Curse, and spells known will feel and play entirely differently from any other. You’re a snowflake, kid.
+
+Now, that’s not to say that there aren’t trap options and wrong turns that players, especially players new to Pathfinder, can take when building an Oracle, but then again, that’s what I’m here for: to guide you through the best of the best and the worst of the worst, explain what I can, render my judgments, and hopefully leave you with a sense of cohesion at the end of it all. We’ll go over some of the Prime Directives that govern the inner workings of the class in the next section, The Making of a Seer, but for now, let me just say that I hope you enjoy the guide. Please don’t hesitate to reach out to me on Reddit, where you can find me at my handle, /u/Allerseelen, as well as in my professional capacity as the head of All Souls Gaming on Patreon and Twitter. And with that, let’s get started! Happy hunting, my friends.
+
+All my best,
+
+Chris

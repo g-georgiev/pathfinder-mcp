@@ -40,12 +40,13 @@ deity: Deity Name
 5. **Quick Nav** — Two-column table: left = in-page anchors, right = reference file links
 6. **Ability Scores** — Table with Base, Racial, Item, Total, Mod, Notes columns. Source of each bonus noted.
 7. **Combat Stats**
-   - **AC** — Breakdown table: each component (base, DEX, armor, shield, natural, deflection, etc.) with source
-   - **HP** — Breakdown: hit dice, CON, feats, etc.
-   - **Saves** — Table with Base, Ability, Item, Total. Note which save progression (good/poor) and source
-   - **Special saves** — Line noting conditional save bonuses, SR, immunities. Link to source feat/feature
+   - **AC** — Breakdown table: each component (base, DEX, armor, shield, natural, deflection, etc.) with source. Include always-on bonuses (luck, insight from items) in the total, not as situational footnotes. Add tactical reminders for key reactive items (e.g. "Don't forget: Bracelet of Second Chances") near the stats they protect.
+   - **HP** — Breakdown table with explicit line items: hit dice (note max at L1 + avg-up thereafter), CON, favored class bonus, Toughness, etc. Include a **Current wounds** line for tracking damage between sessions.
+   - **Saves** — Table with Base, Ability, Item (broken out: resistance, competence, luck, etc.), Total. Note which save progression (good/poor) and source. Add tactical reminders for key reactive items near saves too.
+   - **Special saves** — Line noting conditional save bonuses, SR, immunities. Link to source feat/feature (e.g. Evasion, Stalwart, Shake It Off).
    - **Offense** — BAB, Initiative (with breakdown), Speed (with modifications), CMB, CMD (with breakdown)
-8. **Skills** — Table with Total, Ranks, Ability mod, Class skill bonus, Other bonus, Other Source. Show ranks spent vs available.
+   - **Attacks** — Full attack stat block: table with each iterative (Attack, AB, Damage, Crit). Below the table: AB breakdown formula, Damage breakdown formula. Then list common buff modifiers (Deadly Aim, Rapid Shot, Bane, etc.) with their AB/damage adjustments. Include threat range and AoO details if relevant.
+8. **Skills** — Table with Total, Ranks, Ability mod, Class skill bonus, Other bonus, Other Source. Show ranks spent vs available. Bake always-on bonuses (e.g. Pale Green Prism +1 competence, luck bonuses) into the totals rather than listing them as situational footnotes — note them in the Other Source column. Include item bonuses (e.g. skill-boosting gloves) in the total.
 9. **Feats** — Table with Level taken, linked feat name, quick effect, notes. Mark planned feats with `*(planned)*`.
 10. **Character Traits** — Table with linked name and effect.
 11. **Class Features — Quick Reference** — Subsections per class/source:
@@ -58,14 +59,29 @@ deity: Deity Name
     - CL, base DC formula, special notes (SR bonuses, arcana effects)
     - Slots per day table
     - Spell tables per level: linked name, action, range, duration, one-line effect, source
+    - Source column: "Known" for standard class spells, but also track item sources like "Page of Spell Knowledge", "Ring of Spell Storing", etc.
     - Mark future spell levels with `*(planned)*`
+    - After spell tables: **Item-Based Abilities** section for spell-like effects from equipment (e.g. Teleport from Helm, Haste from Boots)
+14. **Equipment** — Organized by category:
+    - **Weapons**: Name, enhancement, special abilities
+    - **Worn Items**: All slotted items with effect summaries
+    - **Ioun Stones**: List with effects (note if in Wayfinder)
+    - **Special Items**: Custom/unique items with full descriptions
+    - **Figurines / Companions**: If any
+    - **Consumed / Given Away**: Historical record of used-up items
+    - Link standard Pathfinder items to d20pfsrd.com: `[Item Name](https://www.d20pfsrd.com/...)`
+    - Mark custom/homebrew items with `*(custom)*`
+15. **Campaign-Specific Features** (if any) — Dedicated section for non-standard abilities granted by the campaign (blessings, boons, custom systems like eidolon evolutions). Subsection per feature with quick-reference tables and links to features.md for full descriptions.
 
 ### Formatting Rules
 
 - **Traceability**: Every derived number shows its math. AC 16 = 10 + 2 DEX + 4 Mage Armor. Don't just state totals.
 - **Links**: Every spell, feat, and feature name links to its detail in the corresponding reference file: `[Spell Name](spells.md#spell-name)`
+- **Equipment links**: Standard Pathfinder items link to d20pfsrd.com. Custom/homebrew items are marked `*(custom)*`.
+- **Always-on bonuses**: Bake permanent bonuses (luck, competence from always-active items/abilities) into totals. Don't relegate them to "situational" footnotes if they're always active.
+- **Tactical reminders**: For key reactive items (Bracelet of Second Chances, reroll abilities, etc.), add a bold "Don't forget" callout near the stats they protect (AC, saves). These are easy to miss in combat.
 - **Planned vs current**: Anything not available at current level: `*(planned)*`
-- **Source attribution**: Feats show level taken. Spells show source (chosen, bloodline bonus, curse bonus, archetype). Skills show what contributes to "other" bonuses.
+- **Source attribution**: Feats show level taken. Spells show source (chosen, bloodline bonus, curse bonus, archetype, or item like "Page of Spell Knowledge"). Skills show what contributes to "other" bonuses.
 - **Bold totals**: Use `**bold**` for final computed values in tables.
 - **House rules**: Note inline where a house rule affects a calculation, e.g. `*(house rule: DEX replaces STR)*`
 
@@ -177,6 +193,88 @@ Categories (in order):
 ---
 ```
 
+## state.md Structure
+
+The state file tracks live, session-to-session combat and exploration state. It persists between conversations so you can pick up mid-combat next session.
+
+```markdown
+# {Name} — Active State
+
+*Last updated: 2026-03-26, round 3 of combat vs 2 vampires*
+
+## Combat Toggles
+
+Modifiers you routinely activate in combat. These are applied by default when generating attack/damage rolls.
+
+| Toggle | Effect | Notes |
+|--------|--------|-------|
+| Deadly Aim | -4 attack / +8 damage | Always on for ranged |
+| Rapid Shot | -2 attack / +1 extra attack | Full attack only |
+
+## Active Buffs
+
+| Buff | Source | Effect | Duration | Rounds Left |
+|------|--------|--------|----------|-------------|
+| Divine Favor | Self (spell) | +3 luck to attack & damage | 1 min | 7 |
+| Shield of Faith | Self (spell) | +3 deflection AC | 13 min | — |
+| Bit of Luck | Domain power | Next d20 rolls twice, takes better | 1 round | 1 |
+
+## Active Conditions
+
+| Condition | Source | Effect | Duration |
+|-----------|--------|--------|----------|
+| Shaken | Enemy fear aura | -2 attacks, saves, skill checks, ability checks | Until end of encounter |
+
+## Ability Modifications
+
+Temporary changes to ability scores (enhancement, drain, damage, penalties).
+
+| Ability | Modifier | Type | Source | Duration |
+|---------|----------|------|--------|----------|
+| DEX | -2 | Drain | Vampire slam | Permanent until restored |
+| WIS | +4 | Enhancement | Owl's Wisdom | 13 min |
+
+## Resource Tracking
+
+### Spells Remaining
+
+| Level | Total | Used | Remaining |
+|-------|-------|------|-----------|
+| 1st | 7 | 2 | 5 |
+| 2nd | 6 | 1 | 5 |
+| 3rd | 6 | 3 | 3 |
+| 4th | 5 | 0 | 5 |
+| 5th | 2 | 0 | 2 |
+
+### Class Resources
+
+| Resource | Total | Used | Remaining |
+|----------|-------|------|-----------|
+| Grit | 8 | 1 | 7 |
+| Bit of Luck | 11/day | 3 | 8 |
+| Binding Ties | 11/day | 0 | 11 |
+| Seize the Initiative | 11/day | 1 | 10 |
+| Good Fortune | 1/day | 0 | 1 |
+| Unity | 2/day | 0 | 2 |
+
+## Session Notes
+
+Free-form notes about the current situation for continuity.
+
+- Round 3 of combat, 2 vampires remaining (one at ~half HP)
+- Roland is 40ft from south wall, behind partial cover
+- Ally (Nettle) is adjacent to vampire 1, flanking with summoned creature
+```
+
+### state.md Conventions
+
+- **Combat toggles** are separate from buffs — they're player choices that stay on across combats, not timed effects.
+- **Rounds left** uses numbers for in-combat tracking, "—" for long-duration buffs that won't expire mid-combat.
+- **Ability modifications** stack by type per PF1e rules. Note the type (enhancement, morale, drain, damage, penalty) so stacking is correct.
+- **Resource tracking** resets on "new day" — when the user says they rest, clear all used counts and remove expired buffs/conditions.
+- **Session notes** are free-form context for picking up next session. Include tactical positioning, enemy status, anything relevant.
+- When state.md doesn't exist, the character has no active modifiers (fresh state).
+
 ## Data Lookup Process
 
 When creating a character sheet, for every spell, feat, and feature:
@@ -193,7 +291,8 @@ Never write a spell/feat entry with just a name and no description. The whole po
 
 For gestalt builds:
 - List both classes in the class table with slot numbers
-- Use the higher HD, better save progression, and better BAB
+- Use the higher HD and better BAB
+- **Saves**: Pick one class's full save progression — you cannot mix (e.g. Fort from one class, Ref from another). Note which class's saves are used and why (e.g. "Inquisitor saves for better Will")
 - Class features stack (both classes' features apply)
 - Spellcasting sections are separate per class
 - Skills use the better skill ranks per level

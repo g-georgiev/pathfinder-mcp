@@ -55,35 +55,48 @@ The `data/guides/` directory contains optimization guides written by the Pathfin
 
 **If you are an author listed below and would like your content removed from this repository, please open an issue or contact the maintainer directly. Your content will be removed promptly.**
 
-### Included Guides
+### Included Guides (38 guides, 258 files, 7.1MB)
 
 | Guide | Author | Original Source | Classes |
 |-------|--------|-----------------|---------|
-| Bell, Book, & Candle: A Guide to the Pathfinder Oracle | Allerseelen (All Souls Gaming) | [Google Doc](https://docs.google.com/document/d/1sRwsWVteboan4Gc5iIhuvCMMm5a0dd04GMK4HtjHFV8/edit) | Oracle |
-| The Inquisitor's Symposium: A Guide to the Pathfinder Inquisitor | Allerseelen (All Souls Gaming) | [Google Doc](https://docs.google.com/document/d/1sFi5J6RODbKOYJglbELAM7bSLq9XCo7DO9QEtywZC5k/edit) | Inquisitor |
-| The Investigator's Academy: A Guide to the Pathfinder Investigator | Allerseelen (All Souls Gaming) | [Google Doc](https://docs.google.com/document/d/1BkI5ph1ZDPRt8YrkCl9hG1VF8vHYbkC1nMRT9RcQGGE/edit) | Investigator |
-| Significantotter's Guide to the Arcane Trickster | Significantotter | [Google Doc](https://docs.google.com/document/d/1tpOQy_vA7SiaeU-YV5NnHJwVHpy-L9Spt-9RNYu-gSg/edit) | Arcane Trickster |
-
-### Queued Guides (not yet ingested)
-
-| Guide | Author | Original Source | Classes |
-|-------|--------|-----------------|---------|
-| Surpassing even The Boss: Guide to the Gunslinger | N. Jolly | [Google Doc](https://docs.google.com/document/d/1En2ECuP1v63kTqGIUx5dpuhZQuoXl9Tc0UEj3P_xYN0/edit) | Gunslinger |
+| Bell, Book, & Candle | Allerseelen | [Google Doc](https://docs.google.com/document/d/1sRwsWVteboan4Gc5iIhuvCMMm5a0dd04GMK4HtjHFV8/edit) | Oracle |
+| The Inquisitor's Symposium | Allerseelen | [Google Doc](https://docs.google.com/document/d/1sFi5J6RODbKOYJglbELAM7bSLq9XCo7DO9QEtywZC5k/edit) | Inquisitor |
+| The Investigator's Academy | Allerseelen | [Google Doc](https://docs.google.com/document/d/1BkI5ph1ZDPRt8YrkCl9hG1VF8vHYbkC1nMRT9RcQGGE/edit) | Investigator |
+| Guide to the Arcane Trickster | Significantotter | [Google Doc](https://docs.google.com/document/d/1tpOQy_vA7SiaeU-YV5NnHJwVHpy-L9Spt-9RNYu-gSg/edit) | Arcane Trickster |
+| Surpassing even The Boss | N. Jolly | [Google Doc](https://docs.google.com/document/d/1En2ECuP1v63kTqGIUx5dpuhZQuoXl9Tc0UEj3P_xYN0/edit) | Gunslinger |
 | Pathfinder Prestige Class Guide | Unknown | [Google Doc](https://docs.google.com/document/d/1d_EuU-PVeU0MQWwZPpHQ5w_Rsk76uRDv6_jLyS4jyDM/edit) | Prestige Classes |
-| Bombs, Brews, and Blights: Guide to the Alchemist | Iluzry | [Google Doc](https://docs.google.com/document/d/1uvX6Y8mHCdVFgTpLk9PjWU60bFFXSQEVKhGDl1knlpk/edit) | Alchemist |
-| Rogue Eidolon's Guide to Rogues | Rogue Eidolon | [Google Doc](https://docs.google.com/document/d/13sCICmxwkq5yxdXVQqRr-H-SYrwUww13UFsKDcGJyJ4/edit) | Rogue |
-| Magic Beyond Magic: Guide to the Arcanist | Iluzry | [Google Doc](https://docs.google.com/document/d/1esXAlfclC1lDyJ2pOWzfYPkHs8ajQ79UV5SdvjYYMsY/edit) | Arcanist |
-| Unlimited Mageworks: Guide to the Sorcerer | Iluzry | [Google Doc](https://docs.google.com/document/d/17AbVMAIfWtRbXqavMevutmXhfuU-zYXY24yX01KFy74/edit) | Sorcerer |
-| "BLOW THEM TO SMITHEREENS!" Master Blaster Caster Guide | Unknown | [Google Doc](https://docs.google.com/document/d/17YnRW-LlKLUAW6cZ0EwndgpR35EDLk7jFI_0Z1ydtzU/edit) | Sorcerer, Wizard |
-| Blessed Be the Faithful: Guide to Clerics | Iluzry | [Google Doc](https://docs.google.com/document/d/15_OF0nNyOvMjjdcKkpWRHzWKHP4oZWPMcBWpKGT9e9s/edit) | Cleric |
-| Pathfinder First Edition Magic Items by Build | BrotherPatrick | [Google Doc](https://docs.google.com/document/d/1uQlSAhs_s0mnWkCiQPbyJaaZVVkWcBlnnYl__fnuAzg/edit) | General |
-| Pathfinder Gestalt Character Guide | Community | [Google Doc](https://docs.google.com/document/d/17Wv_-l25HMy3LORJ3JKSFjAf0P5Tjyhzdb6bT7oZviM/edit) | Gestalt |
-| Getting X to Y: Guide to Ability Scores | Unknown | [Google Doc](https://docs.google.com/document/d/1o91Z-s0R7Vf2Ujj1lFqGC5W--9JOyU0I6uC9XRIR5to/edit) | General |
-| Tips and Traits: Guide to Pathfinder Traits | Unknown | [Google Doc](https://docs.google.com/document/d/1dVQA-uI740Hh8vq-zsnbHV6UwJg-4QKlpmkxBEmCdhA/edit) | General |
-| The Armamentarium: Guide to Wondrous Items | Unknown | [Google Doc](https://docs.google.com/document/d/1ERhx5kiVaTRSPX1Uy9h3uWZieqPsDNoiT9TkKTC2qxk/edit) | General |
-| Building God's Grimoire: Guide to Sorcerer Spells | Iluzry | [Google Doc](https://docs.google.com/document/d/1_yWa7IJo2f8yD5MTSS7jAOGuo5xCRBjxBf2A2pMq1qs/edit) | Sorcerer |
-| In Totality: Guide to Cleric/Oracle/Warpriest Spells | platinumCheesecake | [Google Doc](https://docs.google.com/document/d/1-5ZWOW3fZrJmJsWYU6ssaqWyhn-YWwoIlAQqfGzm774/edit) | Cleric, Oracle, Warpriest |
+| Bombs, Brews, and Blights | Iluzry | [Google Doc](https://docs.google.com/document/d/1uvX6Y8mHCdVFgTpLk9PjWU60bFFXSQEVKhGDl1knlpk/edit) | Alchemist |
+| Guide to Rogues | Rogue Eidolon | [Google Doc](https://docs.google.com/document/d/13sCICmxwkq5yxdXVQqRr-H-SYrwUww13UFsKDcGJyJ4/edit) | Rogue |
+| Magic Beyond Magic | Iluzry | [Google Doc](https://docs.google.com/document/d/1esXAlfclC1lDyJ2pOWzfYPkHs8ajQ79UV5SdvjYYMsY/edit) | Arcanist |
+| Unlimited Mageworks | Iluzry | [Google Doc](https://docs.google.com/document/d/17AbVMAIfWtRbXqavMevutmXhfuU-zYXY24yX01KFy74/edit) | Sorcerer |
+| Master Blaster Caster Guide | Unknown | [Google Doc](https://docs.google.com/document/d/17YnRW-LlKLUAW6cZ0EwndgpR35EDLk7jFI_0Z1ydtzU/edit) | Sorcerer, Wizard |
+| Blessed Be the Faithful | Iluzry | [Google Doc](https://docs.google.com/document/d/15_OF0nNyOvMjjdcKkpWRHzWKHP4oZWPMcBWpKGT9e9s/edit) | Cleric |
+| Magic Items by Build | BrotherPatrick | [Google Doc](https://docs.google.com/document/d/1uQlSAhs_s0mnWkCiQPbyJaaZVVkWcBlnnYl__fnuAzg/edit) | General |
+| Gestalt Character Guide | Community | [Google Doc](https://docs.google.com/document/d/17Wv_-l25HMy3LORJ3JKSFjAf0P5Tjyhzdb6bT7oZviM/edit) | Gestalt |
+| Getting X to Y | Unknown | [Google Doc](https://docs.google.com/document/d/1o91Z-s0R7Vf2Ujj1lFqGC5W--9JOyU0I6uC9XRIR5to/edit) | General |
+| Tips and Traits | Unknown | [Google Doc](https://docs.google.com/document/d/1dVQA-uI740Hh8vq-zsnbHV6UwJg-4QKlpmkxBEmCdhA/edit) | General |
+| The Armamentarium | Unknown | [Google Doc](https://docs.google.com/document/d/1ERhx5kiVaTRSPX1Uy9h3uWZieqPsDNoiT9TkKTC2qxk/edit) | General |
+| Building God's Grimoire | Iluzry | [Google Doc](https://docs.google.com/document/d/1_yWa7IJo2f8yD5MTSS7jAOGuo5xCRBjxBf2A2pMq1qs/edit) | Sorcerer |
+| In Totality | platinumCheesecake | [Google Doc](https://docs.google.com/document/d/1-5ZWOW3fZrJmJsWYU6ssaqWyhn-YWwoIlAQqfGzm774/edit) | Cleric, Oracle, Warpriest |
 | Marshmallow's Guide to the Fighter | Marshmallow | [Google Doc](https://docs.google.com/document/d/1zM-CtViquLIQjpVgSI1Ot7zHAyIt_0U6dWvfGjA72lo/edit) | Fighter |
+| Guide to the Paladin/Antipaladin | Iluzry | [Google Doc](https://docs.google.com/document/d/1lXA8U0D-dVZQXcHmq4lIS07-Mtz8uDpdSMNkyOW_BNY/edit) | Paladin, Antipaladin |
+| Deadeye's Archery Paladin | Deadeye | [Google Doc](https://docs.google.com/document/d/1ID4_wGGCEsDsNGbDzn3hEfci-R1hq6WeT7IdEB4FxWU/edit) | Paladin |
+| Lord of Rage: Guide to the Barbarian | N. Jolly | [Google Doc](https://docs.google.com/document/d/1plVgdYb5KYxtXiysgd_pzdK-37PCmz2u9VzpuvNPDdo/edit) | Barbarian |
+| Beyond The Blinding Fury | Iluzry | [Google Doc](https://docs.google.com/document/d/1fd7yBuCLWaytw8OFeZIXPCW0oUvPHwDGMDWWLoFe4xA/edit) | Barbarian |
+| BARBARIAN AM SMASH | Trinam | [Google Doc](https://docs.google.com/document/d/1Ump_KFzNoD7x6aJ9ywGank5G9DzSVlef28bBbjuIq2U/edit) | Barbarian |
+| The Show Must Go On | Iluzry | [Google Doc](https://docs.google.com/document/d/1zUWy_N76REjznrWlOzsDYy6Akast4bxS8z_RkLZgegQ/edit) | Bard |
+| All the World's a Stage | Unknown | [Google Doc](https://docs.google.com/document/d/1ogz8HL6GeguT-tN3-6HxXiF_G7mg_tyAQ59V9kPg6g4/edit) | Bard |
+| Guide to the Buffer Bard | Unknown | [Google Doc](https://docs.google.com/document/d/1b1hq_xhfCFjtAyjJMKrdtxRbtDEC1kNm6ZYfvS6HqIw/edit) | Bard |
+| Becoming A Force of Nature | Iluzry | [Google Doc](https://docs.google.com/document/d/11_R80-e0ApO0g8bv2ZzQpb5V7NPIAtb7OKy5M6AGGQ0/edit) | Druid |
+| Faerie Tricks & Big Sticks | Iluzry | [Google Doc](https://docs.google.com/document/d/1wxWuKzXKIrdMEN8Pn5mr5vcasdtf0Gzj8A_8NehxtJE/edit) | Druid |
+| Prometeus Guide to the Druid | Prometeus | [Google Doc](https://docs.google.com/document/d/1PXamF43boZgYtCUlyJAMojfrPaAdYyjPOaGOo1vfqdM/edit) | Druid |
+| Shutting Down Enemies | Unknown | [Google Doc](https://docs.google.com/document/d/1YkARuboGbaCVdOpcgoA0epQFqBlCygzzUsgaBdba9BE/edit) | Witch |
+| Owl's Guide to Witches | Owl | [Google Doc](https://docs.google.com/document/d/1tYE8wheVXGAitQzgLW15X8RoPI8-d27o_GTgUXSVHZ0/edit) | Witch |
+| Myrrh, Frankincense, and Steel | Kurald Galain | [Google Doc](https://docs.google.com/document/d/1jaxkoUJY6hWg5hrNi3KDk42nzq3xXeMCfQLVp55aeRY/edit) | Magus |
+| Forger's Supplemental Guide to the Magus | Forger | [Google Doc](https://docs.google.com/document/d/1sQxhtYSMvzoAcVkDkn94vbDWP5pJtKwsOFCWEe_NzZg/edit) | Magus |
+| Jam's Blended Archetype Guide: The Monk | JAM | [Google Doc](https://docs.google.com/document/d/1-IdBUQ7A8FNa_R_caBNFXdaurdWgAaE4qpzzU_AcRBI/edit) | Monk |
+| Master of Many Styles | Unknown | [Google Doc](https://docs.google.com/document/d/1r-Wh9DgkEwF3Wtj8QMDTdF2kVpQVCS5BCjU2vPcG7Wk/edit) | Monk |
+| Optimizing your Qinggong Monk | Unknown | [Google Doc](https://docs.google.com/document/d/15c_ACgqmpVPY82d4-WSWHGmZXyjiVW9D6311QOneU0U/edit) | Monk |
 
 ## Game Data Sources
 

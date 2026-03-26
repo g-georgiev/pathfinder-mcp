@@ -167,11 +167,68 @@ GUIDE_SECTIONS = {
         ("Equipment", "equipment", "Equipment"),
         ("Sample Builds", "builds", "Sample Builds"),
     ],
+    "paladin-iluzry": [
+        ("Introduction", "overview", "Introduction & Rating System"),
+        ("Class Overview", "class-overview", "Class Overview & Chassis"),
+        ("Roles and Ability Scores", "roles", "Roles and Ability Scores"),
+        ("Races", "races", "Races"),
+        ("Mercies", "mercies", "Mercies & Cruelties"),
+        ("Animal Companions", "companions", "Animal Companions"),
+        ("Paladin Spellcasting", "spells", "Spellcasting"),
+        ("Archetypes", "archetypes", "Archetypes"),
+        ("Multiclassing", "multiclass", "Multiclassing & Prestige"),
+        ("Feats", "feats", "Feats"),
+        ("Equipment", "equipment", "Equipment"),
+        ("Sample Builds", "builds", "Sample Builds"),
+    ],
+    "bard-iluzry": [
+        ("Introduction", "overview", "Introduction & Rating System"),
+        ("Class Overview", "class-overview", "Class Overview & Chassis"),
+        ("Roles and Ability Scores", "roles", "Roles and Ability Scores"),
+        ("Races", "races", "Races"),
+        ("Bardic Performances", "performances", "Bardic Performances"),
+        ("Bardic Masterpieces", "masterpieces", "Bardic Masterpieces"),
+        ("Spells", "spells", "Spells & Spellcasting"),
+        ("Archetypes", "archetypes", "Archetypes"),
+        ("Multiclassing", "multiclass", "Multiclassing & Prestige"),
+        ("Feats", "feats", "Feats"),
+        ("Equipment", "equipment", "Equipment"),
+        ("Sample Builds", "builds", "Sample Builds"),
+    ],
+    "druid-iluzry": [
+        ("Introduction", "overview", "Introduction & Rating System"),
+        ("Class Overview", "class-overview", "Class Overview & Chassis"),
+        ("Roles and Ability Scores", "roles", "Roles and Ability Scores"),
+        ("Races", "races", "Races"),
+        ("Wild Shape", "wildshape", "Wild Shape"),
+        ("Druid Domains", "domains", "Domains"),
+        ("Animal Companions", "companions", "Animal Companions"),
+        ("Archetypes", "archetypes", "Archetypes"),
+        ("Multiclassing", "multiclass", "Multiclassing & Prestige"),
+        ("Feats", "feats", "Feats"),
+        ("Equipment", "equipment", "Equipment"),
+        ("Sample Builds", "builds", "Sample Builds"),
+    ],
+    "druid-spells-iluzry": [
+        ("Introduction", "overview", "Introduction & Rules"),
+        ("Cantrips", "cantrips", "Cantrips"),
+        ("1st Level", "level-1", "1st Level Spells"),
+        ("2nd Level", "level-2", "2nd Level Spells"),
+        ("3rd Level", "level-3", "3rd Level Spells"),
+        ("4th Level", "level-4", "4th Level Spells"),
+        ("5th Level", "level-5", "5th Level Spells"),
+        ("6th Level", "level-6", "6th Level Spells"),
+        ("7th Level", "level-7", "7th Level Spells"),
+        ("8th Level", "level-8", "8th Level Spells"),
+        ("9th Level", "level-9", "9th Level Spells"),
+    ],
 }
 
 
 def read_guide(dirname):
     path = f"data/guides/{dirname}/guide.md"
+    if not os.path.exists(path):
+        return None, None
     with open(path) as f:
         text = f.read()
 
@@ -232,6 +289,10 @@ def find_section_boundaries(body, sections):
 def split_guide(dirname):
     sections = GUIDE_SECTIONS[dirname]
     frontmatter, body = read_guide(dirname)
+
+    if frontmatter is None:
+        print(f"  SKIP {dirname}: already split (no guide.md)")
+        return None
 
     # Parse frontmatter for index
     fm_lines = frontmatter.split("\n")

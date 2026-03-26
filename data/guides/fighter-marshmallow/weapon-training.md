@@ -1,0 +1,3 @@
+# Advanced Weapon Training
+
+Advanced Weapon Training [Combat] (Weapon Master’s Handbook): in case you forgot me mentioning it earlier, this feat exists to give you more of you class features, like Extra Magus Arcana or Extra Rage Power. It is gated by levels, and you can only take it once for every five levels you have. Remember, options like Barroom Brawler make it better not taking this, leaving you with an “open AWT slot” able to pick up any one of them on the fly. It’s a high level thing, since it really won’t be an option until around 10th level, you still might consider not taking this until then and it could be worth it for the added utility. Or take it and retrain out of it at 8th, just to get it back at 9th for free and retain your Barroom Brawler utility.

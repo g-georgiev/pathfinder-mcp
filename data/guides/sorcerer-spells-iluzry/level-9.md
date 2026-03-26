@@ -1,0 +1,34 @@
+# 9th Level Spells
+
+9th Level Spells
+	Control
+	                                                * Tsunami: Lots of water, forced movement, and SR no. Will it always work? No but hey being a force of nature is fun.
+	Buff
+	                                                * Shapechange: All of the best forms of everything, forever, and you can swap whenever you want. Take this with a ring of continuation and enjoy being the ultimate monster.
+	Debuff
+	                                                * ✰Mage’s Disjunction✰ (also Utility): True Dispel Magic. No SR. Objects CAN get saves but...as a standard action, you point to a spot within close range? Everything within 40 feet of whatever you pointed at that isn't yours? Is dispelled. Immediately torn to pieces. Curses? Gone. Cursed items? Rektd. This is...well it’s the ultimate anti magic spell and will always be super mega ultra useful...and again...No SR.
+                                                * Mass Icy Prison: Enemy team, Reflex save (w /SR). Do they fail? Then they are instantly paralyzed and frozen. GG numbnuts.
+                                                * Mass Suffocation: Enemy Team, Fort save (w /SR). Do they fail? Everyone starts getting force choked to death...and failing even 1 save can basically end someone. Regeneration doesn’t save you. Nothing saves you but that SR and whether or not you need to breath.
+                                                * Overwhelming Presence: Enemy Team, Will save (w/ SR). Do they fail? They revere you as the god that you had become, and worship at your feet. Will they make devoted followers, or fresh sacrifices? You decide.
+                                                * Energy Drain: So no save, ranged touch attack (w/ SR). Do they fail? Okay they take 2d4 negative levels...which can stack...FAST. That’s penalties to eVERYTHING, health, saves, attack rolls. When you can’t flat out kill something easily? This is a great way to make it’s life a living hell.
+	Blast
+	                                                * N/A
+	Summons
+	                                                * N/A
+	Utility
+	                                                * ✰Time Stop✰ (also Protection/Buff): This is what godhood feels like. Reach into the gears of creation, O caster mine, and find that they rend at your touch. Hold them still so that you may revel in your Mastery. Basically, roll 1d4+1. For that many rounds, you can do...whatever as the world freezes around you. Continuous area of effects within the environment can still hurt you, and you can’t affect any people directly...BUUUT you can spend these rounds escaping, summoning, buffing or doing whatever else you think will absolutely ruin the DM’s day. This should probably be the first spell you always cast in any fight because action economy wins games and this is MASTERY of action economy. 
+
+Lastly...Oh to heck with it - #ZAWARUDO #KINGUCRIMSON #PART5ISBETTERPART3FITEME #ENDOFTHEWWWOOOOORLD #TRAITORSREQUIMBOPS #HELLYEAHNONBINARYVILLIANSOLIDARITY #LETSGOJOJO!!!!
+                                                *  Dominate Monster: Will Save (w/ SR) or ya know you own whatever you aim this at. Owning people is wrong but if you can do this, it obviously is fantastic!!! 
+                                                * ✰Shades✰ (also Control/Debuff/Blast/Summons/Protection): Cast ANY CONJURATION SPELL 8th and below. ANY. ANY. Healing spells? Yes. Teleportation? Yes. Resurrection? Yes. Yes, yes, yes with none of the components, it just fucking does the thing. THIS is our Wish, because it’s not abhorrently expensive and is still obviously, incredibly and uniquely busted as fuck as we can just steal every conjuration spell from ANY spell list because we are the sorcerer and fuck you thats why.
+
+Note: This is based off of the expanded interpretation of the spell, as this spell simply says conjuration spell, with no spell list or type limiters, whereas both shadow conjuration and greater shadow conjuration spells specifically call out wizard spells of specific subtypes. If your dm rules, instead that this works EXACTLY like shadow conjuration, just higher level, then this goes to still pretty good. I personally don’t agree with this but, I cannot begrudge anyone for being conservative with casters. I would say that at the very least, you should let players at this level cast ANY wizard/sorc conjuration spell, rather than just summoning and creation.
+	Protection
+	                                                   * Prismatic Sphere (w/ Project Image): You can pass in and out of it without problem BUT stop any attempt to project things THROUGH the sphere…OH RIGHT PROJECT FUCKING IMAGE WOULD MAKE THIS MUCH BETTER! HUH!!!! Anyway it’s a 10 minutes per level dome of fuck off, and is absolutelyl fucking hilarous because unless you have the super special magical keys to get through it you are basically just fucked.
+                                                   * Astral Projection (also Utility): Welcome to the ultimate in planar travel and also never dying ever because why would we do that idiot we are gods lmao. If the wizard has this, let them do it, but if you want it, you can enjoy having as many 1 up’s as you need.
+                                                   * Spellbane (w/ Emergency Attunement): Pick 1 spell per 5 caster levels...that spell just don’t work on you, as if under the effect of an antimagic field. ONLY that iteration and specific version of that spell. Now normally...I’d consider this mid at best, just because it doesn’t protect you from much...That said if you combine it with Emergency attunement, giving you the ability to abuse it’s long duration and swap spells on the fly, it’s a MONSTER.
+	9th Lvl Alt Sources
+	                                                   * Wish (scroll/ring of three wishes): Okay this is the ULTIMATE arcane spell, THE iconic 9th level spell, the “I guess do what you want, you are the dm for 6 second spell” and as much as I ABSOLUTELY ADORE IT in pathfinder 1e, it is way too god damn expensive to use. If you REALLY, REALLY need to cast wish??? Bind an Efreeti like the rest of us do. It’s much more sustainable.
+                                                   * Gate (scroll): Remember what I said about summoning gods in Greater Planar binding? Well now we can do that part. Most times It won’t be necessary but like...we can do it.
+                                                   * Create Demiplane Greater (scroll): Make the realm of your dreams! Do whatever! You are gods now, just enjoy hyper minecraft I guess.
+                                                   * Ascension (scroll/mnemonic vestment): Spend 10,000gp if you have a minor artifact and cONGRATS your whole team can get mythic tiers temporarily. Is this something you will do often? No. Is it absolutely sick as hell? Obviously.

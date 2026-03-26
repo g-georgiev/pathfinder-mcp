@@ -1,0 +1,28 @@
+# Arachnid (Allerseelen’s Rewrite)
+
+Arachnid (Allerseelen’s Rewrite)
+
+
+        (2) Heightened Senses (Ex): At 2nd level, an arachnid wildsoul can anticipate physical danger and react astonishingly quickly. He gains the stalker sense vigilante talent, even if he is not a stalker.
+
+
+                No changes here. It’s a good ability.
+
+
+(6) Shoot Webs (Ex): At 6th level, an arachnid wildsoul’s wrists can produce thick, sticky webbing that he can shoot at his enemies. Shooting webbing is a ranged touch attack with a range increment of 10 feet. The webbing acts as a tanglefoot bag when it hits a creature, except the DC of the Reflex save to avoid being glued to the floor or unable to fly is equal to 10 + 1/2 the arachnid wildsoul’s vigilante level + his Constitution modifier. Like a tanglefoot bag, the webbing does not work underwater. The arachnid wildsoul can shoot webs a number of times per day equal to 5 + Constitution modifier.
+Additionally, at 6th level, an arachnid wildsoul can coat his hands and feet in super-sticky webbing, even over equipment such as gloves and boots. This gives him a climb speed of 30 feet. As a move action that provokes attacks of opportunity, an arachnid wildsoul can use his webbing to create the equivalent of a 50-foot length of silk rope (hp 4, break DC 24) and can shoot it at any flat, unoccupied surface that is at least one 5-foot square in size. If the arachnid wildsoul succeeds at a ranged attack against AC 10, the rope sticks fast to the surface, can only be removed if it is destroyed, and can support the weight of the arachnid wildsoul plus one additional Medium or smaller creature. Alternatively, he can create numerous web-ropes as he is moving and swing from rope to rope, essentially allowing him to move at his base speed through the air as long as he always uses at least one hand to hold the webbing and continues to have tether points within 50 feet and above him. The web ropes he creates in this way dissolve as soon as he is done using them to swing.
+
+
+        My rewrite essentially combines shoot webs, web specialist, and web master into one ability, and adds a few more uses per day to shoot webs. It’s strong, even for a vigilante talent, but I don’t think it’s anywhere close to broken. Aerokineticists, occultists, and arcane casters of nearly any variety can fly as often as they want at faster speeds and without any restrictions on having solid surfaces within 50 feet of them, so it doesn’t feel crazy to offer limited “flight” to this archetype. I bumped up the base uses per day of shoot webs, too, in light of the fact that not everyone will have a great Constitution modifier.
+
+
+        (12) Web Sling (Ex): At 12th level, an arachnid wildsoul has become adept at using his webs to launch objects at foes. Treat this ability as an aetherkineticist’s telekinetic blast wild talent, except the arachnid wildsoul must have an unimpeded line of sight to the object being thrown. At 16th level, the range of the arachnid wildsoul’s web sling increases from 30 feet to 120 feet.
+
+
+        This is another iconic Spiderman move, right? Grab a manhole cover, fling it at a bad guy. As strong as it may sound to give another class a kineticist’s simple blast, it’s actually not so bad. There aren’t any infusions, metakinesis, composite blasts, or elemental overflow to worry about, so even 20th-level arachnid wildsouls will only be able to deal 10d6 + 10 + Constitution modifier damage per hit. That’s, what, about 50 damage? It’s fun flavor, but CR 20 enemies have about 370 HP on average, so 50 damage isn’t gonna break the bank. You can consider giving it the empower metakinesis at 16th level, if you want average damage to jump to around 70.
+
+
+        (16) Moment of Glory (Ex): At 16th level, an arachnid wildsoul is capable of inhuman feats of strength or speed when forced into desperate action. Once per day, he may treat his Strength or Dexterity score as 20 points higher for the purposes of one Reflex save, Strength-based skill or ability check, or Dexterity-based skill or ability check (including initiative rolls). The arachnid wildsoul is treated as possessing evasion and improved evasion, as the rogue class features, if he uses moment of glory to modify a Reflex save. If he has fewer than 20% of his maximum hit points and the GM agrees that the action is suitably legendary in scale, he may use this ability without expending his daily use of moment of glory, and may do so even if the daily use has already been expended. Hit point damage taken from allied, friendly, or helpful creatures does not qualify the arachnid wildsoul for this ability’s hit point threshold.
+
+
+        Spiderman is defined not only by his physical powers, but by the mental grit, heroism, and will to persevere that he possesses. I felt like that aspect of him deserved some recognition! We all know the moments when he’s beaten, battered, broken, and somehow musters the strength to stop a moving train car, lift a mountain of steel, dodge a flying glider, or catch a hapless bystander as they fall to their death. If you want to crush an initiative check that your Spidey Sense warned you about, completely dodge an ancient dragon’s breath weapon, single handedly prevent a cave collapse, break down a door that stands between you and the love of your life, this is your ability. And the more beaten you are, the more able you are to pull these spectacular moments out of your cowl! The last line felt a little forced to me, but I wanted to make sure players didn’t simply beat down on their ally, force them into a bunch of manual labor, and then heal them back up with Signature Skill: Heal, heal, or other HP-restoring abilities. Because that’s not heroic, ya know?

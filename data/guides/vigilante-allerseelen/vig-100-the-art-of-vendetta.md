@@ -1,0 +1,6 @@
+# VIG 100: The Art of Vendetta
+
+VIG 100: The Art of Vendetta
+
+
+One of the design choices that I made for my original guide to the Pathfinder inquisitor class and subsequently fell away from was to write a section comparing the class I’m reviewing to other, similar classes in order to figure out more about how it was mechanically similar to and different from those classes. After spending so much time reviewing classes and Pathfinder 1e content, I’ve also begun to develop a sense of...the spirit of a class that I’m reviewing, I guess you might say: a sense of what the class is strong at, what the class is weak at, how the design decisions that Paizo made on everything from armor and weapon proficiencies all the way down to the specific spells on the class’ spell list inform how the class is played. The Vigilante Roles section goes into some detail on this, of course, but that section is designed more as a primer on the mechanics of how to put together different builds, not as a philosophical treatise on what a class is. So starting with this guide (and perhaps going back to revise earlier guides at a later date) I’m going to reinstate this section as we ask the question: what are vigilantes?

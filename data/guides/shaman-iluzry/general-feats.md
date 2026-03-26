@@ -1,0 +1,11 @@
+# General Feats
+
+General Feats
+* (5/5) ✰Improved Familiar✰: Improved familiars ENTIRELY change the game for familiars. Unlike base familiars, who mostly are just neat animals, improved familiars can have spell light abilities, unique traits, better stats, and overall do the job of a familiar better in every way. Moreover, improved familiars can still make use of familiar archetypes (which are really good) so long as that archetype does not replace the bonus that a familiar usually gives. If you plan on having a familiar SERIOUSLY consider picking this up, you won’t regret it. 
+* (5/5) ✰Dreamed Secrets✰: Two wizard spells that you get to choose daily, which require a WILL SAVE to cast. This VASTLY VASTLY VASTLY increases your versatility, and all it requires is that you worship Cosmic Horror (Nothing says you can't be polytheistic…). YOUR ONE WEAKNESS IS YOUR SPELL LIST. THIS FIXES THAT.  YOU ARE TAKING THIS NO QUESTIONS ASKED.
+* (4/5) Spiritual Guardian: If you are using a spirit that gives you access to spiritual weapon or spiritual guardian, this lets them use your shaman level instead of your BAB which will be a little bit better! It’ll even make it better at bypassing spell resistance! Woo!
+* (6/5) Leadership: Our first 6/5 feat. Why? Because for a feat at level 7, you get ANOTHER CHARACTER SHEET. This is far and away the strongest feat in all of pathfinder...and it barely has any prerequisites. If your DM allows this, it’s objectively the best option.
+* (5/5) Divine Interference: As an immediate action, burn a spell slot of 1st level or higher to force an enemy to reroll an attack within 30 ft with a penalty equal to the level of the spell sacrificed. Not a bad use of spells if you just wanna save someone from a crit every now and then.
+* (3/5) Improved Initiative: Going first is amazing! It’s a pretty solid bonus. That said we should basically get this bonus from our familiar so…its kinda a win more situation.
+* (3/5) Toughness: More health is what you need to take more hits!!!
+* (4/5) Knowledgeable Spellcaster: Okay so this one is hilariously powerful because in exchange for a knowledge roll, you can get +3 to overcoming SR and then when you have 10 ranks, its +5. That beasts out and stacks with spell penetration and all you have to do is be decent at knowing things. 1000% worth it.

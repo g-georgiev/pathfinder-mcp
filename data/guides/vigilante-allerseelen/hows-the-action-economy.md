@@ -1,0 +1,6 @@
+# How’s the Action Economy?
+
+How’s the Action Economy?
+
+
+As streamlined as you would expect for a mostly martial/rogue-like class with few overt class features, thank you very much. There’s no pressing demand for swift or immediate actions, you don’t have any spells to cast, and everything beyond that point is standard fighter/rogue fare—get into full-attack range and go to work. The one glaring stumbling block in the vigilante’s action economy is their need to transition between identities when fights break out: social identities essentially can’t participate in combat without being recognized as more than the mild-mannered citizens they appear to be, but the transition between social and vigilante identities takes a full minute out of view of anyone else to preserve your secret. If you’re going the Iron Man route, where you don’t care about your social and vigilante identities being tied in the public eye, by all means, feel free to ignore any of the abilities that let you transition between them. If, however, you’d like to keep them separate, the quick change and immediate change vigilante talents should be considered mandatory unless an archetype (mounted fury, e.g.) prevents you from picking them up. There’s no good way to fuse the social and vigilante identities, so the best that can be done is to speed the transition between states.

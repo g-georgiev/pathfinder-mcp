@@ -16,8 +16,8 @@ An MCP server that turns Claude into an expert Pathfinder 1st Edition advisor. B
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-user/pathfinder-agent
-cd pathfinder-agent
+git clone https://github.com/g-georgiev/pathfinder-mcp
+cd pathfinder-mcp
 
 # Option A: One-command setup + add to your project
 ./setup.sh /path/to/your/project

@@ -1,0 +1,9 @@
+{
+  "pathfinder-data": {
+    "command": "/path/to/pathfinder/agent/mcp-server/.venv/bin/python3",
+    "args": ["/path/to/pathfinder/agent/mcp-server/server.py"],
+    "env": {
+      "PF_DB_PATH": "/path/to/pathfinder/agent/db/pathfinder.db"
+    }
+  }
+}

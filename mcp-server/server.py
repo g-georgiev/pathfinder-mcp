@@ -761,11 +761,11 @@ def get_reference(topic: str) -> str:
     """
     topic_files = {
         "format": "data/characters/FORMAT.md",
-        "advisor": ".claude/rules/advisor.md",
-        "mcp": ".claude/rules/mcp-tools.md",
-        "characters": ".claude/rules/characters.md",
-        "campaign": ".claude/rules/campaign.md",
-        "guides": ".claude/rules/guides.md",
+        "advisor": "docs/advisor.md",
+        "mcp": "docs/mcp-tools.md",
+        "characters": "docs/characters.md",
+        "campaign": "docs/campaign.md",
+        "guides": "docs/guides.md",
     }
 
     if topic not in topic_files:

@@ -1,8 +1,0 @@
-{
-  "name": "pathfinder",
-  "description": "Pathfinder 1st Edition advisor agent with comprehensive game data, character management, and build optimization",
-  "version": "0.1.0",
-  "skills": "skills",
-  "agents": "agents",
-  "mcpServers": "./.mcp.json"
-}

@@ -1,11 +1,8 @@
 ---
 name: create-character
 description: "Create a standardized Pathfinder character sheet from any input format. Accepts character data as chat, pasted text, JSON file, or rough description and generates a complete multi-file character directory."
-user_invocable: true
-arguments:
-  - name: input
-    description: "Character data or path to a file containing character data. Can be omitted to provide data interactively."
-    required: false
+user-invocable: true
+argument-hint: "Character data or path to a file containing character data"
 ---
 
 # Create Character Sheet
@@ -108,7 +105,7 @@ Write a JSON file at `/tmp/pf-character-{name}.json` with this structure:
   },
   "archetype_compatibility": { ... },
   "house_rules": "text of campaign house rules from personal CLAUDE.md",
-  "output_dir": "/absolute/path/to/personal/data/characters/{name}/",
+  "output_dir": "/absolute/path/to/personal/characters/{name}/",
   "format_template": "/absolute/path/to/FORMAT.md"
 }
 ```

@@ -4,10 +4,10 @@ This document defines the standard format for character sheets in this plugin. U
 
 ## Directory Structure
 
-Each character is a directory under `data/characters/`:
+Each character is a directory under `characters/`:
 
 ```
-data/characters/{name}/
+characters/{name}/
 ├── sheet.md          # Main reference — stats, breakdowns, spell quick-reference
 ├── spells.md         # Full spell descriptions with tactical notes
 ├── features.md       # Class features, curses, revelations, racial traits, bloodline
@@ -277,10 +277,10 @@ Free-form notes about the current situation for continuity.
 
 ## Campaign Data (Optional)
 
-Campaign-specific world-building can be stored alongside character data in `data/campaign/{character}/`. This is separate from the character sheet — it's the player's reference for the DM's world.
+Campaign-specific world-building can be stored in `campaigns/{campaign_name}/`. This is separate from the character sheet — it's the player's reference for the DM's world.
 
 ```
-data/campaign/{character}/
+campaigns/{campaign_name}/
 ├── world.md          # Cosmology, timeline, major setting rules
 ├── factions.md       # Nations, organizations, key NPCs
 ├── {location}.md     # Location-specific details

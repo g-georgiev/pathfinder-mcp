@@ -1,9 +1,9 @@
 # Character Sheet Conventions
 
-Each character is a **directory** under `data/characters/` containing multiple linked markdown files:
+Each character is a **directory** under `characters/` containing multiple linked markdown files:
 
 ```
-data/characters/{name}/
+characters/{name}/
 ├── sheet.md        # Main reference — stats, breakdowns, spell quick-reference
 ├── spells.md       # Full spell descriptions (casting time, range, duration, save, full text)
 ├── features.md     # Class features, curses, revelations, racial traits, bloodline powers
@@ -11,7 +11,7 @@ data/characters/{name}/
 └── state.md        # (optional) Live combat state — buffs, conditions, resources
 ```
 
-See `data/characters/FORMAT.md` for the complete format specification including state.md structure.
+See `characters/FORMAT.md` for the complete format specification including state.md structure.
 
 ## Formatting Rules
 

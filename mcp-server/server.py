@@ -641,5 +641,143 @@ def db_stats() -> dict:
     return stats
 
 
+# ---------------------------------------------------------------------------
+# Guide search
+# ---------------------------------------------------------------------------
+
+GUIDES_DIR = str(Path(__file__).parent.parent / "data" / "guides")
+
+
+@mcp.tool()
+def search_guides(
+    query: str,
+    class_name: str = "",
+    limit: int = 10,
+) -> list[dict]:
+    """Search optimization guides for build advice, feat/spell ratings, and recommendations.
+
+    Searches across all 79 community guides (grep on markdown files).
+    Returns matching passages with surrounding context.
+
+    Args:
+        query: Text to search for (e.g. 'sidestep secret', 'power attack', 'battle mystery')
+        class_name: Optional - limit search to guides for this class (e.g. 'oracle', 'fighter')
+        limit: Max number of matching passages to return (default 10)
+
+    Returns:
+        List of dicts with guide, file, and matching passage with context
+    """
+    import subprocess
+
+    # Build grep command
+    search_path = GUIDES_DIR
+    if class_name:
+        # Find guide dirs that match the class
+        matching_dirs = []
+        for idx_path in Path(GUIDES_DIR).glob("*/index.md"):
+            with open(idx_path) as f:
+                content = f.read(500)
+            if class_name.lower() in content.lower():
+                matching_dirs.append(str(idx_path.parent))
+        for guide_path in Path(GUIDES_DIR).glob("*/guide.md"):
+            with open(guide_path) as f:
+                content = f.read(500)
+            if class_name.lower() in content.lower():
+                matching_dirs.append(str(guide_path.parent))
+        if not matching_dirs:
+            return [{"note": f"No guides found for class '{class_name}'"}]
+        search_paths = matching_dirs
+    else:
+        search_paths = [GUIDES_DIR]
+
+    results = []
+    for sp in (search_paths if class_name else [GUIDES_DIR]):
+        try:
+            proc = subprocess.run(
+                ["grep", "-ril", "--include=*.md", query, sp],
+                capture_output=True, text=True, timeout=10
+            )
+            matching_files = [f for f in proc.stdout.strip().split("\n") if f]
+
+            for fpath in matching_files[:limit * 2]:
+                # Get matching lines with context
+                proc2 = subprocess.run(
+                    ["grep", "-in", "-C", "2", "-m", "3", query, fpath],
+                    capture_output=True, text=True, timeout=5
+                )
+                if proc2.stdout.strip():
+                    # Extract guide name from path
+                    rel = os.path.relpath(fpath, GUIDES_DIR)
+                    guide_dir = rel.split(os.sep)[0]
+
+                    results.append({
+                        "guide": guide_dir,
+                        "file": rel,
+                        "matches": proc2.stdout.strip()[:1500],
+                    })
+                    if len(results) >= limit:
+                        break
+        except (subprocess.TimeoutExpired, FileNotFoundError):
+            pass
+
+        if len(results) >= limit:
+            break
+
+    if not results:
+        return [{"note": f"No matches found for '{query}'" + (f" in {class_name} guides" if class_name else "")}]
+
+    return results
+
+
+@mcp.tool()
+def get_guide_index() -> str:
+    """Get the complete guide index listing all available optimization guides.
+
+    Returns the INDEX.md content which lists all guides organized by class
+    with entry points and coverage summary. Use this to find the right guide
+    before reading specific sections.
+    """
+    index_path = os.path.join(GUIDES_DIR, "INDEX.md")
+    if not os.path.exists(index_path):
+        return "INDEX.md not found"
+    with open(index_path) as f:
+        return f.read()
+
+
+@mcp.tool()
+def get_reference(topic: str) -> str:
+    """Get plugin reference documentation by topic.
+
+    Available topics:
+        - 'format' — Character sheet format specification (FORMAT.md)
+        - 'advisor' — Advisor behavior rules (combat, dice, state management)
+        - 'mcp' — MCP tool reference and stub enrichment protocol
+        - 'characters' — Character sheet conventions
+        - 'campaign' — Campaign data conventions
+        - 'guides' — Guide usage instructions
+
+    Args:
+        topic: One of: format, advisor, mcp, characters, campaign, guides
+    """
+    topic_files = {
+        "format": "data/characters/FORMAT.md",
+        "advisor": ".claude/rules/advisor.md",
+        "mcp": ".claude/rules/mcp-tools.md",
+        "characters": ".claude/rules/characters.md",
+        "campaign": ".claude/rules/campaign.md",
+        "guides": ".claude/rules/guides.md",
+    }
+
+    if topic not in topic_files:
+        return f"Unknown topic '{topic}'. Available: {', '.join(sorted(topic_files.keys()))}"
+
+    plugin_root = Path(__file__).parent.parent
+    fpath = plugin_root / topic_files[topic]
+    if not fpath.exists():
+        return f"File not found: {topic_files[topic]}"
+    with open(fpath) as f:
+        return f.read()
+
+
 if __name__ == "__main__":
     mcp.run()

@@ -1,6 +1,6 @@
 # Campaign Context
 
-Players may have campaign-specific data in their personal directory under `data/campaign/{character}/`. This contains world-building notes, faction info, setting lore, and session context that the DM has shared or the player has compiled.
+Players may have campaign-specific data in their personal directory under `campaigns/{campaign_name}/`. This contains world-building notes, faction info, setting lore, and session context that the DM has shared or the player has compiled.
 
 ## When to Use Campaign Data
 
@@ -13,7 +13,7 @@ Players may have campaign-specific data in their personal directory under `data/
 
 ## How to Use It
 
-1. Check if campaign data exists: look for `data/campaign/` in the personal directory (sibling `personal/` to the plugin, or the working directory)
+1. Check if campaign data exists: look for `campaigns/` in the personal directory (sibling `personal/` to the plugin, or the current working directory)
 2. Grep or read the relevant file based on the question
 3. Combine campaign-specific lore with general Pathfinder knowledge from the DB
 4. When campaign lore contradicts standard Golarion canon, the campaign version takes precedence — it's the DM's world

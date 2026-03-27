@@ -16,13 +16,15 @@ SERVER_SCRIPT="$SERVER_DIR/server.py"
 echo "=== Pathfinder 1e MCP Server Setup ==="
 
 # Step 1: Create venv and install mcp
-if [ ! -d "$VENV_DIR" ]; then
+if [ ! -f "$PYTHON" ] || ! "$PYTHON" -c "import mcp" 2>/dev/null; then
     echo "Creating Python venv..."
+    rm -rf "$VENV_DIR"
     python3 -m venv "$VENV_DIR"
+    echo "Installing mcp package..."
+    "$PYTHON" -m pip install -q mcp
+else
+    echo "Python venv OK."
 fi
-
-echo "Installing mcp package..."
-"$VENV_DIR/bin/pip" install -q mcp
 
 # Step 2: Build DB if needed
 DB_PATH="$SCRIPT_DIR/db/pathfinder.db"

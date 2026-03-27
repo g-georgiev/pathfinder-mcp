@@ -15,17 +15,21 @@ An MCP server that turns Claude into an expert Pathfinder 1st Edition advisor. B
 ## Setup
 
 ```bash
-# 1. Build the SQLite database from JSON data
+# Clone the repo
+git clone https://github.com/your-user/pathfinder-agent
+cd pathfinder-agent
+
+# Option A: One-command setup + add to your project
+./setup.sh /path/to/your/project
+
+# Option B: Manual setup
+python3 -m venv mcp-server/.venv && mcp-server/.venv/bin/pip install mcp
 python3 db/build.py
-
-# 2. Set up the MCP server venv
-cd mcp-server && python3 -m venv .venv && .venv/bin/pip install mcp
-
-# 3. Add to your project's .mcp.json (see examples/mcp.json)
-# 4. Add the bootstrap to your project's CLAUDE.md (see examples/CLAUDE.md)
+claude mcp add --scope project --transport stdio pathfinder-data -- \
+  $(pwd)/mcp-server/.venv/bin/python3 $(pwd)/mcp-server/server.py
 ```
 
-See `examples/` for ready-to-use configuration files.
+Then add the bootstrap to your project's `CLAUDE.md` (see `examples/CLAUDE.md`).
 
 ## Architecture
 

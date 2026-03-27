@@ -275,6 +275,22 @@ Free-form notes about the current situation for continuity.
 - **Session notes** are free-form context for picking up next session. Include tactical positioning, enemy status, anything relevant.
 - When state.md doesn't exist, the character has no active modifiers (fresh state).
 
+## Campaign Data (Optional)
+
+Campaign-specific world-building can be stored alongside character data in `data/campaign/{character}/`. This is separate from the character sheet — it's the player's reference for the DM's world.
+
+```
+data/campaign/{character}/
+├── world.md          # Cosmology, timeline, major setting rules
+├── factions.md       # Nations, organizations, key NPCs
+├── {location}.md     # Location-specific details
+├── inspiration.md    # Source material the campaign draws from
+├── sessions.md       # Session logs (optional)
+└── npcs.md           # NPC relationships (optional)
+```
+
+These files have no required format — use whatever structure helps you reference the information during play. The advisor will grep these when you ask setting or lore questions.
+
 ## Data Lookup Process
 
 When creating a character sheet, for every spell, feat, and feature:

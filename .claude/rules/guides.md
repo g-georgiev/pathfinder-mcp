@@ -1,6 +1,6 @@
 # Optimization Guides
 
-The `data/guides/` directory contains 20 community optimization guides covering classes, spells, feats, items, and build strategies. Use these when answering build questions, recommending options, or planning character progression.
+The `data/guides/` directory contains 79 community optimization guides covering classes, spells, feats, items, and build strategies. Use these when answering build questions, recommending options, or planning character progression.
 
 ## How to Find the Right Guide
 
@@ -13,47 +13,6 @@ Each guide directory has either an `index.md` (multi-file guide with sections) o
 grep -ril "sidestep secret" data/guides/
 ```
 
-## Guide Index
-
-### Class Guides (multi-file, sectioned)
-
-| Directory | Class | Author | Key Sections |
-|-----------|-------|--------|--------------|
-| `oracle-allerseelen/` | Oracle | Allerseelen | mysteries, curses, spells, feats, roles, archetypes, multiclass, builds |
-| `inquisitor-allerseelen/` | Inquisitor | Allerseelen | domains, spells, feats, combat styles, archetypes, multiclass, builds |
-| `investigator-allerseelen/` | Investigator | Allerseelen | extracts, talents, feats, archetypes, builds |
-| `arcane-trickster-significantotter/` | Arcane Trickster | Significantotter | prerequisites, spells, feats, builds |
-
-These have separate files per section (e.g. `spells.md`, `feats.md`, `mysteries.md`). Read only the section you need.
-
-### Class Guides (single file)
-
-| Directory | Class | Author |
-|-----------|-------|--------|
-| `sorcerer-iluzry/` | Sorcerer | Iluzry |
-| `sorcerer-spells-iluzry/` | Sorcerer (spells) | Iluzry |
-| `cleric-iluzry/` | Cleric | Iluzry |
-| `alchemist-iluzry/` | Alchemist | Iluzry |
-| `arcanist-iluzry/` | Arcanist | Iluzry |
-| `gunslinger-njolly/` | Gunslinger | N. Jolly |
-| `fighter-marshmallow/` | Fighter | Marshmallow |
-| `rogue-rogueeidolon/` | Rogue | Rogue Eidolon |
-| `blaster-caster/` | Sorcerer/Wizard (blasting) | Unknown |
-
-These are large single files. Use grep to find the relevant section rather than reading the entire file.
-
-### General Guides (single file)
-
-| Directory | Topic | Author |
-|-----------|-------|--------|
-| `gestalt-guide/` | Gestalt character building | Community |
-| `cleric-oracle-warpriest-spells/` | Divine spell ratings | platinumCheesecake |
-| `prestige-classes-guide/` | Prestige class ratings | Unknown |
-| `ability-scores-xty/` | Getting X to Y (stat substitution) | Unknown |
-| `magic-items-brotherpatrick/` | Magic items by build type | BrotherPatrick |
-| `wondrous-items-guide/` | Wondrous item ratings | Unknown |
-| `traits-guide/` | Character trait ratings | Unknown |
-
 ## When to Use Guides
 
 **Use guides when:**
@@ -65,10 +24,13 @@ These are large single files. Use grep to find the relevant section rather than 
 
 **How to use them:**
 1. Identify the relevant class(es) from the user's question
-2. Grep or read the appropriate guide sections
-3. Cross-reference guide recommendations with the DB (search for the actual feat/spell data)
-4. Combine guide opinion with game mechanics for a complete answer
-5. Cite the guide and author when quoting ratings or recommendations
+2. Read `data/guides/INDEX.md` to find the right guide(s)
+3. Grep or read the appropriate guide sections
+4. Cross-reference guide recommendations with the DB (search for the actual feat/spell data)
+5. Combine guide opinion with game mechanics for a complete answer
+6. Cite the guide and author when quoting ratings or recommendations
+
+**Multiple perspectives:** Most popular classes have 2-3 guides by different authors. When guides disagree, present both perspectives and explain the tradeoff. Don't default to one author's opinion.
 
 **Don't just parrot the guide.** The guides are one expert's opinion — synthesize their recommendations with the character's specific build, house rules, party composition, and campaign context. If a guide rates something poorly but it fits the character's theme or fills a party gap, say so.
 

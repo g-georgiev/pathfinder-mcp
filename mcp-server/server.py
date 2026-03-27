@@ -10,6 +10,15 @@ from mcp.server.fastmcp import FastMCP
 
 DB_PATH = os.environ.get("PF_DB_PATH", str(Path(__file__).parent.parent / "db" / "pathfinder.db"))
 
+# Auto-build the database on first run if it doesn't exist
+if not os.path.exists(DB_PATH):
+    import subprocess
+    import sys
+    build_script = str(Path(__file__).parent.parent / "db" / "build.py")
+    print(f"Database not found at {DB_PATH}, building...", file=sys.stderr)
+    subprocess.run([sys.executable, build_script], check=True)
+    print(f"Database built successfully.", file=sys.stderr)
+
 mcp = FastMCP("pathfinder-data")
 
 

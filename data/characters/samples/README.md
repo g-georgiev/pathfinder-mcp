@@ -9,7 +9,7 @@ Standard single-class or multiclass builds using core Pathfinder rules.
 
 | Character | Classes | Level | Concept |
 |-----------|---------|-------|---------|
-| *(none yet)* | | | |
+| [The McGyver](normal/the-mcgyver/sheet.md) | Wizard (Spell Sage) 10 | 10 | Cross-list casting generalist — heals, buffs, controls from any spell list |
 
 ## Gestalt
 

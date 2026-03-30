@@ -9,13 +9,14 @@ An MCP server providing Pathfinder 1st Edition game data, optimization guides, a
 ```
 pathfinder/agent/
 ├── mcp-server/
-│   └── server.py               # MCP server (17 tools)
+│   └── server.py               # MCP server (20 tools)
 ├── db/
 │   ├── build.py                # Rebuilds DB from JSON (use with data/db-restore branch)
 │   └── pathfinder.db           # SQLite database (~13MB, checked into git)
 ├── data/
 │   ├── characters/
-│   │   └── FORMAT.md           # Character sheet + state format specification
+│   │   ├── FORMAT.md           # Character sheet + state format specification
+│   │   └── samples/            # Pre-built sample characters (served by MCP tools)
 │   └── guides/                 # 79 community optimization guides
 │       └── INDEX.md            # Guide index by class
 ├── docs/                       # Reference docs served by get_reference()

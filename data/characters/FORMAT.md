@@ -13,7 +13,7 @@ characters/{name}/
 ├── features.md       # Class features, curses, revelations, racial traits, bloodline
 ├── feats.md          # Feat descriptions with prerequisites and interactions
 ├── backstory.md      # (optional) Character backstory, diary, notes
-└── images/           # (optional) Character art
+└── images/           # (optional) Character art + prompt.md for generation
 ```
 
 ## sheet.md Structure
@@ -302,6 +302,40 @@ When creating a character sheet, for every spell, feat, and feature:
 5. **Write** the full description to the appropriate reference file
 
 Never write a spell/feat entry with just a name and no description. The whole point of the reference files is that the user can look up what things do without leaving the sheet.
+
+## Character Portraits
+
+The `images/` directory holds character art and the prompt used to generate it.
+
+### Generating a portrait
+
+Use the `generate_portrait_prompt` MCP tool to create an optimized image-generation prompt from the character's sheet and backstory:
+
+```
+generate_portrait_prompt(
+    character_dir="data/characters/{name}",
+    style="fantasy illustration",     # or 'oil painting', 'anime', 'realistic', etc.
+    framing="upper body portrait",    # or 'full body', 'action pose', 'headshot', etc.
+    extra_directions=""               # optional: 'dramatic lighting', 'holding a staff', etc.
+)
+```
+
+This reads the character's appearance details and saves a ready-to-use prompt to `images/prompt.md`.
+
+### Adding the image to the sheet
+
+1. Copy the prompt from `images/prompt.md`
+2. Paste into any image generator (ChatGPT, Gemini, Midjourney, Stable Diffusion, etc.)
+3. Save the result to `images/portrait.png`
+4. Add an Images section to sheet.md after the title:
+
+```markdown
+## Images
+
+| | |
+|---|---|
+| ![Portrait](images/portrait.png) | ![Alternate](images/portrait-2.png) |
+```
 
 ## Gestalt Characters
 

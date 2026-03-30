@@ -931,5 +931,183 @@ def compare_with_sample(
     }
 
 
+# ---------------------------------------------------------------------------
+# Portrait prompt generation
+# ---------------------------------------------------------------------------
+
+CHARACTERS_DIR = str(Path(__file__).parent.parent / "data" / "characters")
+
+
+@mcp.tool()
+def generate_portrait_prompt(
+    character_dir: str,
+    style: str = "fantasy illustration",
+    framing: str = "upper body portrait",
+    extra_directions: str = "",
+) -> dict:
+    """Generate an image-generation prompt for a character portrait and save it.
+
+    Reads the character's sheet.md and backstory.md to extract appearance,
+    class, race, equipment, and personality details. Produces a detailed
+    prompt optimized for AI image generators (DALL-E, Midjourney, Stable
+    Diffusion, etc.) and saves it to the character's images/ directory.
+
+    Args:
+        character_dir: Path to the character directory (e.g. 'data/characters/samples/normal/the-mcgyver')
+        style: Art style (default 'fantasy illustration'). Examples: 'oil painting', 'anime', 'realistic portrait', 'comic book'
+        framing: Shot framing (default 'upper body portrait'). Examples: 'full body', 'headshot', 'action pose', 'seated at desk'
+        extra_directions: Additional prompt instructions (e.g. 'dramatic lighting', 'dark background', 'holding a staff')
+
+    Returns:
+        Dict with the generated prompt, file path where it was saved, and next steps for the user.
+    """
+    import re as _re
+
+    char_path = Path(character_dir)
+    # Try relative to project root if not absolute
+    if not char_path.is_absolute():
+        char_path = Path(__file__).parent.parent / character_dir
+
+    # Read available files
+    sheet_text = ""
+    backstory_text = ""
+
+    sheet_file = char_path / "sheet.md"
+    if sheet_file.exists():
+        with open(sheet_file) as f:
+            sheet_text = f.read()
+
+    backstory_file = char_path / "backstory.md"
+    if backstory_file.exists():
+        with open(backstory_file) as f:
+            backstory_text = f.read()
+
+    if not sheet_text:
+        return {"error": f"No sheet.md found in {char_path}"}
+
+    # Extract character details from frontmatter
+    details = {}
+    fm = _re.search(r"^---\s*\n(.*?)\n---", sheet_text, _re.DOTALL)
+    if fm:
+        for line in fm.group(1).splitlines():
+            if ":" in line:
+                k, v = line.split(":", 1)
+                details[k.strip().lower()] = v.strip().strip('"')
+
+    # Extract description line from the identity section
+    desc_match = _re.search(r"\*\*Description\*\*\s*\|\s*(.+?)(?:\s*\||\n)", sheet_text)
+    description = desc_match.group(1).strip() if desc_match else ""
+
+    # Build the prompt
+    prompt_parts = []
+
+    # Style and framing
+    prompt_parts.append(f"{style}, {framing}")
+
+    # Character identity
+    race = details.get("race", "")
+    classes = details.get("classes", "")
+    if race or classes:
+        prompt_parts.append(f"{race} {classes}".strip())
+
+    # Physical description
+    if description:
+        prompt_parts.append(description)
+
+    # Pull appearance details from backstory (first 2 paragraphs usually have physical description)
+    if backstory_text:
+        # Strip markdown headers and links
+        clean = _re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", backstory_text)
+        clean = _re.sub(r"^#+.*$", "", clean, flags=_re.MULTILINE)
+        clean = _re.sub(r"---+", "", clean)
+        paragraphs = [p.strip() for p in clean.split("\n\n") if p.strip() and len(p.strip()) > 50]
+        # Take paragraphs that mention appearance keywords
+        appearance_keywords = ["hair", "eyes", "skin", "tall", "short", "beard", "scar",
+                               "robe", "armor", "cloak", "belt", "wear", "appearance",
+                               "mullet", "denim", "utility", "weathered"]
+        for p in paragraphs:
+            if any(kw in p.lower() for kw in appearance_keywords):
+                # Trim to a reasonable length
+                if len(p) > 400:
+                    p = p[:400].rsplit(".", 1)[0] + "."
+                prompt_parts.append(p)
+
+    # Extra directions
+    if extra_directions:
+        prompt_parts.append(extra_directions)
+
+    # Negative guidance
+    prompt_parts.append("No text, watermarks, or UI elements in the image.")
+
+    full_prompt = "\n\n".join(prompt_parts)
+
+    # Save to images directory
+    images_dir = char_path / "images"
+    images_dir.mkdir(exist_ok=True)
+    prompt_file = images_dir / "prompt.md"
+
+    char_name = details.get("name", char_path.name)
+
+    prompt_content = f"""# {char_name} — Portrait Prompt
+
+## Prompt
+
+Copy and paste this into your preferred image generator:
+
+```
+{full_prompt}
+```
+
+## Settings
+
+- **Style**: {style}
+- **Framing**: {framing}
+- **Recommended aspect ratio**: 2:3 (portrait) or 1:1 (token)
+- **Recommended resolution**: 1024x1536 or 1024x1024
+
+## How to generate and add to the character sheet
+
+1. Copy the prompt above
+2. Paste it into your preferred image generator:
+   - [ChatGPT](https://chatgpt.com) — use "create an image" or the DALL-E tool
+   - [Google Gemini](https://gemini.google.com) — ask it to generate an image
+   - [Midjourney](https://www.midjourney.com) — paste in Discord with /imagine
+   - [Stable Diffusion](https://stability.ai) — use locally or via DreamStudio
+   - Any other text-to-image tool
+3. Download the generated image(s)
+4. Save them to this directory (`images/`) as `portrait.png` (or `portrait-1.png`, `portrait-2.png` for variants)
+5. Reference in sheet.md by adding an Images section after the title:
+
+```markdown
+## Images
+
+| | |
+|---|---|
+| ![Portrait](images/portrait.png) | ![Alt](images/portrait-2.png) |
+```
+
+## Regeneration
+
+To generate a new prompt with different settings, use:
+```
+generate_portrait_prompt(character_dir="{character_dir}", style="...", framing="...", extra_directions="...")
+```
+"""
+
+    with open(prompt_file, "w") as f:
+        f.write(prompt_content)
+
+    return {
+        "prompt": full_prompt,
+        "saved_to": str(prompt_file),
+        "next_steps": (
+            f"Prompt saved to {prompt_file}. "
+            "Copy the prompt into your preferred image generator (ChatGPT, Gemini, Midjourney, etc.), "
+            "download the result, and save it to the images/ directory as portrait.png. "
+            "Then add an Images section to sheet.md to display it."
+        ),
+    }
+
+
 if __name__ == "__main__":
     mcp.run()

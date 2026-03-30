@@ -9,7 +9,7 @@ An MCP server providing Pathfinder 1st Edition game data, optimization guides, a
 ```
 pathfinder/agent/
 ├── mcp-server/
-│   └── server.py               # MCP server (20 tools)
+│   └── server.py               # MCP server (21 tools)
 ├── db/
 │   ├── build.py                # Rebuilds DB from JSON (use with data/db-restore branch)
 │   └── pathfinder.db           # SQLite database (~13MB, checked into git)

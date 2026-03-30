@@ -70,7 +70,7 @@ Pre-built characters showcasing the full character sheet format and MCP-driven b
 
 Each sample character includes: `sheet.md` (full stat breakdown), `spells.md` (spell descriptions), `features.md` (class features), `feats.md` (feat reference), and `backstory.md` (flavor).
 
-## MCP Tools (20 tools)
+## MCP Tools (21 tools)
 
 ### Game Data (13K entries, FTS5 search)
 | Tool | Purpose |
@@ -90,12 +90,13 @@ Each sample character includes: `sheet.md` (full stat breakdown), `spells.md` (s
 | `cache_entry` | Store web-fetched data for future queries |
 | `db_stats` | Row counts per table |
 
-### Sample Characters
+### Sample Characters & Portraits
 | Tool | Purpose |
 |------|---------|
 | `list_sample_characters` | List available sample builds, optionally filtered by type (normal/gestalt) |
 | `get_sample_character` | Read a sample character's sheet, spells, feats, features, or backstory |
 | `compare_with_sample` | Compare a user's build against a sample for optimization insights |
+| `generate_portrait_prompt` | Generate an image-gen prompt from character data, saved to `images/prompt.md` |
 
 ### Guides (79 guides, 37/38 classes)
 | Tool | Purpose |

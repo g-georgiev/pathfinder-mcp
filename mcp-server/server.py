@@ -788,5 +788,148 @@ def get_reference(topic: str) -> str:
         return f.read()
 
 
+# ---------------------------------------------------------------------------
+# Sample characters
+# ---------------------------------------------------------------------------
+
+SAMPLES_DIR = str(Path(__file__).parent.parent / "data" / "characters" / "samples")
+
+
+@mcp.tool()
+def list_sample_characters(
+    build_type: str = "",
+) -> list[dict]:
+    """List available sample character sheets.
+
+    Args:
+        build_type: Filter by 'normal' or 'gestalt'. Empty returns all.
+
+    Returns:
+        List of dicts with name, build_type, classes, level, and concept from frontmatter.
+    """
+    import re as _re
+
+    results = []
+    base = Path(SAMPLES_DIR)
+    dirs = []
+    if build_type in ("normal", "gestalt"):
+        type_dir = base / build_type
+        if type_dir.is_dir():
+            dirs = [(build_type, d) for d in type_dir.iterdir() if d.is_dir()]
+    else:
+        for bt in ("normal", "gestalt"):
+            type_dir = base / bt
+            if type_dir.is_dir():
+                dirs.extend((bt, d) for d in type_dir.iterdir() if d.is_dir())
+
+    for bt, char_dir in sorted(dirs, key=lambda x: x[1].name):
+        sheet = char_dir / "sheet.md"
+        entry = {"name": char_dir.name, "build_type": bt, "files": []}
+
+        # List available files
+        for f in sorted(char_dir.iterdir()):
+            if f.is_file() and f.suffix == ".md":
+                entry["files"].append(f.name)
+
+        # Parse frontmatter from sheet.md if present
+        if sheet.exists():
+            with open(sheet) as fh:
+                text = fh.read(1000)
+            fm = _re.search(r"^---\s*\n(.*?)\n---", text, _re.DOTALL)
+            if fm:
+                for line in fm.group(1).splitlines():
+                    if ":" in line:
+                        k, v = line.split(":", 1)
+                        k = k.strip().lower()
+                        if k in ("level", "classes", "race", "alignment", "concept"):
+                            entry[k] = v.strip().strip('"')
+
+        results.append(entry)
+
+    if not results:
+        return [{"note": "No sample characters found" + (f" for type '{build_type}'" if build_type else "")}]
+    return results
+
+
+@mcp.tool()
+def get_sample_character(
+    name: str,
+    file: str = "sheet.md",
+) -> str:
+    """Read a sample character's sheet or reference file.
+
+    Args:
+        name: Character folder name (e.g. 'valeria')
+        file: Which file to read (default 'sheet.md'). Also: spells.md, features.md, feats.md, backstory.md
+    """
+    base = Path(SAMPLES_DIR)
+    # Search both normal and gestalt
+    for bt in ("normal", "gestalt"):
+        fpath = base / bt / name / file
+        if fpath.exists():
+            with open(fpath) as fh:
+                return fh.read()
+
+    return f"Not found: sample character '{name}' file '{file}'"
+
+
+@mcp.tool()
+def compare_with_sample(
+    sample_name: str,
+    user_sheet: str,
+) -> dict:
+    """Compare a user's character build with a sample character for optimization insights.
+
+    Extracts key stats (ability scores, feats, spells, class choices) from both
+    sheets and highlights differences. Useful for spotting missed optimizations.
+
+    Args:
+        sample_name: Name of the sample character to compare against
+        user_sheet: The user's full sheet.md content (paste or read from file)
+
+    Returns:
+        Dict with sample_summary, user_summary, and comparison notes
+    """
+    import re as _re
+
+    def extract_summary(text: str) -> dict:
+        summary = {}
+        # Frontmatter
+        fm = _re.search(r"^---\s*\n(.*?)\n---", text, _re.DOTALL)
+        if fm:
+            for line in fm.group(1).splitlines():
+                if ":" in line:
+                    k, v = line.split(":", 1)
+                    summary[k.strip().lower()] = v.strip().strip('"')
+        # Feats — look for feat table rows
+        feat_rows = _re.findall(r"\|\s*\d+\s*\|\s*\[([^\]]+)\]", text)
+        if feat_rows:
+            summary["feats"] = feat_rows
+        # Ability scores — look for the table
+        ability_match = _re.findall(r"\|\s*(STR|DEX|CON|INT|WIS|CHA)\s*\|.*?\|\s*\*\*(\d+)\*\*", text)
+        if ability_match:
+            summary["abilities"] = {k: int(v) for k, v in ability_match}
+        return summary
+
+    # Get sample sheet
+    sample_text = get_sample_character(sample_name)
+    if sample_text.startswith("Not found:"):
+        return {"error": sample_text}
+
+    sample_summary = extract_summary(sample_text)
+    user_summary = extract_summary(user_sheet)
+
+    return {
+        "sample_name": sample_name,
+        "sample_summary": sample_summary,
+        "user_summary": user_summary,
+        "note": (
+            "Compare class choices, feat selections, and ability score allocations. "
+            "The sample represents one optimized approach — differences aren't necessarily wrong, "
+            "but may highlight alternatives worth considering."
+        ),
+    }
+
+
 if __name__ == "__main__":
     mcp.run()

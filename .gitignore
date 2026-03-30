@@ -7,9 +7,12 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Data pipeline databases (downloaded)
+# Data pipeline (source JSONs preserved on data/db-restore branch)
 scripts/data/*.db
 scripts/data/raw/
+scripts/data/output/
 
-# Built SQLite database (regenerable from JSON)
-db/pathfinder.db
+# SQLite transient files
+*.db-shm
+*.db-wal
+*.db-journal

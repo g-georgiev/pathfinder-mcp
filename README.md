@@ -24,10 +24,11 @@ cd pathfinder-mcp
 
 # Option B: Manual setup
 python3 -m venv mcp-server/.venv && mcp-server/.venv/bin/pip install mcp
-python3 db/build.py
 claude mcp add --scope project --transport stdio pathfinder-data -- \
   $(pwd)/mcp-server/.venv/bin/python3 $(pwd)/mcp-server/server.py
 ```
+
+The SQLite database ships with the repo — no build step needed.
 
 Then add the bootstrap to your project's `CLAUDE.md` (see `examples/CLAUDE.md`).
 
@@ -38,8 +39,8 @@ pathfinder/agent/
 ├── mcp-server/
 │   └── server.py            # MCP server — 17 tools
 ├── db/
-│   ├── build.py             # Builds SQLite DB from JSON
-│   └── pathfinder.db        # Built database (gitignored)
+│   ├── build.py             # Rebuilds DB from JSON (see data/db-restore branch)
+│   └── pathfinder.db        # SQLite database (~13MB, checked in)
 ├── data/
 │   ├── characters/
 │   │   └── FORMAT.md        # Character sheet + state format specification
@@ -53,7 +54,7 @@ pathfinder/agent/
 │   └── guides.md            # Guide usage instructions
 ├── scripts/
 │   ├── src/                 # Data pipeline (PSRD + aonprd extraction & merge)
-│   └── data/output/         # Generated JSON (source of truth for DB)
+│   └── data/output/         # Generated JSON (gitignored; see data/db-restore branch)
 └── examples/
     ├── mcp.json             # Example .mcp.json for consuming projects
     └── CLAUDE.md            # Example CLAUDE.md bootstrap
@@ -140,6 +141,8 @@ The SQLite database is built from two primary sources:
 
 - **PSRD** (Pathfinder SRD) — Open Game License content extracted from the official SRD databases
 - **Archives of Nethys (aonprd.com)** — Spell, feat, and archetype indexes scraped for names, URLs, and brief descriptions
+
+The source JSON files from the data pipeline are preserved on the `data/db-restore` branch for rebuilding the DB if data issues are found. The DB also accumulates web-fetched entries via the `cache_entry` MCP tool (prefixed `web-`).
 
 All Pathfinder game mechanics content is published under the **Open Game License v1.0a** by Paizo Inc.
 

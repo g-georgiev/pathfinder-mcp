@@ -11,6 +11,12 @@ deity: none
 
 **"It's all just magic. The gods don't own the patent."**
 
+## Images
+
+| | |
+|---|---|
+| ![Portrait](images/portrait-1.png) | ![Portrait Alt](images/portrait-2.png) |
+
 | | |
 |---|---|
 | **Race** | Human |

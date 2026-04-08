@@ -23,7 +23,7 @@ pathfinder/agent/
 ├── scripts/
 │   ├── src/                    # Python data pipeline (PSRD + aonprd)
 │   └── data/output/            # Generated JSON (gitignored; see data/db-restore branch)
-└── examples/                   # Example configs for consuming projects
+└── config-templates/           # Starter configs for consuming projects
 ```
 
 ## Setup

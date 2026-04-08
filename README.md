@@ -30,20 +30,21 @@ claude mcp add --scope project --transport stdio pathfinder-data -- \
 
 The SQLite database ships with the repo — no build step needed.
 
-Then add the bootstrap to your project's `CLAUDE.md` (see `examples/CLAUDE.md`).
+Then add the bootstrap to your project's `CLAUDE.md` (see `config-templates/CLAUDE.md`).
 
 ## Architecture
 
 ```
 pathfinder/agent/
 ├── mcp-server/
-│   └── server.py            # MCP server — 17 tools
+│   └── server.py            # MCP server — 21 tools
 ├── db/
 │   ├── build.py             # Rebuilds DB from JSON (see data/db-restore branch)
 │   └── pathfinder.db        # SQLite database (~13MB, checked in)
 ├── data/
 │   ├── characters/
-│   │   └── FORMAT.md        # Character sheet + state format specification
+│   │   ├── FORMAT.md        # Character sheet + state format specification
+│   │   └── samples/         # Pre-built sample characters (normal/ and gestalt/)
 │   └── guides/              # 79 community optimization guides (14MB)
 │       └── INDEX.md         # Guide index by class
 ├── docs/                    # Reference docs served by get_reference()
@@ -55,20 +56,21 @@ pathfinder/agent/
 ├── scripts/
 │   ├── src/                 # Data pipeline (PSRD + aonprd extraction & merge)
 │   └── data/output/         # Generated JSON (gitignored; see data/db-restore branch)
-└── examples/
-    ├── mcp.json             # Example .mcp.json for consuming projects
-    └── CLAUDE.md            # Example CLAUDE.md bootstrap
+└── config-templates/
+    ├── mcp.json             # Starter .mcp.json for consuming projects
+    └── CLAUDE.md            # Starter CLAUDE.md bootstrap
 ```
 
 ## Sample Characters
 
-Pre-built characters showcasing the full character sheet format and MCP-driven build process. See [data/characters/samples/](data/characters/samples/) for the full list.
+Pre-built characters showcasing the full character sheet format and MCP-driven build process. See [data/characters/samples/](data/characters/samples/) for the full list, organized into [normal/](data/characters/samples/normal/) (single-class) and [gestalt/](data/characters/samples/gestalt/) builds.
 
-| Character | Classes | Level | Concept |
-|-----------|---------|-------|---------|
-| [The McGyver](data/characters/samples/normal/the-mcgyver/sheet.md) | Wizard (Spell Sage) 10 | 10 | Cross-list casting generalist — casts cleric, druid, and bard spells via Spell Study |
+| Character | Classes | Level | Type | Concept |
+|-----------|---------|-------|------|---------|
+| [The McGyver](data/characters/samples/normal/the-mcgyver/sheet.md) | Wizard (Spell Sage) 10 | 10 | Normal | Cross-list casting generalist — casts cleric, druid, and bard spells via Spell Study |
+| [The Shwarma Master](data/characters/samples/gestalt/the-shwarma-master/sheet.md) | Magus (Kensai) // Wizard (Foresight Divination) 16 | 16 | Gestalt | Gold-standard gestalt action economy — Spell Combat + Broad Study delivers Wizard touch spells through a scimitar (*Aisha*), paired with passive Kensai INT bonuses to AC, initiative, crits, and AoOs. Also a working Qadiran cook |
 
-Each sample character includes: `sheet.md` (full stat breakdown), `spells.md` (spell descriptions), `features.md` (class features), `feats.md` (feat reference), and `backstory.md` (flavor).
+Each sample character includes: `sheet.md` (full stat breakdown), `spells.md` (spell descriptions), `features.md` (class features), `feats.md` (feat reference), `backstory.md` (flavor), and `images/` (portraits + generation prompt).
 
 ## MCP Tools (21 tools)
 

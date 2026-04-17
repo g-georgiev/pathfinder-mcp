@@ -16,3 +16,9 @@ scripts/data/output/
 *.db-shm
 *.db-wal
 *.db-journal
+
+# Game state database (dynamic, session-specific)
+db/game_state.db
+
+# Local MCP config with absolute paths (use config-templates/mcp.json as reference)
+.mcp.json

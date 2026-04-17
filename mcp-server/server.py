@@ -1109,5 +1109,13 @@ generate_portrait_prompt(character_dir="{character_dir}", style="...", framing="
     }
 
 
+# ---------------------------------------------------------------------------
+# Register game state tools (AI DM expansion)
+# ---------------------------------------------------------------------------
+
+from tools import register_all
+register_all(mcp)
+
+
 if __name__ == "__main__":
     mcp.run()

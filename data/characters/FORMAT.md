@@ -195,6 +195,8 @@ Categories (in order):
 
 ## state.md Structure
 
+> **Note:** In the personal campaign repo (sibling `personal/`), `state.md` is superseded by the `pf` sheet app's `play/state.yaml` plus per-session journals (see that repo). The format below is kept for characters used directly with this plugin, such as the MCP's sample characters.
+
 The state file tracks live, session-to-session combat and exploration state. It persists between conversations so you can pick up mid-combat next session.
 
 ```markdown
@@ -271,7 +273,7 @@ Free-form notes about the current situation for continuity.
 - **Combat toggles** are separate from buffs — they're player choices that stay on across combats, not timed effects.
 - **Rounds left** uses numbers for in-combat tracking, "—" for long-duration buffs that won't expire mid-combat.
 - **Ability modifications** stack by type per PF1e rules. Note the type (enhancement, morale, drain, damage, penalty) so stacking is correct.
-- **Resource tracking** resets on "new day" — when the user says they rest, clear all used counts and remove expired buffs/conditions.
+- **Resource tracking** resets on "new day" — when the user says they rest, clear the used counts of daily resources and spell slots and remove expired buffs/conditions. Non-renewing charges (wand charges, bracelet beads, talismans, consumables) never reset on rest.
 - **Session notes** are free-form context for picking up next session. Include tactical positioning, enemy status, anything relevant.
 - When state.md doesn't exist, the character has no active modifiers (fresh state).
 
@@ -342,7 +344,7 @@ This reads the character's appearance details and saves a ready-to-use prompt to
 For gestalt builds:
 - List both classes in the class table with slot numbers
 - Use the higher HD and better BAB
-- **Saves**: Pick one class's full save progression — you cannot mix (e.g. Fort from one class, Ref from another). Note which class's saves are used and why (e.g. "Inquisitor saves for better Will")
+- **Saves**: Take the better progression for **each save separately** (standard gestalt rule) — e.g. Fort from one class, Ref and Will from the other. A campaign may instead house-rule a one-class policy (one class's full save progression, no mixing); if so, note it under House Rules and say which class's saves are used and why (e.g. "Inquisitor saves for better Will")
 - Class features stack (both classes' features apply)
 - Spellcasting sections are separate per class
 - Skills use the better skill ranks per level

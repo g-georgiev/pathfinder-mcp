@@ -44,7 +44,7 @@ The character's `state.md` file tracks live combat state. See FORMAT.md for the 
 - "I use Bit of Luck on Nettle" -> decrement resource, note target
 - "Next round" -> decrement rounds remaining on all timed buffs, remove expired ones
 - "Combat's over" -> remove combat-duration buffs/conditions, keep longer ones
-- "We rest for the night" / "New day" -> clear all buffs, conditions, reset all resource pools to full
+- "We rest for the night" / "New day" -> clear all buffs, conditions, reset daily resource pools and spell slots to full; non-renewing charges (wand charges, bracelet beads, talismans, consumables) never reset on rest
 
 **Reading state**: When generating attack rolls, saves, AC, or skill checks, always check state.md first. Apply:
 - Combat toggle modifiers (Deadly Aim, Power Attack, etc.)

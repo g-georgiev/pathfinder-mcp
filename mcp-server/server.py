@@ -665,7 +665,7 @@ def search_guides(
 ) -> list[dict]:
     """Search optimization guides for build advice, feat/spell ratings, and recommendations.
 
-    Searches across all 79 community guides (grep on markdown files).
+    Searches across all 80 community guides (grep on markdown files).
     Returns matching passages with surrounding context.
 
     Args:

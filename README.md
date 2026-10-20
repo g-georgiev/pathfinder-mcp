@@ -1,13 +1,13 @@
 # Pathfinder 1e Advisor — MCP Server
 
-An MCP server that turns any AI agent into an expert Pathfinder 1st Edition advisor with comprehensive rules lookup, character management, combat resolution, and campaign tracking. Backed by a local SQLite database of ~13,000 game entries, 79 community optimization guides, and a complete game state engine.
+An MCP server that turns any AI agent into an expert Pathfinder 1st Edition advisor with comprehensive rules lookup, character management, combat resolution, and campaign tracking. Backed by a local SQLite database of ~13,000 game entries, 80 community optimization guides, and a complete game state engine.
 
 ## What It Does
 
 **Rules Reference (21 tools)**
 - Search spells, feats, classes, archetypes, items, equipment, races, class options with full-text search
 - Verify feat prerequisites and archetype compatibility against character stats
-- Search 79 optimization guides for feat/spell ratings and build recommendations
+- Search 80 optimization guides for feat/spell ratings and build recommendations
 - Read-through cache: missing data is fetched from aonprd.com/d20pfsrd.com and cached locally
 
 **Game State (35 tools)**
@@ -89,7 +89,7 @@ pathfinder-mcp/
 │   ├── characters/
 │   │   ├── FORMAT.md           # Character sheet format specification
 │   │   └── samples/            # Pre-built sample characters
-│   └── guides/                 # 79 community optimization guides (14MB)
+│   └── guides/                 # 80 community optimization guides (14MB)
 │       └── INDEX.md            # Guide index by class
 ├── docs/                       # Runtime reference docs (served by get_reference())
 ├── scripts/                    # Data pipeline (PSRD + aonprd extraction)
@@ -126,7 +126,7 @@ pathfinder-mcp/
 | `compare_with_sample` | Compare a user's build against a sample for optimization insights |
 | `generate_portrait_prompt` | Generate an image-gen prompt from character data |
 
-### Guides (79 guides, 37/38 classes)
+### Guides (80 guides, 38/38 classes)
 
 | Tool | Purpose |
 |------|---------|
@@ -257,7 +257,7 @@ The `data/guides/` directory contains optimization guides written by the Pathfin
 
 **If you are an author listed below and would like your content removed from this repository, please open an issue or contact the maintainer directly. Your content will be removed promptly.**
 
-### 79 guides, 349 files, 14MB — [Full Index](data/guides/INDEX.md)
+### 80 guides, 357 files, 14MB — [Full Index](data/guides/INDEX.md)
 
 | Author | Guides | Classes Covered |
 |--------|--------|-----------------|

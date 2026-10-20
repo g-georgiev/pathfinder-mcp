@@ -2,7 +2,7 @@
 
 Spells & Spellcasting
 Look Bards don’t get a lot of spells but they get enough that they matter. Moreover, as I’ve said many times, bards have a particularly curated list that vibes with their class features in a way that I don’t feel like a lot of spellcasters do…and they are spontaneous casters so…I’m going to review Bard Spells like I did with the Sorcerer.
-Aria of The Arcane: Iluzry's Guide To Bard Spellcasting
+Aria of The Arcane: Iluzry's Guide To Bard Spellcasting (the full spell guide is [bard-spells-iluzry](../bard-spells-iluzry/index.md))
   
 
 

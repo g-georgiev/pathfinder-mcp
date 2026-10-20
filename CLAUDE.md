@@ -25,7 +25,7 @@ pathfinder/agent/
 │   ├── characters/
 │   │   ├── FORMAT.md           # Character sheet + state format specification
 │   │   └── samples/            # Pre-built sample characters (served by MCP tools)
-│   └── guides/                 # 79 community optimization guides
+│   └── guides/                 # 80 community optimization guides
 │       └── INDEX.md            # Guide index by class
 ├── docs/                       # Reference docs served by get_reference()
 ├── scripts/

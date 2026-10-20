@@ -17,6 +17,7 @@ Quick reference for finding the right optimization guide.
 | Bard | The Show Must Go On: Iluzry's Guide to the Bard | Iluzry | [index.md](bard-iluzry/index.md) |
 | Bard | Guide to the Buffer Bard | Unknown | [guide.md](bard-buffer/guide.md) |
 | Bard | All the World's a Stage: Guide to the Bard | Unknown | [guide.md](bard-stage-director/guide.md) |
+| Bard | Aria of The Arcane: Iluzry's Guide to Bard Spells & Spellcasting | Iluzry | [index.md](bard-spells-iluzry/index.md) |
 | Bloodrager | One B.A.M.F's Guide to the Bloodrager | Unknown | [guide.md](bloodrager-bamf/guide.md) |
 | Bloodrager | Raining Blood: The Bloodrager's Guide | Unknown | [guide.md](bloodrager-raining-blood/guide.md) |
 | Brawler | Brawlers: Debuffing with Style | Unknown | [guide.md](brawler-debuffing/guide.md) |
